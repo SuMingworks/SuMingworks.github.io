@@ -1,0 +1,1 @@
+import{d as e,t}from"./GlobalMouseFlowService-CPDcMzsj.js";export{t as configureGlobalMouseFlow,e as takeGlobalMouseFlowInitialization};
