@@ -48,9 +48,9 @@
         "isAccessibleForFree": true
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-CoIY6LnI.js"></script>
+    <script type="module" crossorigin src="/assets/main-BjAncotk.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/preload-helper-zJ_50EbN.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-B4QetWdo.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-BpdP9HDL.css">
   </head>
   <body>
     <noscript>
@@ -125,11 +125,14 @@
         <input type="file" id="folderInput" multiple style="display: none" />
 
         <div class="dock-bar">
+          <button type="button" class="dock-close-btn" aria-label="关闭 Dock" title="关闭 Dock">
+            <i class="fas fa-xmark" aria-hidden="true"></i>
+          </button>
           <div class="dock-controls-row">
             <!-- 左侧：音频源 -->
             <div class="dock-section dock-left">
-              <button id="loopbackButton" class="dock-btn" title="系统音频">
-                <i class="fas fa-microphone"></i>
+              <button id="loopbackButton" class="dock-btn" title="系统音频" aria-label="系统音频">
+                <i class="fas fa-microphone" aria-hidden="true"></i>
               </button>
               <label for="folderInput" class="dock-btn dock-label" title="选择音频文件">
                 <i class="fas fa-folder-open"></i>
@@ -181,6 +184,9 @@
             <span class="dock-progress-time" id="totalTime">00:00</span>
           </div>
         </div>
+        <button type="button" class="dock-reopen-btn" aria-label="打开 Dock" title="打开 Dock" hidden>
+          <i class="fas fa-chevron-up" aria-hidden="true"></i>
+        </button>
 
         <!-- 折叠按钮兼容（保留 DOM 但不显示） -->
         <button
