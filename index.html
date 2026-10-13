@@ -48,9 +48,9 @@
         "isAccessibleForFree": true
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-BHgCPQQJ.js"></script>
+    <script type="module" crossorigin src="/assets/main-CYn6Z6mm.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/preload-helper-zJ_50EbN.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-cvQ4zi-B.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-Cg5Ip-ZK.css">
   </head>
   <body>
     <noscript>
@@ -79,12 +79,6 @@
       <div id="info">
         <h1>音频之眼</h1>
 
-        <!-- 添加音乐信息元素 -->
-        <div class="music-info" id="musicInfo" style="display: none">
-          <div class="music-title" id="musicTitle"></div>
-          <div class="music-details" id="musicDetails"></div>
-        </div>
-        <!-- 移除了状态提示元素和折叠按钮 -->
       </div>
 
       <!-- 播放列表 -->
@@ -180,6 +174,7 @@
           <div class="dock-progress-bar">
             <span class="dock-progress-time" id="currentTime">00:00</span>
             <div class="dock-progress-track" id="progressTrack">
+              <span class="dock-track-title" id="dockTrackTitle" aria-live="polite" aria-atomic="true">未播放音乐</span>
               <div class="dock-progress-fill" id="progressFill"></div>
               <div class="dock-progress-thumb" id="progressThumb"></div>
             </div>
@@ -291,8 +286,29 @@
               <i class="fas fa-wand-magic-sparkles"></i><span>流体</span
               ><span class="control-center-status" aria-hidden="true"></span>
             </button>
+            <button type="button" class="control-center-tab" role="tab" aria-selected="false"
+              data-control-page="gesture" aria-controls="gestureSettingsPanel">
+              <i class="fas fa-hand" aria-hidden="true"></i><span>手势</span>
+            </button>
           </nav>
-          <div id="controlCenterContent" class="control-center-content"></div>
+          <div id="controlCenterContent" class="control-center-content">
+            <section id="gestureSettingsPanel" class="settings-panel bg-settings-panel gesture-settings-panel" hidden>
+              <h3>摄像头手势</h3>
+              <p>用手代替鼠标控制当前动画。画面只在本机识别。</p>
+              <button type="button" aria-pressed="false">开启摄像头手势</button>
+              <p data-gesture-status role="status" aria-live="polite">摄像头手势已关闭</p>
+              <video muted autoplay playsinline aria-label="镜像摄像头预览"></video>
+              <ul>
+                <li>只伸食指移动：鼠标流体跟随</li>
+                <li>握拳并移动：旋转视角</li>
+                <li>张掌左右／上下移动：平移视角</li>
+                <li>张掌靠近／远离摄像头：放大／缩小</li>
+                <li>👍 保持后向左／右挥动：上一首／下一首</li>
+                <li>✌️ 保持后向左／右挥动：上一个／下一个动画</li>
+              </ul>
+              <p>全程单手，无需切模式。手形保持约 0.2 秒后生效；张掌正对摄像头，平移与缩放自动锁定，停稳片刻后可换方向。切换后先放下手或换为食指／握拳／张掌再挥动。鼠标操作优先；固定视角动画不支持视角控制。手机请使用 HTTPS，并放在支架上。</p>
+            </section>
+          </div>
         </div>
       </section>
 

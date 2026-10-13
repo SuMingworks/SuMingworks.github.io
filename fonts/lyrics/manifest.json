@@ -1,0 +1,4368 @@
+{
+  "sans": {
+    "source": "SourceHanSansCN-VF.ttf",
+    "sourceSha256": "25a01e41b5cc99893eb35a6cd2cc7611841dc19eb03cbaf7f0c1de8210f2ba0b",
+    "sourceUrl": "https://github.com/adobe-fonts/source-han-sans/tree/release/Variable/TTF/Subset",
+    "fontRevision": 2.0050048828125,
+    "family": "AudioEyes Lyrics Sans",
+    "characters": 30926,
+    "weightRange": [
+      250.0,
+      900.0
+    ],
+    "slices": [
+      {
+        "file": "sans-00020-90533a4b3a89.woff2",
+        "bytes": 14576,
+        "characters": 95,
+        "range": "U+20-7E"
+      },
+      {
+        "file": "sans-000a0-ab6d900479eb.woff2",
+        "bytes": 11312,
+        "characters": 96,
+        "range": "U+A0-FF"
+      },
+      {
+        "file": "sans-00100-9a43a6da6193.woff2",
+        "bytes": 4984,
+        "characters": 30,
+        "range": "U+100-16D"
+      },
+      {
+        "file": "sans-00192-3d2d34ac5237.woff2",
+        "bytes": 4292,
+        "characters": 23,
+        "range": "U+192-1F9"
+      },
+      {
+        "file": "sans-00251-8c997c72d6a5.woff2",
+        "bytes": 2148,
+        "characters": 2,
+        "range": "U+251-261"
+      },
+      {
+        "file": "sans-002bb-b3e89c7570c9.woff2",
+        "bytes": 2412,
+        "characters": 8,
+        "range": "U+2BB-2EB"
+      },
+      {
+        "file": "sans-00300-5c554219eb54.woff2",
+        "bytes": 1892,
+        "characters": 5,
+        "range": "U+300-30C"
+      },
+      {
+        "file": "sans-00391-0a886f07e909.woff2",
+        "bytes": 9080,
+        "characters": 49,
+        "range": "U+391-3C9"
+      },
+      {
+        "file": "sans-00401-8dbb206409be.woff2",
+        "bytes": 9892,
+        "characters": 66,
+        "range": "U+401-451"
+      },
+      {
+        "file": "sans-01e3e-ae619f7bbecb.woff2",
+        "bytes": 2128,
+        "characters": 2,
+        "range": "U+1E3E-1E3F"
+      },
+      {
+        "file": "sans-01ea0-21b1a1e6cfc4.woff2",
+        "bytes": 8340,
+        "characters": 90,
+        "range": "U+1EA0-1EF9"
+      },
+      {
+        "file": "sans-02002-429157b5d3c3.woff2",
+        "bytes": 5564,
+        "characters": 35,
+        "range": "U+2002-2074"
+      },
+      {
+        "file": "sans-020a9-9fb319381928.woff2",
+        "bytes": 2416,
+        "characters": 5,
+        "range": "U+20A9-20DE"
+      },
+      {
+        "file": "sans-02100-fce2e2e82a7b.woff2",
+        "bytes": 6908,
+        "characters": 40,
+        "range": "U+2100-217B"
+      },
+      {
+        "file": "sans-02190-c8a56ba53840.woff2",
+        "bytes": 3712,
+        "characters": 25,
+        "range": "U+2190-21F5"
+      },
+      {
+        "file": "sans-02200-c4a816434c6b.woff2",
+        "bytes": 6424,
+        "characters": 56,
+        "range": "U+2200-2277"
+      },
+      {
+        "file": "sans-02282-33bb2272fd50.woff2",
+        "bytes": 3276,
+        "characters": 19,
+        "range": "U+2282-22EF"
+      },
+      {
+        "file": "sans-02305-e123244212ba.woff2",
+        "bytes": 2684,
+        "characters": 7,
+        "range": "U+2305-232A"
+      },
+      {
+        "file": "sans-023b0-89e26be2ba5a.woff2",
+        "bytes": 3036,
+        "characters": 20,
+        "range": "U+23B0-23DB"
+      },
+      {
+        "file": "sans-02423-8f8f4875927a.woff2",
+        "bytes": 6272,
+        "characters": 33,
+        "range": "U+2423-247F"
+      },
+      {
+        "file": "sans-02480-2053ae6e6c2d.woff2",
+        "bytes": 17380,
+        "characters": 128,
+        "range": "U+2480-24FF"
+      },
+      {
+        "file": "sans-02500-b105d5be31be.woff2",
+        "bytes": 2848,
+        "characters": 128,
+        "range": "U+2500-257F"
+      },
+      {
+        "file": "sans-02580-bfb972609197.woff2",
+        "bytes": 4056,
+        "characters": 72,
+        "range": "U+2580-25EF"
+      },
+      {
+        "file": "sans-02600-c164a430ff9e.woff2",
+        "bytes": 10416,
+        "characters": 47,
+        "range": "U+2600-267D"
+      },
+      {
+        "file": "sans-026a0-78001808b1b2.woff2",
+        "bytes": 2680,
+        "characters": 3,
+        "range": "U+26A0-26BE"
+      },
+      {
+        "file": "sans-02702-b8d8e964c356.woff2",
+        "bytes": 4712,
+        "characters": 17,
+        "range": "U+2702-277F"
+      },
+      {
+        "file": "sans-02780-847d695d136f.woff2",
+        "bytes": 4612,
+        "characters": 21,
+        "range": "U+2780-27A1"
+      },
+      {
+        "file": "sans-02934-15bc65c6f1be.woff2",
+        "bytes": 2088,
+        "characters": 2,
+        "range": "U+2934-2935"
+      },
+      {
+        "file": "sans-029bf-030e1d2e3dbd.woff2",
+        "bytes": 1904,
+        "characters": 3,
+        "range": "U+29BF-29FB"
+      },
+      {
+        "file": "sans-02b05-f80611cc8d7a.woff2",
+        "bytes": 1868,
+        "characters": 4,
+        "range": "U+2B05-2B1A"
+      },
+      {
+        "file": "sans-02b95-9736b6f8b7d4.woff2",
+        "bytes": 1636,
+        "characters": 1,
+        "range": "U+2B95-2B95"
+      },
+      {
+        "file": "sans-02e3a-cd68df2fd3eb.woff2",
+        "bytes": 1832,
+        "characters": 2,
+        "range": "U+2E3A-2E3B"
+      },
+      {
+        "file": "sans-02e80-ece8922f01f2.woff2",
+        "bytes": 22964,
+        "characters": 115,
+        "range": "U+2E80-2EF3"
+      },
+      {
+        "file": "sans-02f00-39f836729187.woff2",
+        "bytes": 21784,
+        "characters": 128,
+        "range": "U+2F00-2F7F"
+      },
+      {
+        "file": "sans-02f80-bcd699693122.woff2",
+        "bytes": 25260,
+        "characters": 102,
+        "range": "U+2F80-2FFF"
+      },
+      {
+        "file": "sans-03000-b44b14329283.woff2",
+        "bytes": 37912,
+        "characters": 127,
+        "range": "U+3000-307F"
+      },
+      {
+        "file": "sans-03080-0deccfab50f6.woff2",
+        "bytes": 52428,
+        "characters": 126,
+        "range": "U+3080-30FF"
+      },
+      {
+        "file": "sans-03105-deb77e3d3b75.woff2",
+        "bytes": 15720,
+        "characters": 121,
+        "range": "U+3105-317F"
+      },
+      {
+        "file": "sans-03180-528f7f4275a4.woff2",
+        "bytes": 20472,
+        "characters": 118,
+        "range": "U+3180-31FF"
+      },
+      {
+        "file": "sans-03200-fe54d7598b2a.woff2",
+        "bytes": 21040,
+        "characters": 127,
+        "range": "U+3200-327F"
+      },
+      {
+        "file": "sans-03280-e54ea501e2d4.woff2",
+        "bytes": 27212,
+        "characters": 128,
+        "range": "U+3280-32FF"
+      },
+      {
+        "file": "sans-03300-8ebfbbdcd10c.woff2",
+        "bytes": 59428,
+        "characters": 127,
+        "range": "U+3300-337F"
+      },
+      {
+        "file": "sans-03380-6a3208db5d53.woff2",
+        "bytes": 18164,
+        "characters": 128,
+        "range": "U+3380-33FF"
+      },
+      {
+        "file": "sans-03400-c3e867a93c72.woff2",
+        "bytes": 36904,
+        "characters": 128,
+        "range": "U+3400-347F"
+      },
+      {
+        "file": "sans-03480-e34949d918ab.woff2",
+        "bytes": 44572,
+        "characters": 128,
+        "range": "U+3480-34FF"
+      },
+      {
+        "file": "sans-03500-e657491b2965.woff2",
+        "bytes": 41524,
+        "characters": 128,
+        "range": "U+3500-357F"
+      },
+      {
+        "file": "sans-03580-dc4a38efd1b2.woff2",
+        "bytes": 40072,
+        "characters": 128,
+        "range": "U+3580-35FF"
+      },
+      {
+        "file": "sans-03600-31ccc60a055a.woff2",
+        "bytes": 45856,
+        "characters": 128,
+        "range": "U+3600-367F"
+      },
+      {
+        "file": "sans-03680-fec616bb2d8d.woff2",
+        "bytes": 43048,
+        "characters": 128,
+        "range": "U+3680-36FF"
+      },
+      {
+        "file": "sans-03700-b8263f1cac4c.woff2",
+        "bytes": 50528,
+        "characters": 128,
+        "range": "U+3700-377F"
+      },
+      {
+        "file": "sans-03780-b668dc6de46f.woff2",
+        "bytes": 37272,
+        "characters": 128,
+        "range": "U+3780-37FF"
+      },
+      {
+        "file": "sans-03800-84d1bad155b7.woff2",
+        "bytes": 45964,
+        "characters": 128,
+        "range": "U+3800-387F"
+      },
+      {
+        "file": "sans-03880-baadeb1a83ff.woff2",
+        "bytes": 43352,
+        "characters": 128,
+        "range": "U+3880-38FF"
+      },
+      {
+        "file": "sans-03900-080f9dc1c563.woff2",
+        "bytes": 43280,
+        "characters": 128,
+        "range": "U+3900-397F"
+      },
+      {
+        "file": "sans-03980-9055fef7f176.woff2",
+        "bytes": 47088,
+        "characters": 128,
+        "range": "U+3980-39FF"
+      },
+      {
+        "file": "sans-03a00-9597b662804b.woff2",
+        "bytes": 50340,
+        "characters": 128,
+        "range": "U+3A00-3A7F"
+      },
+      {
+        "file": "sans-03a80-50c007cf895f.woff2",
+        "bytes": 40240,
+        "characters": 128,
+        "range": "U+3A80-3AFF"
+      },
+      {
+        "file": "sans-03b00-f32930791c3d.woff2",
+        "bytes": 44376,
+        "characters": 128,
+        "range": "U+3B00-3B7F"
+      },
+      {
+        "file": "sans-03b80-e1e6575b5d6d.woff2",
+        "bytes": 53084,
+        "characters": 128,
+        "range": "U+3B80-3BFF"
+      },
+      {
+        "file": "sans-03c00-ce29f63272e9.woff2",
+        "bytes": 53540,
+        "characters": 128,
+        "range": "U+3C00-3C7F"
+      },
+      {
+        "file": "sans-03c80-144f9606602e.woff2",
+        "bytes": 44904,
+        "characters": 128,
+        "range": "U+3C80-3CFF"
+      },
+      {
+        "file": "sans-03d00-5e52f80f381c.woff2",
+        "bytes": 50628,
+        "characters": 128,
+        "range": "U+3D00-3D7F"
+      },
+      {
+        "file": "sans-03d80-7671ba6679e3.woff2",
+        "bytes": 54004,
+        "characters": 128,
+        "range": "U+3D80-3DFF"
+      },
+      {
+        "file": "sans-03e00-fd28bf2fda52.woff2",
+        "bytes": 45040,
+        "characters": 128,
+        "range": "U+3E00-3E7F"
+      },
+      {
+        "file": "sans-03e80-b550725324a6.woff2",
+        "bytes": 45232,
+        "characters": 128,
+        "range": "U+3E80-3EFF"
+      },
+      {
+        "file": "sans-03f00-69f7196394ac.woff2",
+        "bytes": 53080,
+        "characters": 128,
+        "range": "U+3F00-3F7F"
+      },
+      {
+        "file": "sans-03f80-d94b484f043e.woff2",
+        "bytes": 46196,
+        "characters": 128,
+        "range": "U+3F80-3FFF"
+      },
+      {
+        "file": "sans-04000-20903657ae01.woff2",
+        "bytes": 38732,
+        "characters": 128,
+        "range": "U+4000-407F"
+      },
+      {
+        "file": "sans-04080-c15d3ecf95b9.woff2",
+        "bytes": 46984,
+        "characters": 128,
+        "range": "U+4080-40FF"
+      },
+      {
+        "file": "sans-04100-9dd9f7a9faab.woff2",
+        "bytes": 43992,
+        "characters": 128,
+        "range": "U+4100-417F"
+      },
+      {
+        "file": "sans-04180-1b66ef4e4706.woff2",
+        "bytes": 47304,
+        "characters": 128,
+        "range": "U+4180-41FF"
+      },
+      {
+        "file": "sans-04200-742db4c27527.woff2",
+        "bytes": 58184,
+        "characters": 128,
+        "range": "U+4200-427F"
+      },
+      {
+        "file": "sans-04280-a1623a0125d0.woff2",
+        "bytes": 53584,
+        "characters": 128,
+        "range": "U+4280-42FF"
+      },
+      {
+        "file": "sans-04300-2515774b10a8.woff2",
+        "bytes": 55692,
+        "characters": 128,
+        "range": "U+4300-437F"
+      },
+      {
+        "file": "sans-04380-0a475a3773eb.woff2",
+        "bytes": 43816,
+        "characters": 128,
+        "range": "U+4380-43FF"
+      },
+      {
+        "file": "sans-04400-9d737d3ff41d.woff2",
+        "bytes": 47400,
+        "characters": 128,
+        "range": "U+4400-447F"
+      },
+      {
+        "file": "sans-04480-47b72751ff70.woff2",
+        "bytes": 37196,
+        "characters": 128,
+        "range": "U+4480-44FF"
+      },
+      {
+        "file": "sans-04500-6e87a29070b8.woff2",
+        "bytes": 50960,
+        "characters": 128,
+        "range": "U+4500-457F"
+      },
+      {
+        "file": "sans-04580-2538967f3fff.woff2",
+        "bytes": 52864,
+        "characters": 128,
+        "range": "U+4580-45FF"
+      },
+      {
+        "file": "sans-04600-38ea480809aa.woff2",
+        "bytes": 52360,
+        "characters": 128,
+        "range": "U+4600-467F"
+      },
+      {
+        "file": "sans-04680-55fe4bd9bc4b.woff2",
+        "bytes": 41228,
+        "characters": 128,
+        "range": "U+4680-46FF"
+      },
+      {
+        "file": "sans-04700-67ca1d62ee86.woff2",
+        "bytes": 52556,
+        "characters": 128,
+        "range": "U+4700-477F"
+      },
+      {
+        "file": "sans-04780-6d3d345378d2.woff2",
+        "bytes": 44444,
+        "characters": 128,
+        "range": "U+4780-47FF"
+      },
+      {
+        "file": "sans-04800-b3770143a6bb.woff2",
+        "bytes": 44720,
+        "characters": 128,
+        "range": "U+4800-487F"
+      },
+      {
+        "file": "sans-04880-9e5b63f0375b.woff2",
+        "bytes": 44584,
+        "characters": 128,
+        "range": "U+4880-48FF"
+      },
+      {
+        "file": "sans-04900-a9c6e6117aa7.woff2",
+        "bytes": 55868,
+        "characters": 128,
+        "range": "U+4900-497F"
+      },
+      {
+        "file": "sans-04980-c8a646a9518b.woff2",
+        "bytes": 43412,
+        "characters": 128,
+        "range": "U+4980-49FF"
+      },
+      {
+        "file": "sans-04a00-a0655533fd6e.woff2",
+        "bytes": 44516,
+        "characters": 128,
+        "range": "U+4A00-4A7F"
+      },
+      {
+        "file": "sans-04a80-682b01d29228.woff2",
+        "bytes": 51044,
+        "characters": 128,
+        "range": "U+4A80-4AFF"
+      },
+      {
+        "file": "sans-04b00-4a3dbe8996d7.woff2",
+        "bytes": 53788,
+        "characters": 128,
+        "range": "U+4B00-4B7F"
+      },
+      {
+        "file": "sans-04b80-8de2de844906.woff2",
+        "bytes": 52224,
+        "characters": 128,
+        "range": "U+4B80-4BFF"
+      },
+      {
+        "file": "sans-04c00-608547df31e9.woff2",
+        "bytes": 56704,
+        "characters": 128,
+        "range": "U+4C00-4C7F"
+      },
+      {
+        "file": "sans-04c80-cd837291cf10.woff2",
+        "bytes": 58928,
+        "characters": 128,
+        "range": "U+4C80-4CFF"
+      },
+      {
+        "file": "sans-04d00-a6cff0212caa.woff2",
+        "bytes": 58268,
+        "characters": 128,
+        "range": "U+4D00-4D7F"
+      },
+      {
+        "file": "sans-04d80-dc2ec967fede.woff2",
+        "bytes": 30812,
+        "characters": 64,
+        "range": "U+4D80-4DBF"
+      },
+      {
+        "file": "sans-04e00-07f4ef5ec8fe.woff2",
+        "bytes": 28284,
+        "characters": 128,
+        "range": "U+4E00-4E7F"
+      },
+      {
+        "file": "sans-04e80-e84d913cae7f.woff2",
+        "bytes": 28104,
+        "characters": 128,
+        "range": "U+4E80-4EFF"
+      },
+      {
+        "file": "sans-04f00-b676d11e04cb.woff2",
+        "bytes": 29596,
+        "characters": 128,
+        "range": "U+4F00-4F7F"
+      },
+      {
+        "file": "sans-04f80-df1e7351b6e1.woff2",
+        "bytes": 35960,
+        "characters": 128,
+        "range": "U+4F80-4FFF"
+      },
+      {
+        "file": "sans-05000-84d5d2d14dba.woff2",
+        "bytes": 36576,
+        "characters": 128,
+        "range": "U+5000-507F"
+      },
+      {
+        "file": "sans-05080-c28d306b6bfc.woff2",
+        "bytes": 45652,
+        "characters": 128,
+        "range": "U+5080-50FF"
+      },
+      {
+        "file": "sans-05100-6b2c87b1f574.woff2",
+        "bytes": 46284,
+        "characters": 128,
+        "range": "U+5100-517F"
+      },
+      {
+        "file": "sans-05180-050adc76988e.woff2",
+        "bytes": 33972,
+        "characters": 128,
+        "range": "U+5180-51FF"
+      },
+      {
+        "file": "sans-05200-0391572d59dd.woff2",
+        "bytes": 37528,
+        "characters": 128,
+        "range": "U+5200-527F"
+      },
+      {
+        "file": "sans-05280-6cbf31bd44f2.woff2",
+        "bytes": 50184,
+        "characters": 128,
+        "range": "U+5280-52FF"
+      },
+      {
+        "file": "sans-05300-d695b97d574d.woff2",
+        "bytes": 31576,
+        "characters": 128,
+        "range": "U+5300-537F"
+      },
+      {
+        "file": "sans-05380-210669710e57.woff2",
+        "bytes": 36224,
+        "characters": 128,
+        "range": "U+5380-53FF"
+      },
+      {
+        "file": "sans-05400-329889638caa.woff2",
+        "bytes": 28012,
+        "characters": 128,
+        "range": "U+5400-547F"
+      },
+      {
+        "file": "sans-05480-8c84c9681da9.woff2",
+        "bytes": 31844,
+        "characters": 128,
+        "range": "U+5480-54FF"
+      },
+      {
+        "file": "sans-05500-1e1c3e153294.woff2",
+        "bytes": 35304,
+        "characters": 128,
+        "range": "U+5500-557F"
+      },
+      {
+        "file": "sans-05580-b37e608d7213.woff2",
+        "bytes": 40124,
+        "characters": 128,
+        "range": "U+5580-55FF"
+      },
+      {
+        "file": "sans-05600-c551739b0679.woff2",
+        "bytes": 45500,
+        "characters": 128,
+        "range": "U+5600-567F"
+      },
+      {
+        "file": "sans-05680-53594feda196.woff2",
+        "bytes": 45272,
+        "characters": 128,
+        "range": "U+5680-56FF"
+      },
+      {
+        "file": "sans-05700-014a6fbc2481.woff2",
+        "bytes": 31024,
+        "characters": 128,
+        "range": "U+5700-577F"
+      },
+      {
+        "file": "sans-05780-9e3cb65bab4a.woff2",
+        "bytes": 35504,
+        "characters": 128,
+        "range": "U+5780-57FF"
+      },
+      {
+        "file": "sans-05800-cf42f78f83ea.woff2",
+        "bytes": 40404,
+        "characters": 128,
+        "range": "U+5800-587F"
+      },
+      {
+        "file": "sans-05880-2c711b175857.woff2",
+        "bytes": 44492,
+        "characters": 128,
+        "range": "U+5880-58FF"
+      },
+      {
+        "file": "sans-05900-8144dfbc6972.woff2",
+        "bytes": 40628,
+        "characters": 128,
+        "range": "U+5900-597F"
+      },
+      {
+        "file": "sans-05980-3b5b8e88ba3a.woff2",
+        "bytes": 37860,
+        "characters": 128,
+        "range": "U+5980-59FF"
+      },
+      {
+        "file": "sans-05a00-3226ecc0f712.woff2",
+        "bytes": 44908,
+        "characters": 128,
+        "range": "U+5A00-5A7F"
+      },
+      {
+        "file": "sans-05a80-cd5f1f609069.woff2",
+        "bytes": 49312,
+        "characters": 128,
+        "range": "U+5A80-5AFF"
+      },
+      {
+        "file": "sans-05b00-dfd76b119314.woff2",
+        "bytes": 55132,
+        "characters": 128,
+        "range": "U+5B00-5B7F"
+      },
+      {
+        "file": "sans-05b80-adf2b1d5cf88.woff2",
+        "bytes": 37224,
+        "characters": 128,
+        "range": "U+5B80-5BFF"
+      },
+      {
+        "file": "sans-05c00-319e921235b3.woff2",
+        "bytes": 36280,
+        "characters": 128,
+        "range": "U+5C00-5C7F"
+      },
+      {
+        "file": "sans-05c80-28afed6651a7.woff2",
+        "bytes": 32476,
+        "characters": 128,
+        "range": "U+5C80-5CFF"
+      },
+      {
+        "file": "sans-05d00-8458f556d94a.woff2",
+        "bytes": 40204,
+        "characters": 128,
+        "range": "U+5D00-5D7F"
+      },
+      {
+        "file": "sans-05d80-efa60385db58.woff2",
+        "bytes": 47620,
+        "characters": 128,
+        "range": "U+5D80-5DFF"
+      },
+      {
+        "file": "sans-05e00-b7358808a6c3.woff2",
+        "bytes": 37136,
+        "characters": 128,
+        "range": "U+5E00-5E7F"
+      },
+      {
+        "file": "sans-05e80-ae038fd10a20.woff2",
+        "bytes": 43232,
+        "characters": 128,
+        "range": "U+5E80-5EFF"
+      },
+      {
+        "file": "sans-05f00-1cfcfd67773f.woff2",
+        "bytes": 42104,
+        "characters": 128,
+        "range": "U+5F00-5F7F"
+      },
+      {
+        "file": "sans-05f80-ff36b88376fe.woff2",
+        "bytes": 37064,
+        "characters": 128,
+        "range": "U+5F80-5FFF"
+      },
+      {
+        "file": "sans-06000-aa611d2f1ad7.woff2",
+        "bytes": 37584,
+        "characters": 128,
+        "range": "U+6000-607F"
+      },
+      {
+        "file": "sans-06080-1cdc602ea3c2.woff2",
+        "bytes": 41952,
+        "characters": 128,
+        "range": "U+6080-60FF"
+      },
+      {
+        "file": "sans-06100-decdbb8c8867.woff2",
+        "bytes": 49420,
+        "characters": 128,
+        "range": "U+6100-617F"
+      },
+      {
+        "file": "sans-06180-1360080d6f76.woff2",
+        "bytes": 54856,
+        "characters": 128,
+        "range": "U+6180-61FF"
+      },
+      {
+        "file": "sans-06200-47fdc7f5f29f.woff2",
+        "bytes": 39584,
+        "characters": 128,
+        "range": "U+6200-627F"
+      },
+      {
+        "file": "sans-06280-411db950a8c8.woff2",
+        "bytes": 34144,
+        "characters": 128,
+        "range": "U+6280-62FF"
+      },
+      {
+        "file": "sans-06300-87dd4dfbffe4.woff2",
+        "bytes": 38348,
+        "characters": 128,
+        "range": "U+6300-637F"
+      },
+      {
+        "file": "sans-06380-3bc343914795.woff2",
+        "bytes": 41352,
+        "characters": 128,
+        "range": "U+6380-63FF"
+      },
+      {
+        "file": "sans-06400-2eef2b042701.woff2",
+        "bytes": 48636,
+        "characters": 128,
+        "range": "U+6400-647F"
+      },
+      {
+        "file": "sans-06480-b09cc380b096.woff2",
+        "bytes": 52684,
+        "characters": 128,
+        "range": "U+6480-64FF"
+      },
+      {
+        "file": "sans-06500-c84306200b23.woff2",
+        "bytes": 52940,
+        "characters": 128,
+        "range": "U+6500-657F"
+      },
+      {
+        "file": "sans-06580-9c2dcf02977a.woff2",
+        "bytes": 44044,
+        "characters": 128,
+        "range": "U+6580-65FF"
+      },
+      {
+        "file": "sans-06600-c94aa959df47.woff2",
+        "bytes": 32832,
+        "characters": 128,
+        "range": "U+6600-667F"
+      },
+      {
+        "file": "sans-06680-27119755ab5f.woff2",
+        "bytes": 40308,
+        "characters": 128,
+        "range": "U+6680-66FF"
+      },
+      {
+        "file": "sans-06700-45591c503ee4.woff2",
+        "bytes": 36344,
+        "characters": 128,
+        "range": "U+6700-677F"
+      },
+      {
+        "file": "sans-06780-aae65285192a.woff2",
+        "bytes": 35428,
+        "characters": 128,
+        "range": "U+6780-67FF"
+      },
+      {
+        "file": "sans-06800-8dad42640efb.woff2",
+        "bytes": 39496,
+        "characters": 128,
+        "range": "U+6800-687F"
+      },
+      {
+        "file": "sans-06880-6ecd9e770ef6.woff2",
+        "bytes": 43520,
+        "characters": 128,
+        "range": "U+6880-68FF"
+      },
+      {
+        "file": "sans-06900-29d23403ce71.woff2",
+        "bytes": 44304,
+        "characters": 128,
+        "range": "U+6900-697F"
+      },
+      {
+        "file": "sans-06980-ef0771e00ba5.woff2",
+        "bytes": 48508,
+        "characters": 128,
+        "range": "U+6980-69FF"
+      },
+      {
+        "file": "sans-06a00-9b1220c70756.woff2",
+        "bytes": 52080,
+        "characters": 128,
+        "range": "U+6A00-6A7F"
+      },
+      {
+        "file": "sans-06a80-d8433b98c06a.woff2",
+        "bytes": 57612,
+        "characters": 128,
+        "range": "U+6A80-6AFF"
+      },
+      {
+        "file": "sans-06b00-1053894a984f.woff2",
+        "bytes": 51572,
+        "characters": 128,
+        "range": "U+6B00-6B7F"
+      },
+      {
+        "file": "sans-06b80-47d923911912.woff2",
+        "bytes": 48768,
+        "characters": 128,
+        "range": "U+6B80-6BFF"
+      },
+      {
+        "file": "sans-06c00-94503fe9fb6e.woff2",
+        "bytes": 35732,
+        "characters": 128,
+        "range": "U+6C00-6C7F"
+      },
+      {
+        "file": "sans-06c80-2a0f437531c9.woff2",
+        "bytes": 36768,
+        "characters": 128,
+        "range": "U+6C80-6CFF"
+      },
+      {
+        "file": "sans-06d00-7de00dcdf79c.woff2",
+        "bytes": 37624,
+        "characters": 128,
+        "range": "U+6D00-6D7F"
+      },
+      {
+        "file": "sans-06d80-f81866e5812f.woff2",
+        "bytes": 41828,
+        "characters": 128,
+        "range": "U+6D80-6DFF"
+      },
+      {
+        "file": "sans-06e00-6af1a80a3ed7.woff2",
+        "bytes": 41716,
+        "characters": 128,
+        "range": "U+6E00-6E7F"
+      },
+      {
+        "file": "sans-06e80-0a9c61be11e6.woff2",
+        "bytes": 50264,
+        "characters": 128,
+        "range": "U+6E80-6EFF"
+      },
+      {
+        "file": "sans-06f00-e64896064243.woff2",
+        "bytes": 51604,
+        "characters": 128,
+        "range": "U+6F00-6F7F"
+      },
+      {
+        "file": "sans-06f80-70316f0d6cba.woff2",
+        "bytes": 54064,
+        "characters": 128,
+        "range": "U+6F80-6FFF"
+      },
+      {
+        "file": "sans-07000-9b49fba88e43.woff2",
+        "bytes": 60012,
+        "characters": 128,
+        "range": "U+7000-707F"
+      },
+      {
+        "file": "sans-07080-f4d75a07be54.woff2",
+        "bytes": 41228,
+        "characters": 128,
+        "range": "U+7080-70FF"
+      },
+      {
+        "file": "sans-07100-98c751fe5c60.woff2",
+        "bytes": 45904,
+        "characters": 128,
+        "range": "U+7100-717F"
+      },
+      {
+        "file": "sans-07180-0b825679c42f.woff2",
+        "bytes": 54620,
+        "characters": 128,
+        "range": "U+7180-71FF"
+      },
+      {
+        "file": "sans-07200-88039e355f08.woff2",
+        "bytes": 48408,
+        "characters": 128,
+        "range": "U+7200-727F"
+      },
+      {
+        "file": "sans-07280-5ba04961e603.woff2",
+        "bytes": 42996,
+        "characters": 128,
+        "range": "U+7280-72FF"
+      },
+      {
+        "file": "sans-07300-5be81d95cafa.woff2",
+        "bytes": 51448,
+        "characters": 128,
+        "range": "U+7300-737F"
+      },
+      {
+        "file": "sans-07380-505a89415f8c.woff2",
+        "bytes": 35460,
+        "characters": 128,
+        "range": "U+7380-73FF"
+      },
+      {
+        "file": "sans-07400-63e5f889004e.woff2",
+        "bytes": 40396,
+        "characters": 128,
+        "range": "U+7400-747F"
+      },
+      {
+        "file": "sans-07480-475a3dcacb2b.woff2",
+        "bytes": 54384,
+        "characters": 128,
+        "range": "U+7480-74FF"
+      },
+      {
+        "file": "sans-07500-f6fbd13ce078.woff2",
+        "bytes": 38528,
+        "characters": 128,
+        "range": "U+7500-757F"
+      },
+      {
+        "file": "sans-07580-39dc4c0c1e81.woff2",
+        "bytes": 40796,
+        "characters": 128,
+        "range": "U+7580-75FF"
+      },
+      {
+        "file": "sans-07600-17340b780eaa.woff2",
+        "bytes": 53756,
+        "characters": 128,
+        "range": "U+7600-767F"
+      },
+      {
+        "file": "sans-07680-8b84e30f8fd9.woff2",
+        "bytes": 38252,
+        "characters": 128,
+        "range": "U+7680-76FF"
+      },
+      {
+        "file": "sans-07700-cc3250520d71.woff2",
+        "bytes": 34028,
+        "characters": 128,
+        "range": "U+7700-777F"
+      },
+      {
+        "file": "sans-07780-531fcffe1f5b.woff2",
+        "bytes": 43688,
+        "characters": 128,
+        "range": "U+7780-77FF"
+      },
+      {
+        "file": "sans-07800-e37abecfaf78.woff2",
+        "bytes": 34816,
+        "characters": 128,
+        "range": "U+7800-787F"
+      },
+      {
+        "file": "sans-07880-f824d36c88b6.woff2",
+        "bytes": 44320,
+        "characters": 128,
+        "range": "U+7880-78FF"
+      },
+      {
+        "file": "sans-07900-5a0f0b4e3378.woff2",
+        "bytes": 45272,
+        "characters": 128,
+        "range": "U+7900-797F"
+      },
+      {
+        "file": "sans-07980-8d37dfb243dc.woff2",
+        "bytes": 42420,
+        "characters": 128,
+        "range": "U+7980-79FF"
+      },
+      {
+        "file": "sans-07a00-aba324478174.woff2",
+        "bytes": 49020,
+        "characters": 128,
+        "range": "U+7A00-7A7F"
+      },
+      {
+        "file": "sans-07a80-9f9332b42034.woff2",
+        "bytes": 46684,
+        "characters": 128,
+        "range": "U+7A80-7AFF"
+      },
+      {
+        "file": "sans-07b00-d8074f770b0d.woff2",
+        "bytes": 43316,
+        "characters": 128,
+        "range": "U+7B00-7B7F"
+      },
+      {
+        "file": "sans-07b80-0154164af7ca.woff2",
+        "bytes": 51732,
+        "characters": 128,
+        "range": "U+7B80-7BFF"
+      },
+      {
+        "file": "sans-07c00-e165331362c4.woff2",
+        "bytes": 58248,
+        "characters": 128,
+        "range": "U+7C00-7C7F"
+      },
+      {
+        "file": "sans-07c80-bdc395eeae2b.woff2",
+        "bytes": 46368,
+        "characters": 128,
+        "range": "U+7C80-7CFF"
+      },
+      {
+        "file": "sans-07d00-0ccc8f832383.woff2",
+        "bytes": 49624,
+        "characters": 128,
+        "range": "U+7D00-7D7F"
+      },
+      {
+        "file": "sans-07d80-870951960e16.woff2",
+        "bytes": 55000,
+        "characters": 128,
+        "range": "U+7D80-7DFF"
+      },
+      {
+        "file": "sans-07e00-98909ff40d0b.woff2",
+        "bytes": 64600,
+        "characters": 128,
+        "range": "U+7E00-7E7F"
+      },
+      {
+        "file": "sans-07e80-02bc30cce629.woff2",
+        "bytes": 56180,
+        "characters": 128,
+        "range": "U+7E80-7EFF"
+      },
+      {
+        "file": "sans-07f00-67abf2f756ee.woff2",
+        "bytes": 46672,
+        "characters": 128,
+        "range": "U+7F00-7F7F"
+      },
+      {
+        "file": "sans-07f80-26491b27066a.woff2",
+        "bytes": 50980,
+        "characters": 128,
+        "range": "U+7F80-7FFF"
+      },
+      {
+        "file": "sans-08000-c42b7502aabb.woff2",
+        "bytes": 42312,
+        "characters": 128,
+        "range": "U+8000-807F"
+      },
+      {
+        "file": "sans-08080-b00917fd1832.woff2",
+        "bytes": 37056,
+        "characters": 128,
+        "range": "U+8080-80FF"
+      },
+      {
+        "file": "sans-08100-e425634f3e77.woff2",
+        "bytes": 43884,
+        "characters": 128,
+        "range": "U+8100-817F"
+      },
+      {
+        "file": "sans-08180-1c7071017dc8.woff2",
+        "bytes": 51348,
+        "characters": 128,
+        "range": "U+8180-81FF"
+      },
+      {
+        "file": "sans-08200-33d77cb275f5.woff2",
+        "bytes": 43960,
+        "characters": 128,
+        "range": "U+8200-827F"
+      },
+      {
+        "file": "sans-08280-16616dcd89ca.woff2",
+        "bytes": 29064,
+        "characters": 128,
+        "range": "U+8280-82FF"
+      },
+      {
+        "file": "sans-08300-4514174d71e6.woff2",
+        "bytes": 34532,
+        "characters": 128,
+        "range": "U+8300-837F"
+      },
+      {
+        "file": "sans-08380-c2dbf3d38169.woff2",
+        "bytes": 37848,
+        "characters": 128,
+        "range": "U+8380-83FF"
+      },
+      {
+        "file": "sans-08400-e96c2b6fd67e.woff2",
+        "bytes": 39372,
+        "characters": 128,
+        "range": "U+8400-847F"
+      },
+      {
+        "file": "sans-08480-4136e3d8ee8b.woff2",
+        "bytes": 45884,
+        "characters": 128,
+        "range": "U+8480-84FF"
+      },
+      {
+        "file": "sans-08500-2fa983c3b8f6.woff2",
+        "bytes": 47936,
+        "characters": 128,
+        "range": "U+8500-857F"
+      },
+      {
+        "file": "sans-08580-7f8ae6be518d.woff2",
+        "bytes": 53000,
+        "characters": 128,
+        "range": "U+8580-85FF"
+      },
+      {
+        "file": "sans-08600-dc47ceb8d914.woff2",
+        "bytes": 55800,
+        "characters": 128,
+        "range": "U+8600-867F"
+      },
+      {
+        "file": "sans-08680-4dca0a7bef42.woff2",
+        "bytes": 39340,
+        "characters": 128,
+        "range": "U+8680-86FF"
+      },
+      {
+        "file": "sans-08700-b2b0d0668b1b.woff2",
+        "bytes": 44660,
+        "characters": 128,
+        "range": "U+8700-877F"
+      },
+      {
+        "file": "sans-08780-8dd3f6927ba3.woff2",
+        "bytes": 52588,
+        "characters": 128,
+        "range": "U+8780-87FF"
+      },
+      {
+        "file": "sans-08800-840b34052c48.woff2",
+        "bytes": 50964,
+        "characters": 128,
+        "range": "U+8800-887F"
+      },
+      {
+        "file": "sans-08880-1e885caf657a.woff2",
+        "bytes": 45620,
+        "characters": 128,
+        "range": "U+8880-88FF"
+      },
+      {
+        "file": "sans-08900-c628e18e6f21.woff2",
+        "bytes": 55880,
+        "characters": 128,
+        "range": "U+8900-897F"
+      },
+      {
+        "file": "sans-08980-bb1dab60f7de.woff2",
+        "bytes": 49540,
+        "characters": 128,
+        "range": "U+8980-89FF"
+      },
+      {
+        "file": "sans-08a00-80b9ef65f5fb.woff2",
+        "bytes": 30596,
+        "characters": 128,
+        "range": "U+8A00-8A7F"
+      },
+      {
+        "file": "sans-08a80-437bb41f1301.woff2",
+        "bytes": 38000,
+        "characters": 128,
+        "range": "U+8A80-8AFF"
+      },
+      {
+        "file": "sans-08b00-191151f56efa.woff2",
+        "bytes": 48176,
+        "characters": 128,
+        "range": "U+8B00-8B7F"
+      },
+      {
+        "file": "sans-08b80-eb8814b90ebf.woff2",
+        "bytes": 43852,
+        "characters": 128,
+        "range": "U+8B80-8BFF"
+      },
+      {
+        "file": "sans-08c00-9ddbbde7b636.woff2",
+        "bytes": 53156,
+        "characters": 128,
+        "range": "U+8C00-8C7F"
+      },
+      {
+        "file": "sans-08c80-e5c0f3f85213.woff2",
+        "bytes": 40240,
+        "characters": 128,
+        "range": "U+8C80-8CFF"
+      },
+      {
+        "file": "sans-08d00-3c8ce07dce43.woff2",
+        "bytes": 45336,
+        "characters": 128,
+        "range": "U+8D00-8D7F"
+      },
+      {
+        "file": "sans-08d80-322c5c3288a1.woff2",
+        "bytes": 39368,
+        "characters": 128,
+        "range": "U+8D80-8DFF"
+      },
+      {
+        "file": "sans-08e00-563622ecdd8d.woff2",
+        "bytes": 45252,
+        "characters": 128,
+        "range": "U+8E00-8E7F"
+      },
+      {
+        "file": "sans-08e80-5125747b2880.woff2",
+        "bytes": 45212,
+        "characters": 128,
+        "range": "U+8E80-8EFF"
+      },
+      {
+        "file": "sans-08f00-0a45687e5fa6.woff2",
+        "bytes": 40344,
+        "characters": 128,
+        "range": "U+8F00-8F7F"
+      },
+      {
+        "file": "sans-08f80-8fdbae8baa05.woff2",
+        "bytes": 38304,
+        "characters": 128,
+        "range": "U+8F80-8FFF"
+      },
+      {
+        "file": "sans-09000-cd3e090a876d.woff2",
+        "bytes": 44348,
+        "characters": 128,
+        "range": "U+9000-907F"
+      },
+      {
+        "file": "sans-09080-80793cbec485.woff2",
+        "bytes": 44796,
+        "characters": 128,
+        "range": "U+9080-90FF"
+      },
+      {
+        "file": "sans-09100-edfb5582c7a5.woff2",
+        "bytes": 47300,
+        "characters": 128,
+        "range": "U+9100-917F"
+      },
+      {
+        "file": "sans-09180-3be64cf96d32.woff2",
+        "bytes": 45580,
+        "characters": 128,
+        "range": "U+9180-91FF"
+      },
+      {
+        "file": "sans-09200-4ae89cb4863e.woff2",
+        "bytes": 36728,
+        "characters": 128,
+        "range": "U+9200-927F"
+      },
+      {
+        "file": "sans-09280-ca28d481ff47.woff2",
+        "bytes": 44188,
+        "characters": 128,
+        "range": "U+9280-92FF"
+      },
+      {
+        "file": "sans-09300-6e0a3d83e964.woff2",
+        "bytes": 46196,
+        "characters": 128,
+        "range": "U+9300-937F"
+      },
+      {
+        "file": "sans-09380-3a739c1f86e4.woff2",
+        "bytes": 54644,
+        "characters": 128,
+        "range": "U+9380-93FF"
+      },
+      {
+        "file": "sans-09400-fe10e60dafb8.woff2",
+        "bytes": 60972,
+        "characters": 128,
+        "range": "U+9400-947F"
+      },
+      {
+        "file": "sans-09480-1f3dd6461228.woff2",
+        "bytes": 41028,
+        "characters": 128,
+        "range": "U+9480-94FF"
+      },
+      {
+        "file": "sans-09500-b3d2a088414d.woff2",
+        "bytes": 49476,
+        "characters": 128,
+        "range": "U+9500-957F"
+      },
+      {
+        "file": "sans-09580-1a0e5b4e5537.woff2",
+        "bytes": 34208,
+        "characters": 128,
+        "range": "U+9580-95FF"
+      },
+      {
+        "file": "sans-09600-00f2c8baaf96.woff2",
+        "bytes": 39420,
+        "characters": 128,
+        "range": "U+9600-967F"
+      },
+      {
+        "file": "sans-09680-0caca7e8796e.woff2",
+        "bytes": 46744,
+        "characters": 128,
+        "range": "U+9680-96FF"
+      },
+      {
+        "file": "sans-09700-8de6f99670bf.woff2",
+        "bytes": 43440,
+        "characters": 128,
+        "range": "U+9700-977F"
+      },
+      {
+        "file": "sans-09780-880b6d147555.woff2",
+        "bytes": 41708,
+        "characters": 128,
+        "range": "U+9780-97FF"
+      },
+      {
+        "file": "sans-09800-e5de5b84cf4a.woff2",
+        "bytes": 44356,
+        "characters": 128,
+        "range": "U+9800-987F"
+      },
+      {
+        "file": "sans-09880-6a958fcd9a28.woff2",
+        "bytes": 52840,
+        "characters": 128,
+        "range": "U+9880-98FF"
+      },
+      {
+        "file": "sans-09900-583d8e149436.woff2",
+        "bytes": 51396,
+        "characters": 128,
+        "range": "U+9900-997F"
+      },
+      {
+        "file": "sans-09980-193317fb2aba.woff2",
+        "bytes": 46788,
+        "characters": 128,
+        "range": "U+9980-99FF"
+      },
+      {
+        "file": "sans-09a00-de80c99a9b52.woff2",
+        "bytes": 55396,
+        "characters": 128,
+        "range": "U+9A00-9A7F"
+      },
+      {
+        "file": "sans-09a80-9ec646a14dbf.woff2",
+        "bytes": 50804,
+        "characters": 128,
+        "range": "U+9A80-9AFF"
+      },
+      {
+        "file": "sans-09b00-8dc1d54897ce.woff2",
+        "bytes": 58096,
+        "characters": 128,
+        "range": "U+9B00-9B7F"
+      },
+      {
+        "file": "sans-09b80-2ab66ce9def8.woff2",
+        "bytes": 46692,
+        "characters": 128,
+        "range": "U+9B80-9BFF"
+      },
+      {
+        "file": "sans-09c00-23420cc98199.woff2",
+        "bytes": 54980,
+        "characters": 128,
+        "range": "U+9C00-9C7F"
+      },
+      {
+        "file": "sans-09c80-85a5f7697d5d.woff2",
+        "bytes": 45276,
+        "characters": 128,
+        "range": "U+9C80-9CFF"
+      },
+      {
+        "file": "sans-09d00-409d7f6fe3f5.woff2",
+        "bytes": 50096,
+        "characters": 128,
+        "range": "U+9D00-9D7F"
+      },
+      {
+        "file": "sans-09d80-17990b10ca0e.woff2",
+        "bytes": 59112,
+        "characters": 128,
+        "range": "U+9D80-9DFF"
+      },
+      {
+        "file": "sans-09e00-1707e82383c3.woff2",
+        "bytes": 59188,
+        "characters": 128,
+        "range": "U+9E00-9E7F"
+      },
+      {
+        "file": "sans-09e80-2b8a9c3e1f29.woff2",
+        "bytes": 58176,
+        "characters": 128,
+        "range": "U+9E80-9EFF"
+      },
+      {
+        "file": "sans-09f00-f13ab2cf7a66.woff2",
+        "bytes": 53552,
+        "characters": 128,
+        "range": "U+9F00-9F7F"
+      },
+      {
+        "file": "sans-09f80-d1569366ead4.woff2",
+        "bytes": 51500,
+        "characters": 128,
+        "range": "U+9F80-9FFF"
+      },
+      {
+        "file": "sans-0f900-023e50b13568.woff2",
+        "bytes": 17692,
+        "characters": 50,
+        "range": "U+F900-F97F"
+      },
+      {
+        "file": "sans-0f980-f7983d727de4.woff2",
+        "bytes": 14524,
+        "characters": 38,
+        "range": "U+F980-F9FF"
+      },
+      {
+        "file": "sans-0fa02-e7176ddbddb0.woff2",
+        "bytes": 12856,
+        "characters": 34,
+        "range": "U+FA02-FA5E"
+      },
+      {
+        "file": "sans-0fb00-5b8af7c32720.woff2",
+        "bytes": 2304,
+        "characters": 5,
+        "range": "U+FB00-FB04"
+      },
+      {
+        "file": "sans-0fe10-3b4fb8680c2d.woff2",
+        "bytes": 6936,
+        "characters": 68,
+        "range": "U+FE10-FE6B"
+      },
+      {
+        "file": "sans-0ff01-2dc09590bf57.woff2",
+        "bytes": 18340,
+        "characters": 127,
+        "range": "U+FF01-FF7F"
+      },
+      {
+        "file": "sans-0ff80-2dff495205ce.woff2",
+        "bytes": 13172,
+        "characters": 97,
+        "range": "U+FF80-FFEE"
+      },
+      {
+        "file": "sans-1f100-d30ceddb72cd.woff2",
+        "bytes": 13916,
+        "characters": 122,
+        "range": "U+1F100-1F17F"
+      },
+      {
+        "file": "sans-1f180-040de37cb84f.woff2",
+        "bytes": 9880,
+        "characters": 45,
+        "range": "U+1F180-1F1AC"
+      },
+      {
+        "file": "sans-1f200-327d93530a66.woff2",
+        "bytes": 16552,
+        "characters": 58,
+        "range": "U+1F200-1F251"
+      },
+      {
+        "file": "sans-20087-24054b68ae72.woff2",
+        "bytes": 2052,
+        "characters": 3,
+        "range": "U+20087-200CC"
+      },
+      {
+        "file": "sans-20164-72ccc7dec028.woff2",
+        "bytes": 2088,
+        "characters": 1,
+        "range": "U+20164-20164"
+      },
+      {
+        "file": "sans-20628-8a8f0d0bbf1c.woff2",
+        "bytes": 2124,
+        "characters": 2,
+        "range": "U+20628-20676"
+      },
+      {
+        "file": "sans-20cd0-4f2a7deb259e.woff2",
+        "bytes": 2052,
+        "characters": 1,
+        "range": "U+20CD0-20CD0"
+      },
+      {
+        "file": "sans-2139a-735f8bb8b9b7.woff2",
+        "bytes": 2048,
+        "characters": 1,
+        "range": "U+2139A-2139A"
+      },
+      {
+        "file": "sans-21413-a7a99dac706c.woff2",
+        "bytes": 2224,
+        "characters": 1,
+        "range": "U+21413-21413"
+      },
+      {
+        "file": "sans-215d7-a8726500f6e4.woff2",
+        "bytes": 1816,
+        "characters": 1,
+        "range": "U+215D7-215D7"
+      },
+      {
+        "file": "sans-2298f-634b4be01f13.woff2",
+        "bytes": 1932,
+        "characters": 1,
+        "range": "U+2298F-2298F"
+      },
+      {
+        "file": "sans-235cb-12c46cfa4eac.woff2",
+        "bytes": 2212,
+        "characters": 1,
+        "range": "U+235CB-235CB"
+      },
+      {
+        "file": "sans-23c97-69669ed777c8.woff2",
+        "bytes": 2296,
+        "characters": 2,
+        "range": "U+23C97-23C98"
+      },
+      {
+        "file": "sans-23e23-6100175a3b0a.woff2",
+        "bytes": 2084,
+        "characters": 1,
+        "range": "U+23E23-23E23"
+      },
+      {
+        "file": "sans-241fe-0d2699afdc1e.woff2",
+        "bytes": 2072,
+        "characters": 1,
+        "range": "U+241FE-241FE"
+      },
+      {
+        "file": "sans-2420e-cb6f982b334e.woff2",
+        "bytes": 2200,
+        "characters": 1,
+        "range": "U+2420E-2420E"
+      },
+      {
+        "file": "sans-248e9-4888bb524cd1.woff2",
+        "bytes": 1796,
+        "characters": 1,
+        "range": "U+248E9-248E9"
+      },
+      {
+        "file": "sans-249db-ff47c75dde9a.woff2",
+        "bytes": 2120,
+        "characters": 1,
+        "range": "U+249DB-249DB"
+      },
+      {
+        "file": "sans-24a01-88ef42c35b64.woff2",
+        "bytes": 2492,
+        "characters": 2,
+        "range": "U+24A01-24A7D"
+      },
+      {
+        "file": "sans-24ac9-af2ddd9042f2.woff2",
+        "bytes": 2400,
+        "characters": 1,
+        "range": "U+24AC9-24AC9"
+      },
+      {
+        "file": "sans-25532-a0a330a82485.woff2",
+        "bytes": 2280,
+        "characters": 2,
+        "range": "U+25532-25562"
+      },
+      {
+        "file": "sans-255a8-2d3c3229268b.woff2",
+        "bytes": 2040,
+        "characters": 1,
+        "range": "U+255A8-255A8"
+      },
+      {
+        "file": "sans-25ad7-44b1aa44224d.woff2",
+        "bytes": 1904,
+        "characters": 1,
+        "range": "U+25AD7-25AD7"
+      },
+      {
+        "file": "sans-25ed7-76bd89b0a270.woff2",
+        "bytes": 2140,
+        "characters": 1,
+        "range": "U+25ED7-25ED7"
+      },
+      {
+        "file": "sans-26221-bd23324348b0.woff2",
+        "bytes": 2328,
+        "characters": 1,
+        "range": "U+26221-26221"
+      },
+      {
+        "file": "sans-2648d-41d5d2451791.woff2",
+        "bytes": 2332,
+        "characters": 1,
+        "range": "U+2648D-2648D"
+      },
+      {
+        "file": "sans-26676-34b623bb7494.woff2",
+        "bytes": 1928,
+        "characters": 1,
+        "range": "U+26676-26676"
+      },
+      {
+        "file": "sans-2677c-e1c40c39bd2d.woff2",
+        "bytes": 2236,
+        "characters": 1,
+        "range": "U+2677C-2677C"
+      },
+      {
+        "file": "sans-26b5c-20ba4b2a3397.woff2",
+        "bytes": 1872,
+        "characters": 1,
+        "range": "U+26B5C-26B5C"
+      },
+      {
+        "file": "sans-26c21-03f73271b520.woff2",
+        "bytes": 2168,
+        "characters": 1,
+        "range": "U+26C21-26C21"
+      },
+      {
+        "file": "sans-278b2-492c8d28c0a0.woff2",
+        "bytes": 2212,
+        "characters": 1,
+        "range": "U+278B2-278B2"
+      },
+      {
+        "file": "sans-27eaf-7ebc72c077ac.woff2",
+        "bytes": 2056,
+        "characters": 1,
+        "range": "U+27EAF-27EAF"
+      },
+      {
+        "file": "sans-27fb7-a80c4e5e839f.woff2",
+        "bytes": 2300,
+        "characters": 2,
+        "range": "U+27FB7-27FF9"
+      },
+      {
+        "file": "sans-28408-ae445b930d50.woff2",
+        "bytes": 2292,
+        "characters": 1,
+        "range": "U+28408-28408"
+      },
+      {
+        "file": "sans-28678-5d188f6ef246.woff2",
+        "bytes": 2068,
+        "characters": 1,
+        "range": "U+28678-28678"
+      },
+      {
+        "file": "sans-28695-f0ba0bda96b0.woff2",
+        "bytes": 2196,
+        "characters": 1,
+        "range": "U+28695-28695"
+      },
+      {
+        "file": "sans-287e0-28dbcb716adc.woff2",
+        "bytes": 2180,
+        "characters": 1,
+        "range": "U+287E0-287E0"
+      },
+      {
+        "file": "sans-28b49-bbbfea6fd250.woff2",
+        "bytes": 2352,
+        "characters": 1,
+        "range": "U+28B49-28B49"
+      },
+      {
+        "file": "sans-28c47-ceac6be0ebb3.woff2",
+        "bytes": 3604,
+        "characters": 4,
+        "range": "U+28C47-28C54"
+      },
+      {
+        "file": "sans-28e0f-c0f6ac104e62.woff2",
+        "bytes": 1812,
+        "characters": 1,
+        "range": "U+28E0F-28E0F"
+      },
+      {
+        "file": "sans-28e99-72d769b3c2c0.woff2",
+        "bytes": 2200,
+        "characters": 1,
+        "range": "U+28E99-28E99"
+      },
+      {
+        "file": "sans-2967f-5935d0af906d.woff2",
+        "bytes": 1896,
+        "characters": 1,
+        "range": "U+2967F-2967F"
+      },
+      {
+        "file": "sans-29810-377848c9611f.woff2",
+        "bytes": 2012,
+        "characters": 1,
+        "range": "U+29810-29810"
+      },
+      {
+        "file": "sans-29f7e-65587d979ad0.woff2",
+        "bytes": 2208,
+        "characters": 1,
+        "range": "U+29F7E-29F7E"
+      },
+      {
+        "file": "sans-29f83-91b24c87fef6.woff2",
+        "bytes": 2876,
+        "characters": 2,
+        "range": "U+29F83-29F8C"
+      },
+      {
+        "file": "sans-2a7dd-41c447333d38.woff2",
+        "bytes": 2136,
+        "characters": 1,
+        "range": "U+2A7DD-2A7DD"
+      },
+      {
+        "file": "sans-2a8fb-30cd82726ae7.woff2",
+        "bytes": 2168,
+        "characters": 1,
+        "range": "U+2A8FB-2A8FB"
+      },
+      {
+        "file": "sans-2a917-8d5aec2018b9.woff2",
+        "bytes": 2236,
+        "characters": 1,
+        "range": "U+2A917-2A917"
+      },
+      {
+        "file": "sans-2aa30-b4ab30a5f0dd.woff2",
+        "bytes": 2736,
+        "characters": 3,
+        "range": "U+2AA30-2AA58"
+      },
+      {
+        "file": "sans-2afa2-6ef1d95e2a6d.woff2",
+        "bytes": 1948,
+        "characters": 1,
+        "range": "U+2AFA2-2AFA2"
+      },
+      {
+        "file": "sans-2b127-763ffd904451.woff2",
+        "bytes": 4148,
+        "characters": 4,
+        "range": "U+2B127-2B138"
+      },
+      {
+        "file": "sans-2b1ed-0430879eedc0.woff2",
+        "bytes": 2048,
+        "characters": 1,
+        "range": "U+2B1ED-2B1ED"
+      },
+      {
+        "file": "sans-2b300-49ad4c8e94ea.woff2",
+        "bytes": 3888,
+        "characters": 5,
+        "range": "U+2B300-2B37D"
+      },
+      {
+        "file": "sans-2b404-9ef9278dc963.woff2",
+        "bytes": 3576,
+        "characters": 4,
+        "range": "U+2B404-2B461"
+      },
+      {
+        "file": "sans-2b4e7-60541a9513f0.woff2",
+        "bytes": 2928,
+        "characters": 4,
+        "range": "U+2B4E7-2B4F9"
+      },
+      {
+        "file": "sans-2b50d-8b7682681a2e.woff2",
+        "bytes": 3412,
+        "characters": 3,
+        "range": "U+2B50D-2B536"
+      },
+      {
+        "file": "sans-2b5ae-9426ba655746.woff2",
+        "bytes": 3708,
+        "characters": 5,
+        "range": "U+2B5AE-2B5F4"
+      },
+      {
+        "file": "sans-2b61c-fb428cc60a87.woff2",
+        "bytes": 5028,
+        "characters": 7,
+        "range": "U+2B61C-2B62C"
+      },
+      {
+        "file": "sans-2b695-d98a8dfe9ec5.woff2",
+        "bytes": 3976,
+        "characters": 4,
+        "range": "U+2B695-2B6ED"
+      },
+      {
+        "file": "sans-2b7a9-4c3080d093d2.woff2",
+        "bytes": 4444,
+        "characters": 5,
+        "range": "U+2B7A9-2B7FC"
+      },
+      {
+        "file": "sans-2b806-3a50d972bd04.woff2",
+        "bytes": 3268,
+        "characters": 3,
+        "range": "U+2B806-2B81C"
+      },
+      {
+        "file": "sans-2b8b8-da1fd9ab1fa9.woff2",
+        "bytes": 1948,
+        "characters": 1,
+        "range": "U+2B8B8-2B8B8"
+      },
+      {
+        "file": "sans-2bac7-a11bd12340a3.woff2",
+        "bytes": 2188,
+        "characters": 1,
+        "range": "U+2BAC7-2BAC7"
+      },
+      {
+        "file": "sans-2bb5f-22944b2ab189.woff2",
+        "bytes": 2600,
+        "characters": 3,
+        "range": "U+2BB5F-2BB7C"
+      },
+      {
+        "file": "sans-2bb83-d87f5a8a07b3.woff2",
+        "bytes": 1896,
+        "characters": 1,
+        "range": "U+2BB83-2BB83"
+      },
+      {
+        "file": "sans-2bc1b-33b0ce62218b.woff2",
+        "bytes": 2096,
+        "characters": 1,
+        "range": "U+2BC1B-2BC1B"
+      },
+      {
+        "file": "sans-2bd77-e7192dcd0435.woff2",
+        "bytes": 2064,
+        "characters": 1,
+        "range": "U+2BD77-2BD77"
+      },
+      {
+        "file": "sans-2bd87-d1ba6c913b60.woff2",
+        "bytes": 2532,
+        "characters": 2,
+        "range": "U+2BD87-2BDF7"
+      },
+      {
+        "file": "sans-2be29-ed778fc51adf.woff2",
+        "bytes": 2064,
+        "characters": 1,
+        "range": "U+2BE29-2BE29"
+      },
+      {
+        "file": "sans-2c029-96133be91706.woff2",
+        "bytes": 2224,
+        "characters": 2,
+        "range": "U+2C029-2C02A"
+      },
+      {
+        "file": "sans-2c0a9-ff09fdb36aa0.woff2",
+        "bytes": 2556,
+        "characters": 2,
+        "range": "U+2C0A9-2C0CA"
+      },
+      {
+        "file": "sans-2c1d5-e19f3e59b64d.woff2",
+        "bytes": 2664,
+        "characters": 3,
+        "range": "U+2C1D5-2C1F9"
+      },
+      {
+        "file": "sans-2c27c-60950d71aeee.woff2",
+        "bytes": 2016,
+        "characters": 1,
+        "range": "U+2C27C-2C27C"
+      },
+      {
+        "file": "sans-2c288-4cccc74ced52.woff2",
+        "bytes": 2456,
+        "characters": 2,
+        "range": "U+2C288-2C2A4"
+      },
+      {
+        "file": "sans-2c317-fdd68378af28.woff2",
+        "bytes": 3396,
+        "characters": 4,
+        "range": "U+2C317-2C364"
+      },
+      {
+        "file": "sans-2c488-32b829236831.woff2",
+        "bytes": 2708,
+        "characters": 3,
+        "range": "U+2C488-2C497"
+      },
+      {
+        "file": "sans-2c542-bbb5e4d3daca.woff2",
+        "bytes": 2136,
+        "characters": 1,
+        "range": "U+2C542-2C542"
+      },
+      {
+        "file": "sans-2c613-c792b9d063be.woff2",
+        "bytes": 6836,
+        "characters": 11,
+        "range": "U+2C613-2C64B"
+      },
+      {
+        "file": "sans-2c72c-339350a4ceb1.woff2",
+        "bytes": 2328,
+        "characters": 2,
+        "range": "U+2C72C-2C72F"
+      },
+      {
+        "file": "sans-2c79f-20f13ef10d9f.woff2",
+        "bytes": 3324,
+        "characters": 3,
+        "range": "U+2C79F-2C7FD"
+      },
+      {
+        "file": "sans-2c8d9-b3de0e4a2935.woff2",
+        "bytes": 2932,
+        "characters": 4,
+        "range": "U+2C8D9-2C8F3"
+      },
+      {
+        "file": "sans-2c907-89888baf866f.woff2",
+        "bytes": 3032,
+        "characters": 3,
+        "range": "U+2C907-2C91D"
+      },
+      {
+        "file": "sans-2ca02-440fe8509e28.woff2",
+        "bytes": 3012,
+        "characters": 3,
+        "range": "U+2CA02-2CA7D"
+      },
+      {
+        "file": "sans-2caa9-4aec4a7677e1.woff2",
+        "bytes": 2252,
+        "characters": 1,
+        "range": "U+2CAA9-2CAA9"
+      },
+      {
+        "file": "sans-2cb29-614297b4d383.woff2",
+        "bytes": 10360,
+        "characters": 21,
+        "range": "U+2CB29-2CB7C"
+      },
+      {
+        "file": "sans-2cbb1-dd5301915717.woff2",
+        "bytes": 3060,
+        "characters": 4,
+        "range": "U+2CBB1-2CBCE"
+      },
+      {
+        "file": "sans-2cc56-255a59e5e7da.woff2",
+        "bytes": 2588,
+        "characters": 2,
+        "range": "U+2CC56-2CC5F"
+      },
+      {
+        "file": "sans-2ccf5-8ead4ce48776.woff2",
+        "bytes": 3432,
+        "characters": 4,
+        "range": "U+2CCF5-2CCFF"
+      },
+      {
+        "file": "sans-2cd02-c56890b4b905.woff2",
+        "bytes": 3212,
+        "characters": 3,
+        "range": "U+2CD02-2CD0A"
+      },
+      {
+        "file": "sans-2cd8b-1d67e98ca800.woff2",
+        "bytes": 6208,
+        "characters": 10,
+        "range": "U+2CD8B-2CDD5"
+      },
+      {
+        "file": "sans-2ce18-a7be4f176541.woff2",
+        "bytes": 5380,
+        "characters": 6,
+        "range": "U+2CE18-2CE7C"
+      },
+      {
+        "file": "sans-2ce88-a759d6c03761.woff2",
+        "bytes": 2732,
+        "characters": 2,
+        "range": "U+2CE88-2CE93"
+      },
+      {
+        "file": "sans-2d544-e86fb6cdc104.woff2",
+        "bytes": 1820,
+        "characters": 1,
+        "range": "U+2D544-2D544"
+      },
+      {
+        "file": "sans-2f878-3d7b960f734c.woff2",
+        "bytes": 1760,
+        "characters": 1,
+        "range": "U+2F878-2F878"
+      },
+      {
+        "file": "sans-2f884-7bfeb5403602.woff2",
+        "bytes": 2572,
+        "characters": 2,
+        "range": "U+2F884-2F8B6"
+      }
+    ]
+  },
+  "serif": {
+    "source": "SourceHanSerifCN-VF.ttf",
+    "sourceSha256": "8e052cbcdbd0f03496c9ad05da7d57901549286d5efd30f3caf66a393f6c389b",
+    "sourceUrl": "https://github.com/adobe-fonts/source-han-serif/tree/release/Variable/TTF/Subset",
+    "fontRevision": 2.0030059814453125,
+    "family": "AudioEyes Lyrics Serif",
+    "characters": 30930,
+    "weightRange": [
+      250.0,
+      900.0
+    ],
+    "slices": [
+      {
+        "file": "serif-00020-e571f2c26bde.woff2",
+        "bytes": 19972,
+        "characters": 95,
+        "range": "U+20-7E"
+      },
+      {
+        "file": "serif-000a0-a985ec8dd89c.woff2",
+        "bytes": 14340,
+        "characters": 96,
+        "range": "U+A0-FF"
+      },
+      {
+        "file": "serif-00100-21283a951b27.woff2",
+        "bytes": 6140,
+        "characters": 30,
+        "range": "U+100-16D"
+      },
+      {
+        "file": "serif-00192-4e77c0356a6d.woff2",
+        "bytes": 5264,
+        "characters": 23,
+        "range": "U+192-1F9"
+      },
+      {
+        "file": "serif-00251-eadde73e23f3.woff2",
+        "bytes": 2220,
+        "characters": 2,
+        "range": "U+251-261"
+      },
+      {
+        "file": "serif-002bb-3ec04df661c3.woff2",
+        "bytes": 2592,
+        "characters": 8,
+        "range": "U+2BB-2EB"
+      },
+      {
+        "file": "serif-00300-0224d456adc9.woff2",
+        "bytes": 2060,
+        "characters": 5,
+        "range": "U+300-30C"
+      },
+      {
+        "file": "serif-00391-2c05db9a84ea.woff2",
+        "bytes": 11448,
+        "characters": 49,
+        "range": "U+391-3C9"
+      },
+      {
+        "file": "serif-00401-da32e2fc6a11.woff2",
+        "bytes": 14228,
+        "characters": 66,
+        "range": "U+401-451"
+      },
+      {
+        "file": "serif-01e3e-8fd65003050f.woff2",
+        "bytes": 2452,
+        "characters": 2,
+        "range": "U+1E3E-1E3F"
+      },
+      {
+        "file": "serif-01ea0-acda0b1a7e1c.woff2",
+        "bytes": 9764,
+        "characters": 90,
+        "range": "U+1EA0-1EF9"
+      },
+      {
+        "file": "serif-02002-7ca4c8bbe2e3.woff2",
+        "bytes": 6528,
+        "characters": 35,
+        "range": "U+2002-2074"
+      },
+      {
+        "file": "serif-020a9-9c4385f9f636.woff2",
+        "bytes": 2536,
+        "characters": 5,
+        "range": "U+20A9-20DE"
+      },
+      {
+        "file": "serif-02100-adf9029b4154.woff2",
+        "bytes": 9084,
+        "characters": 40,
+        "range": "U+2100-217B"
+      },
+      {
+        "file": "serif-02190-8bb8bbfa4c46.woff2",
+        "bytes": 3384,
+        "characters": 25,
+        "range": "U+2190-21F5"
+      },
+      {
+        "file": "serif-02200-e45312fb8c8d.woff2",
+        "bytes": 6656,
+        "characters": 56,
+        "range": "U+2200-2277"
+      },
+      {
+        "file": "serif-02282-2abcb6e182f4.woff2",
+        "bytes": 3416,
+        "characters": 19,
+        "range": "U+2282-22EF"
+      },
+      {
+        "file": "serif-02305-47a642749677.woff2",
+        "bytes": 2684,
+        "characters": 7,
+        "range": "U+2305-232A"
+      },
+      {
+        "file": "serif-023b0-70035496719b.woff2",
+        "bytes": 3096,
+        "characters": 20,
+        "range": "U+23B0-23DB"
+      },
+      {
+        "file": "serif-02423-59fb494c0f1b.woff2",
+        "bytes": 6700,
+        "characters": 33,
+        "range": "U+2423-247F"
+      },
+      {
+        "file": "serif-02480-1667f00530f3.woff2",
+        "bytes": 21352,
+        "characters": 128,
+        "range": "U+2480-24FF"
+      },
+      {
+        "file": "serif-02500-144e08f4fbd7.woff2",
+        "bytes": 2940,
+        "characters": 128,
+        "range": "U+2500-257F"
+      },
+      {
+        "file": "serif-02580-a213c9066e54.woff2",
+        "bytes": 3656,
+        "characters": 72,
+        "range": "U+2580-25EF"
+      },
+      {
+        "file": "serif-02600-371271093b3a.woff2",
+        "bytes": 9756,
+        "characters": 47,
+        "range": "U+2600-267D"
+      },
+      {
+        "file": "serif-026a0-f0a7a35816ab.woff2",
+        "bytes": 2556,
+        "characters": 3,
+        "range": "U+26A0-26BE"
+      },
+      {
+        "file": "serif-02702-b3544c3137f0.woff2",
+        "bytes": 4572,
+        "characters": 17,
+        "range": "U+2702-277F"
+      },
+      {
+        "file": "serif-02780-9244399fff64.woff2",
+        "bytes": 4784,
+        "characters": 21,
+        "range": "U+2780-27A1"
+      },
+      {
+        "file": "serif-02934-f70c90f33a2c.woff2",
+        "bytes": 2060,
+        "characters": 2,
+        "range": "U+2934-2935"
+      },
+      {
+        "file": "serif-029bf-d54e3f638116.woff2",
+        "bytes": 1888,
+        "characters": 3,
+        "range": "U+29BF-29FB"
+      },
+      {
+        "file": "serif-02b05-e8c5be09c54c.woff2",
+        "bytes": 1844,
+        "characters": 4,
+        "range": "U+2B05-2B1A"
+      },
+      {
+        "file": "serif-02b95-3a5b5032a2c9.woff2",
+        "bytes": 1688,
+        "characters": 1,
+        "range": "U+2B95-2B95"
+      },
+      {
+        "file": "serif-02e3a-3c326cabcf9a.woff2",
+        "bytes": 1908,
+        "characters": 2,
+        "range": "U+2E3A-2E3B"
+      },
+      {
+        "file": "serif-02e80-ca2f8d43047b.woff2",
+        "bytes": 29620,
+        "characters": 115,
+        "range": "U+2E80-2EF3"
+      },
+      {
+        "file": "serif-02f00-7580e0badea7.woff2",
+        "bytes": 26848,
+        "characters": 128,
+        "range": "U+2F00-2F7F"
+      },
+      {
+        "file": "serif-02f80-021ced35b25b.woff2",
+        "bytes": 31980,
+        "characters": 98,
+        "range": "U+2F80-2FFB"
+      },
+      {
+        "file": "serif-03000-ed0fe4a9710e.woff2",
+        "bytes": 50972,
+        "characters": 127,
+        "range": "U+3000-307F"
+      },
+      {
+        "file": "serif-03080-56bde6a89684.woff2",
+        "bytes": 74532,
+        "characters": 126,
+        "range": "U+3080-30FF"
+      },
+      {
+        "file": "serif-03105-2bac71c65b42.woff2",
+        "bytes": 32188,
+        "characters": 121,
+        "range": "U+3105-317F"
+      },
+      {
+        "file": "serif-03180-59a44047c4aa.woff2",
+        "bytes": 28892,
+        "characters": 111,
+        "range": "U+3180-31FF"
+      },
+      {
+        "file": "serif-03200-24650a6489ad.woff2",
+        "bytes": 27740,
+        "characters": 127,
+        "range": "U+3200-327F"
+      },
+      {
+        "file": "serif-03280-e9f4c3479c76.woff2",
+        "bytes": 33928,
+        "characters": 128,
+        "range": "U+3280-32FF"
+      },
+      {
+        "file": "serif-03300-1f776fed7627.woff2",
+        "bytes": 93280,
+        "characters": 127,
+        "range": "U+3300-337F"
+      },
+      {
+        "file": "serif-03380-7cbd164f57ea.woff2",
+        "bytes": 27692,
+        "characters": 128,
+        "range": "U+3380-33FF"
+      },
+      {
+        "file": "serif-03400-6b13223d8820.woff2",
+        "bytes": 46220,
+        "characters": 128,
+        "range": "U+3400-347F"
+      },
+      {
+        "file": "serif-03480-1842eff9b8ab.woff2",
+        "bytes": 60596,
+        "characters": 128,
+        "range": "U+3480-34FF"
+      },
+      {
+        "file": "serif-03500-9555ab0ae962.woff2",
+        "bytes": 54444,
+        "characters": 128,
+        "range": "U+3500-357F"
+      },
+      {
+        "file": "serif-03580-6a5c8daeb762.woff2",
+        "bytes": 54948,
+        "characters": 128,
+        "range": "U+3580-35FF"
+      },
+      {
+        "file": "serif-03600-e2ecfd0698ea.woff2",
+        "bytes": 62468,
+        "characters": 128,
+        "range": "U+3600-367F"
+      },
+      {
+        "file": "serif-03680-96cd9d74e7b9.woff2",
+        "bytes": 51644,
+        "characters": 128,
+        "range": "U+3680-36FF"
+      },
+      {
+        "file": "serif-03700-58347776a047.woff2",
+        "bytes": 65820,
+        "characters": 128,
+        "range": "U+3700-377F"
+      },
+      {
+        "file": "serif-03780-053a07d50286.woff2",
+        "bytes": 49400,
+        "characters": 128,
+        "range": "U+3780-37FF"
+      },
+      {
+        "file": "serif-03800-8004240f3a6b.woff2",
+        "bytes": 60780,
+        "characters": 128,
+        "range": "U+3800-387F"
+      },
+      {
+        "file": "serif-03880-a2b682b57c31.woff2",
+        "bytes": 55388,
+        "characters": 128,
+        "range": "U+3880-38FF"
+      },
+      {
+        "file": "serif-03900-2953bb06eb50.woff2",
+        "bytes": 51536,
+        "characters": 128,
+        "range": "U+3900-397F"
+      },
+      {
+        "file": "serif-03980-5508ddb95cc9.woff2",
+        "bytes": 59396,
+        "characters": 128,
+        "range": "U+3980-39FF"
+      },
+      {
+        "file": "serif-03a00-ba5646204074.woff2",
+        "bytes": 67016,
+        "characters": 128,
+        "range": "U+3A00-3A7F"
+      },
+      {
+        "file": "serif-03a80-c45679b1e5aa.woff2",
+        "bytes": 51292,
+        "characters": 128,
+        "range": "U+3A80-3AFF"
+      },
+      {
+        "file": "serif-03b00-1e2183cb9ff9.woff2",
+        "bytes": 56740,
+        "characters": 128,
+        "range": "U+3B00-3B7F"
+      },
+      {
+        "file": "serif-03b80-429541e75fba.woff2",
+        "bytes": 65748,
+        "characters": 128,
+        "range": "U+3B80-3BFF"
+      },
+      {
+        "file": "serif-03c00-d2fd3f9081bf.woff2",
+        "bytes": 67096,
+        "characters": 128,
+        "range": "U+3C00-3C7F"
+      },
+      {
+        "file": "serif-03c80-18b40ee56aca.woff2",
+        "bytes": 59896,
+        "characters": 128,
+        "range": "U+3C80-3CFF"
+      },
+      {
+        "file": "serif-03d00-5cc81db63f44.woff2",
+        "bytes": 73108,
+        "characters": 128,
+        "range": "U+3D00-3D7F"
+      },
+      {
+        "file": "serif-03d80-9633976c9080.woff2",
+        "bytes": 71136,
+        "characters": 128,
+        "range": "U+3D80-3DFF"
+      },
+      {
+        "file": "serif-03e00-482eb2885cc6.woff2",
+        "bytes": 57228,
+        "characters": 128,
+        "range": "U+3E00-3E7F"
+      },
+      {
+        "file": "serif-03e80-6d052845275f.woff2",
+        "bytes": 57700,
+        "characters": 128,
+        "range": "U+3E80-3EFF"
+      },
+      {
+        "file": "serif-03f00-dac6b9968aad.woff2",
+        "bytes": 62924,
+        "characters": 128,
+        "range": "U+3F00-3F7F"
+      },
+      {
+        "file": "serif-03f80-0aa5b7251453.woff2",
+        "bytes": 56836,
+        "characters": 128,
+        "range": "U+3F80-3FFF"
+      },
+      {
+        "file": "serif-04000-c004c3ef9315.woff2",
+        "bytes": 53184,
+        "characters": 128,
+        "range": "U+4000-407F"
+      },
+      {
+        "file": "serif-04080-7b8cc2d4f103.woff2",
+        "bytes": 59860,
+        "characters": 128,
+        "range": "U+4080-40FF"
+      },
+      {
+        "file": "serif-04100-9b276ce27eee.woff2",
+        "bytes": 54944,
+        "characters": 128,
+        "range": "U+4100-417F"
+      },
+      {
+        "file": "serif-04180-a77702fd3230.woff2",
+        "bytes": 60028,
+        "characters": 128,
+        "range": "U+4180-41FF"
+      },
+      {
+        "file": "serif-04200-13bcbfe352c0.woff2",
+        "bytes": 69684,
+        "characters": 128,
+        "range": "U+4200-427F"
+      },
+      {
+        "file": "serif-04280-44461256a171.woff2",
+        "bytes": 64512,
+        "characters": 128,
+        "range": "U+4280-42FF"
+      },
+      {
+        "file": "serif-04300-047d5c8b3de4.woff2",
+        "bytes": 69320,
+        "characters": 128,
+        "range": "U+4300-437F"
+      },
+      {
+        "file": "serif-04380-922da25a9462.woff2",
+        "bytes": 54828,
+        "characters": 128,
+        "range": "U+4380-43FF"
+      },
+      {
+        "file": "serif-04400-1da890eefaa4.woff2",
+        "bytes": 60476,
+        "characters": 128,
+        "range": "U+4400-447F"
+      },
+      {
+        "file": "serif-04480-14bd5871d7d4.woff2",
+        "bytes": 50824,
+        "characters": 128,
+        "range": "U+4480-44FF"
+      },
+      {
+        "file": "serif-04500-6f7400b9f866.woff2",
+        "bytes": 69120,
+        "characters": 128,
+        "range": "U+4500-457F"
+      },
+      {
+        "file": "serif-04580-2a3761b9588e.woff2",
+        "bytes": 68448,
+        "characters": 128,
+        "range": "U+4580-45FF"
+      },
+      {
+        "file": "serif-04600-f53f213bea86.woff2",
+        "bytes": 67180,
+        "characters": 128,
+        "range": "U+4600-467F"
+      },
+      {
+        "file": "serif-04680-5c8c2b6bbd25.woff2",
+        "bytes": 53640,
+        "characters": 128,
+        "range": "U+4680-46FF"
+      },
+      {
+        "file": "serif-04700-fb9ed846d8ec.woff2",
+        "bytes": 68444,
+        "characters": 128,
+        "range": "U+4700-477F"
+      },
+      {
+        "file": "serif-04780-b7821dd3bee0.woff2",
+        "bytes": 54960,
+        "characters": 128,
+        "range": "U+4780-47FF"
+      },
+      {
+        "file": "serif-04800-3709d38cd299.woff2",
+        "bytes": 61748,
+        "characters": 128,
+        "range": "U+4800-487F"
+      },
+      {
+        "file": "serif-04880-74b80d3b8720.woff2",
+        "bytes": 56248,
+        "characters": 128,
+        "range": "U+4880-48FF"
+      },
+      {
+        "file": "serif-04900-b15bc7e01c3e.woff2",
+        "bytes": 72968,
+        "characters": 128,
+        "range": "U+4900-497F"
+      },
+      {
+        "file": "serif-04980-8e037b940213.woff2",
+        "bytes": 56084,
+        "characters": 128,
+        "range": "U+4980-49FF"
+      },
+      {
+        "file": "serif-04a00-a5b434457c49.woff2",
+        "bytes": 61760,
+        "characters": 128,
+        "range": "U+4A00-4A7F"
+      },
+      {
+        "file": "serif-04a80-988e3203e1f0.woff2",
+        "bytes": 65780,
+        "characters": 128,
+        "range": "U+4A80-4AFF"
+      },
+      {
+        "file": "serif-04b00-e0cf1c0092fa.woff2",
+        "bytes": 68068,
+        "characters": 128,
+        "range": "U+4B00-4B7F"
+      },
+      {
+        "file": "serif-04b80-e9f10f27da59.woff2",
+        "bytes": 69360,
+        "characters": 128,
+        "range": "U+4B80-4BFF"
+      },
+      {
+        "file": "serif-04c00-c96bbe4e7f1f.woff2",
+        "bytes": 69940,
+        "characters": 128,
+        "range": "U+4C00-4C7F"
+      },
+      {
+        "file": "serif-04c80-a46121649afa.woff2",
+        "bytes": 72464,
+        "characters": 128,
+        "range": "U+4C80-4CFF"
+      },
+      {
+        "file": "serif-04d00-1e15f5974de6.woff2",
+        "bytes": 75864,
+        "characters": 128,
+        "range": "U+4D00-4D7F"
+      },
+      {
+        "file": "serif-04d80-92e4826a81f1.woff2",
+        "bytes": 38968,
+        "characters": 64,
+        "range": "U+4D80-4DBF"
+      },
+      {
+        "file": "serif-04e00-aba3f8ca81d8.woff2",
+        "bytes": 34900,
+        "characters": 128,
+        "range": "U+4E00-4E7F"
+      },
+      {
+        "file": "serif-04e80-2f5436e515f2.woff2",
+        "bytes": 35840,
+        "characters": 128,
+        "range": "U+4E80-4EFF"
+      },
+      {
+        "file": "serif-04f00-7ed3fcc60a07.woff2",
+        "bytes": 38184,
+        "characters": 128,
+        "range": "U+4F00-4F7F"
+      },
+      {
+        "file": "serif-04f80-92f0b2098f19.woff2",
+        "bytes": 46444,
+        "characters": 128,
+        "range": "U+4F80-4FFF"
+      },
+      {
+        "file": "serif-05000-a10a76528ca9.woff2",
+        "bytes": 49968,
+        "characters": 128,
+        "range": "U+5000-507F"
+      },
+      {
+        "file": "serif-05080-7f410f457397.woff2",
+        "bytes": 62384,
+        "characters": 128,
+        "range": "U+5080-50FF"
+      },
+      {
+        "file": "serif-05100-2e03a470fc29.woff2",
+        "bytes": 62092,
+        "characters": 128,
+        "range": "U+5100-517F"
+      },
+      {
+        "file": "serif-05180-1a62212fa20b.woff2",
+        "bytes": 49720,
+        "characters": 128,
+        "range": "U+5180-51FF"
+      },
+      {
+        "file": "serif-05200-733dd004e313.woff2",
+        "bytes": 46792,
+        "characters": 128,
+        "range": "U+5200-527F"
+      },
+      {
+        "file": "serif-05280-7e6a00d2cdbc.woff2",
+        "bytes": 62288,
+        "characters": 128,
+        "range": "U+5280-52FF"
+      },
+      {
+        "file": "serif-05300-26fa35b03d81.woff2",
+        "bytes": 43068,
+        "characters": 128,
+        "range": "U+5300-537F"
+      },
+      {
+        "file": "serif-05380-435f415c631c.woff2",
+        "bytes": 45860,
+        "characters": 128,
+        "range": "U+5380-53FF"
+      },
+      {
+        "file": "serif-05400-19c5d4752aa5.woff2",
+        "bytes": 38552,
+        "characters": 128,
+        "range": "U+5400-547F"
+      },
+      {
+        "file": "serif-05480-f726436051ec.woff2",
+        "bytes": 44944,
+        "characters": 128,
+        "range": "U+5480-54FF"
+      },
+      {
+        "file": "serif-05500-8cea7a46d8bf.woff2",
+        "bytes": 50320,
+        "characters": 128,
+        "range": "U+5500-557F"
+      },
+      {
+        "file": "serif-05580-187acb634eb7.woff2",
+        "bytes": 57908,
+        "characters": 128,
+        "range": "U+5580-55FF"
+      },
+      {
+        "file": "serif-05600-1f2b18bde61c.woff2",
+        "bytes": 66588,
+        "characters": 128,
+        "range": "U+5600-567F"
+      },
+      {
+        "file": "serif-05680-7ebc8daf6f9c.woff2",
+        "bytes": 66104,
+        "characters": 128,
+        "range": "U+5680-56FF"
+      },
+      {
+        "file": "serif-05700-3802e7f92696.woff2",
+        "bytes": 42008,
+        "characters": 128,
+        "range": "U+5700-577F"
+      },
+      {
+        "file": "serif-05780-8dc194f65f85.woff2",
+        "bytes": 49184,
+        "characters": 128,
+        "range": "U+5780-57FF"
+      },
+      {
+        "file": "serif-05800-a87c151cc6d4.woff2",
+        "bytes": 57792,
+        "characters": 128,
+        "range": "U+5800-587F"
+      },
+      {
+        "file": "serif-05880-fc9283c98330.woff2",
+        "bytes": 65384,
+        "characters": 128,
+        "range": "U+5880-58FF"
+      },
+      {
+        "file": "serif-05900-bf3384168438.woff2",
+        "bytes": 51112,
+        "characters": 128,
+        "range": "U+5900-597F"
+      },
+      {
+        "file": "serif-05980-da254066e3b0.woff2",
+        "bytes": 47960,
+        "characters": 128,
+        "range": "U+5980-59FF"
+      },
+      {
+        "file": "serif-05a00-86ca780ca878.woff2",
+        "bytes": 59120,
+        "characters": 128,
+        "range": "U+5A00-5A7F"
+      },
+      {
+        "file": "serif-05a80-d758bdfed48d.woff2",
+        "bytes": 65244,
+        "characters": 128,
+        "range": "U+5A80-5AFF"
+      },
+      {
+        "file": "serif-05b00-6e982edbff70.woff2",
+        "bytes": 73628,
+        "characters": 128,
+        "range": "U+5B00-5B7F"
+      },
+      {
+        "file": "serif-05b80-e855c850adf5.woff2",
+        "bytes": 52912,
+        "characters": 128,
+        "range": "U+5B80-5BFF"
+      },
+      {
+        "file": "serif-05c00-6e83dcc7ad92.woff2",
+        "bytes": 49716,
+        "characters": 128,
+        "range": "U+5C00-5C7F"
+      },
+      {
+        "file": "serif-05c80-8c195c897d18.woff2",
+        "bytes": 46708,
+        "characters": 128,
+        "range": "U+5C80-5CFF"
+      },
+      {
+        "file": "serif-05d00-8f4679236993.woff2",
+        "bytes": 58420,
+        "characters": 128,
+        "range": "U+5D00-5D7F"
+      },
+      {
+        "file": "serif-05d80-254b1de46631.woff2",
+        "bytes": 67452,
+        "characters": 128,
+        "range": "U+5D80-5DFF"
+      },
+      {
+        "file": "serif-05e00-ce0df9e00890.woff2",
+        "bytes": 53924,
+        "characters": 128,
+        "range": "U+5E00-5E7F"
+      },
+      {
+        "file": "serif-05e80-c81378bb85fb.woff2",
+        "bytes": 52388,
+        "characters": 128,
+        "range": "U+5E80-5EFF"
+      },
+      {
+        "file": "serif-05f00-9336aaa4fcd8.woff2",
+        "bytes": 56584,
+        "characters": 128,
+        "range": "U+5F00-5F7F"
+      },
+      {
+        "file": "serif-05f80-b7b7ae054034.woff2",
+        "bytes": 49432,
+        "characters": 128,
+        "range": "U+5F80-5FFF"
+      },
+      {
+        "file": "serif-06000-6aa7905702c3.woff2",
+        "bytes": 46772,
+        "characters": 128,
+        "range": "U+6000-607F"
+      },
+      {
+        "file": "serif-06080-be5b9655a3e2.woff2",
+        "bytes": 55120,
+        "characters": 128,
+        "range": "U+6080-60FF"
+      },
+      {
+        "file": "serif-06100-682faf23da72.woff2",
+        "bytes": 64904,
+        "characters": 128,
+        "range": "U+6100-617F"
+      },
+      {
+        "file": "serif-06180-dc0b8a1ff811.woff2",
+        "bytes": 73784,
+        "characters": 128,
+        "range": "U+6180-61FF"
+      },
+      {
+        "file": "serif-06200-acc0487cc6ec.woff2",
+        "bytes": 51408,
+        "characters": 128,
+        "range": "U+6200-627F"
+      },
+      {
+        "file": "serif-06280-756380205b86.woff2",
+        "bytes": 43376,
+        "characters": 128,
+        "range": "U+6280-62FF"
+      },
+      {
+        "file": "serif-06300-7dbc157afcb8.woff2",
+        "bytes": 51140,
+        "characters": 128,
+        "range": "U+6300-637F"
+      },
+      {
+        "file": "serif-06380-962ba478370d.woff2",
+        "bytes": 56616,
+        "characters": 128,
+        "range": "U+6380-63FF"
+      },
+      {
+        "file": "serif-06400-0ffbdcdabd64.woff2",
+        "bytes": 65224,
+        "characters": 128,
+        "range": "U+6400-647F"
+      },
+      {
+        "file": "serif-06480-d51357331823.woff2",
+        "bytes": 73348,
+        "characters": 128,
+        "range": "U+6480-64FF"
+      },
+      {
+        "file": "serif-06500-77fb1783fe4e.woff2",
+        "bytes": 69680,
+        "characters": 128,
+        "range": "U+6500-657F"
+      },
+      {
+        "file": "serif-06580-c6a48607a18b.woff2",
+        "bytes": 57268,
+        "characters": 128,
+        "range": "U+6580-65FF"
+      },
+      {
+        "file": "serif-06600-c40220638d21.woff2",
+        "bytes": 45312,
+        "characters": 128,
+        "range": "U+6600-667F"
+      },
+      {
+        "file": "serif-06680-2fd5a9ba1495.woff2",
+        "bytes": 61568,
+        "characters": 128,
+        "range": "U+6680-66FF"
+      },
+      {
+        "file": "serif-06700-9e91c8ceeba4.woff2",
+        "bytes": 43864,
+        "characters": 128,
+        "range": "U+6700-677F"
+      },
+      {
+        "file": "serif-06780-e23ab1131af6.woff2",
+        "bytes": 43368,
+        "characters": 128,
+        "range": "U+6780-67FF"
+      },
+      {
+        "file": "serif-06800-2db078c062db.woff2",
+        "bytes": 49728,
+        "characters": 128,
+        "range": "U+6800-687F"
+      },
+      {
+        "file": "serif-06880-54bc5c5a69f4.woff2",
+        "bytes": 54396,
+        "characters": 128,
+        "range": "U+6880-68FF"
+      },
+      {
+        "file": "serif-06900-f40b9d6d940f.woff2",
+        "bytes": 57284,
+        "characters": 128,
+        "range": "U+6900-697F"
+      },
+      {
+        "file": "serif-06980-54cded60a1f4.woff2",
+        "bytes": 63928,
+        "characters": 128,
+        "range": "U+6980-69FF"
+      },
+      {
+        "file": "serif-06a00-beea9a62fc6e.woff2",
+        "bytes": 69052,
+        "characters": 128,
+        "range": "U+6A00-6A7F"
+      },
+      {
+        "file": "serif-06a80-4fcecc36ab7a.woff2",
+        "bytes": 78200,
+        "characters": 128,
+        "range": "U+6A80-6AFF"
+      },
+      {
+        "file": "serif-06b00-a9f0384b808d.woff2",
+        "bytes": 69292,
+        "characters": 128,
+        "range": "U+6B00-6B7F"
+      },
+      {
+        "file": "serif-06b80-467ee6bd3753.woff2",
+        "bytes": 63516,
+        "characters": 128,
+        "range": "U+6B80-6BFF"
+      },
+      {
+        "file": "serif-06c00-50ac9af83f50.woff2",
+        "bytes": 50320,
+        "characters": 128,
+        "range": "U+6C00-6C7F"
+      },
+      {
+        "file": "serif-06c80-0b4133bfd23e.woff2",
+        "bytes": 51244,
+        "characters": 128,
+        "range": "U+6C80-6CFF"
+      },
+      {
+        "file": "serif-06d00-5b54d4fc41b4.woff2",
+        "bytes": 55456,
+        "characters": 128,
+        "range": "U+6D00-6D7F"
+      },
+      {
+        "file": "serif-06d80-3edcf2a3dc22.woff2",
+        "bytes": 61304,
+        "characters": 128,
+        "range": "U+6D80-6DFF"
+      },
+      {
+        "file": "serif-06e00-b1987db8dc29.woff2",
+        "bytes": 62064,
+        "characters": 128,
+        "range": "U+6E00-6E7F"
+      },
+      {
+        "file": "serif-06e80-e3a44b3ec20f.woff2",
+        "bytes": 71372,
+        "characters": 128,
+        "range": "U+6E80-6EFF"
+      },
+      {
+        "file": "serif-06f00-2f5a7ae9257c.woff2",
+        "bytes": 75244,
+        "characters": 128,
+        "range": "U+6F00-6F7F"
+      },
+      {
+        "file": "serif-06f80-a7f443692bbc.woff2",
+        "bytes": 78216,
+        "characters": 128,
+        "range": "U+6F80-6FFF"
+      },
+      {
+        "file": "serif-07000-32d9a7151ed0.woff2",
+        "bytes": 87148,
+        "characters": 128,
+        "range": "U+7000-707F"
+      },
+      {
+        "file": "serif-07080-987bc8c46827.woff2",
+        "bytes": 50220,
+        "characters": 128,
+        "range": "U+7080-70FF"
+      },
+      {
+        "file": "serif-07100-85acce8d1763.woff2",
+        "bytes": 59404,
+        "characters": 128,
+        "range": "U+7100-717F"
+      },
+      {
+        "file": "serif-07180-e540f0295b2f.woff2",
+        "bytes": 72468,
+        "characters": 128,
+        "range": "U+7180-71FF"
+      },
+      {
+        "file": "serif-07200-c192e951f314.woff2",
+        "bytes": 64660,
+        "characters": 128,
+        "range": "U+7200-727F"
+      },
+      {
+        "file": "serif-07280-69509d6e6664.woff2",
+        "bytes": 54736,
+        "characters": 128,
+        "range": "U+7280-72FF"
+      },
+      {
+        "file": "serif-07300-8d0256789be2.woff2",
+        "bytes": 66040,
+        "characters": 128,
+        "range": "U+7300-737F"
+      },
+      {
+        "file": "serif-07380-cd8d63591d70.woff2",
+        "bytes": 46196,
+        "characters": 128,
+        "range": "U+7380-73FF"
+      },
+      {
+        "file": "serif-07400-4f34b6c67d06.woff2",
+        "bytes": 56036,
+        "characters": 128,
+        "range": "U+7400-747F"
+      },
+      {
+        "file": "serif-07480-e75b8873ce2c.woff2",
+        "bytes": 71852,
+        "characters": 128,
+        "range": "U+7480-74FF"
+      },
+      {
+        "file": "serif-07500-70c7583189f3.woff2",
+        "bytes": 51424,
+        "characters": 128,
+        "range": "U+7500-757F"
+      },
+      {
+        "file": "serif-07580-b9e32239b3c9.woff2",
+        "bytes": 48528,
+        "characters": 128,
+        "range": "U+7580-75FF"
+      },
+      {
+        "file": "serif-07600-37e37938cdb4.woff2",
+        "bytes": 69452,
+        "characters": 128,
+        "range": "U+7600-767F"
+      },
+      {
+        "file": "serif-07680-b0345ddb848d.woff2",
+        "bytes": 53896,
+        "characters": 128,
+        "range": "U+7680-76FF"
+      },
+      {
+        "file": "serif-07700-1a862a87870c.woff2",
+        "bytes": 47376,
+        "characters": 128,
+        "range": "U+7700-777F"
+      },
+      {
+        "file": "serif-07780-f59b6b4904ea.woff2",
+        "bytes": 62736,
+        "characters": 128,
+        "range": "U+7780-77FF"
+      },
+      {
+        "file": "serif-07800-571ca79fcf8a.woff2",
+        "bytes": 47496,
+        "characters": 128,
+        "range": "U+7800-787F"
+      },
+      {
+        "file": "serif-07880-08b6116448f5.woff2",
+        "bytes": 62340,
+        "characters": 128,
+        "range": "U+7880-78FF"
+      },
+      {
+        "file": "serif-07900-7da8520bdac0.woff2",
+        "bytes": 62628,
+        "characters": 128,
+        "range": "U+7900-797F"
+      },
+      {
+        "file": "serif-07980-82cf3d706438.woff2",
+        "bytes": 56540,
+        "characters": 128,
+        "range": "U+7980-79FF"
+      },
+      {
+        "file": "serif-07a00-6d997668dcee.woff2",
+        "bytes": 65304,
+        "characters": 128,
+        "range": "U+7A00-7A7F"
+      },
+      {
+        "file": "serif-07a80-dea4b1248ddb.woff2",
+        "bytes": 62872,
+        "characters": 128,
+        "range": "U+7A80-7AFF"
+      },
+      {
+        "file": "serif-07b00-94ff6a24db62.woff2",
+        "bytes": 53804,
+        "characters": 128,
+        "range": "U+7B00-7B7F"
+      },
+      {
+        "file": "serif-07b80-5957f21cfd8e.woff2",
+        "bytes": 68060,
+        "characters": 128,
+        "range": "U+7B80-7BFF"
+      },
+      {
+        "file": "serif-07c00-5c65c41f425e.woff2",
+        "bytes": 79348,
+        "characters": 128,
+        "range": "U+7C00-7C7F"
+      },
+      {
+        "file": "serif-07c80-6b460a3afaa5.woff2",
+        "bytes": 60488,
+        "characters": 128,
+        "range": "U+7C80-7CFF"
+      },
+      {
+        "file": "serif-07d00-8a40cc81c4c4.woff2",
+        "bytes": 66212,
+        "characters": 128,
+        "range": "U+7D00-7D7F"
+      },
+      {
+        "file": "serif-07d80-70f1d69be70d.woff2",
+        "bytes": 77868,
+        "characters": 128,
+        "range": "U+7D80-7DFF"
+      },
+      {
+        "file": "serif-07e00-0cedca415429.woff2",
+        "bytes": 92304,
+        "characters": 128,
+        "range": "U+7E00-7E7F"
+      },
+      {
+        "file": "serif-07e80-c9f65d8ef94b.woff2",
+        "bytes": 70408,
+        "characters": 128,
+        "range": "U+7E80-7EFF"
+      },
+      {
+        "file": "serif-07f00-053634183d97.woff2",
+        "bytes": 63712,
+        "characters": 128,
+        "range": "U+7F00-7F7F"
+      },
+      {
+        "file": "serif-07f80-fc39a5cccb11.woff2",
+        "bytes": 69640,
+        "characters": 128,
+        "range": "U+7F80-7FFF"
+      },
+      {
+        "file": "serif-08000-57878302c2e2.woff2",
+        "bytes": 56884,
+        "characters": 128,
+        "range": "U+8000-807F"
+      },
+      {
+        "file": "serif-08080-77dc13272cb4.woff2",
+        "bytes": 44704,
+        "characters": 128,
+        "range": "U+8080-80FF"
+      },
+      {
+        "file": "serif-08100-5a85cae67e11.woff2",
+        "bytes": 54276,
+        "characters": 128,
+        "range": "U+8100-817F"
+      },
+      {
+        "file": "serif-08180-865cfc1e0e49.woff2",
+        "bytes": 69740,
+        "characters": 128,
+        "range": "U+8180-81FF"
+      },
+      {
+        "file": "serif-08200-aeb1388058f1.woff2",
+        "bytes": 61484,
+        "characters": 128,
+        "range": "U+8200-827F"
+      },
+      {
+        "file": "serif-08280-139eaad89cf7.woff2",
+        "bytes": 40324,
+        "characters": 128,
+        "range": "U+8280-82FF"
+      },
+      {
+        "file": "serif-08300-1096528baa20.woff2",
+        "bytes": 48580,
+        "characters": 128,
+        "range": "U+8300-837F"
+      },
+      {
+        "file": "serif-08380-dd9842b20237.woff2",
+        "bytes": 52720,
+        "characters": 128,
+        "range": "U+8380-83FF"
+      },
+      {
+        "file": "serif-08400-bbe26702d916.woff2",
+        "bytes": 54876,
+        "characters": 128,
+        "range": "U+8400-847F"
+      },
+      {
+        "file": "serif-08480-e68698b69cf8.woff2",
+        "bytes": 65016,
+        "characters": 128,
+        "range": "U+8480-84FF"
+      },
+      {
+        "file": "serif-08500-0726e045a807.woff2",
+        "bytes": 67868,
+        "characters": 128,
+        "range": "U+8500-857F"
+      },
+      {
+        "file": "serif-08580-19fa5e8d69a6.woff2",
+        "bytes": 75584,
+        "characters": 128,
+        "range": "U+8580-85FF"
+      },
+      {
+        "file": "serif-08600-0ceff9cbd6ce.woff2",
+        "bytes": 77764,
+        "characters": 128,
+        "range": "U+8600-867F"
+      },
+      {
+        "file": "serif-08680-95054b55411e.woff2",
+        "bytes": 51992,
+        "characters": 128,
+        "range": "U+8680-86FF"
+      },
+      {
+        "file": "serif-08700-6c31d3f35386.woff2",
+        "bytes": 62600,
+        "characters": 128,
+        "range": "U+8700-877F"
+      },
+      {
+        "file": "serif-08780-3fa27270b17c.woff2",
+        "bytes": 74288,
+        "characters": 128,
+        "range": "U+8780-87FF"
+      },
+      {
+        "file": "serif-08800-fe190143aaa0.woff2",
+        "bytes": 71844,
+        "characters": 128,
+        "range": "U+8800-887F"
+      },
+      {
+        "file": "serif-08880-03d611f2161b.woff2",
+        "bytes": 57616,
+        "characters": 128,
+        "range": "U+8880-88FF"
+      },
+      {
+        "file": "serif-08900-fbfb8ff83a23.woff2",
+        "bytes": 72372,
+        "characters": 128,
+        "range": "U+8900-897F"
+      },
+      {
+        "file": "serif-08980-d2841b396859.woff2",
+        "bytes": 64508,
+        "characters": 128,
+        "range": "U+8980-89FF"
+      },
+      {
+        "file": "serif-08a00-8a6af6719965.woff2",
+        "bytes": 43040,
+        "characters": 128,
+        "range": "U+8A00-8A7F"
+      },
+      {
+        "file": "serif-08a80-569843d16dae.woff2",
+        "bytes": 52972,
+        "characters": 128,
+        "range": "U+8A80-8AFF"
+      },
+      {
+        "file": "serif-08b00-f2fe948592e4.woff2",
+        "bytes": 66764,
+        "characters": 128,
+        "range": "U+8B00-8B7F"
+      },
+      {
+        "file": "serif-08b80-d4052455e6fc.woff2",
+        "bytes": 56612,
+        "characters": 128,
+        "range": "U+8B80-8BFF"
+      },
+      {
+        "file": "serif-08c00-d826e212e3ad.woff2",
+        "bytes": 66840,
+        "characters": 128,
+        "range": "U+8C00-8C7F"
+      },
+      {
+        "file": "serif-08c80-ee6dc9b5cb23.woff2",
+        "bytes": 57252,
+        "characters": 128,
+        "range": "U+8C80-8CFF"
+      },
+      {
+        "file": "serif-08d00-0447685a7e7e.woff2",
+        "bytes": 60556,
+        "characters": 128,
+        "range": "U+8D00-8D7F"
+      },
+      {
+        "file": "serif-08d80-990c8a1603c8.woff2",
+        "bytes": 53520,
+        "characters": 128,
+        "range": "U+8D80-8DFF"
+      },
+      {
+        "file": "serif-08e00-8343df489cda.woff2",
+        "bytes": 63660,
+        "characters": 128,
+        "range": "U+8E00-8E7F"
+      },
+      {
+        "file": "serif-08e80-5a877474a336.woff2",
+        "bytes": 64688,
+        "characters": 128,
+        "range": "U+8E80-8EFF"
+      },
+      {
+        "file": "serif-08f00-d0c9b16023b6.woff2",
+        "bytes": 59516,
+        "characters": 128,
+        "range": "U+8F00-8F7F"
+      },
+      {
+        "file": "serif-08f80-e08a5efc5813.woff2",
+        "bytes": 48260,
+        "characters": 128,
+        "range": "U+8F80-8FFF"
+      },
+      {
+        "file": "serif-09000-d7724767320f.woff2",
+        "bytes": 58912,
+        "characters": 128,
+        "range": "U+9000-907F"
+      },
+      {
+        "file": "serif-09080-d805f389d1c5.woff2",
+        "bytes": 57272,
+        "characters": 128,
+        "range": "U+9080-90FF"
+      },
+      {
+        "file": "serif-09100-6ae3bb7176cf.woff2",
+        "bytes": 64672,
+        "characters": 128,
+        "range": "U+9100-917F"
+      },
+      {
+        "file": "serif-09180-7f7a5490ed41.woff2",
+        "bytes": 64176,
+        "characters": 128,
+        "range": "U+9180-91FF"
+      },
+      {
+        "file": "serif-09200-8d89f5d9d245.woff2",
+        "bytes": 51364,
+        "characters": 128,
+        "range": "U+9200-927F"
+      },
+      {
+        "file": "serif-09280-ce339e800160.woff2",
+        "bytes": 61332,
+        "characters": 128,
+        "range": "U+9280-92FF"
+      },
+      {
+        "file": "serif-09300-3937ac36831b.woff2",
+        "bytes": 66380,
+        "characters": 128,
+        "range": "U+9300-937F"
+      },
+      {
+        "file": "serif-09380-345f1de1da0d.woff2",
+        "bytes": 77604,
+        "characters": 128,
+        "range": "U+9380-93FF"
+      },
+      {
+        "file": "serif-09400-fcc1700a9fed.woff2",
+        "bytes": 87516,
+        "characters": 128,
+        "range": "U+9400-947F"
+      },
+      {
+        "file": "serif-09480-76ce760f8f75.woff2",
+        "bytes": 54620,
+        "characters": 128,
+        "range": "U+9480-94FF"
+      },
+      {
+        "file": "serif-09500-0a85489cfbfb.woff2",
+        "bytes": 67328,
+        "characters": 128,
+        "range": "U+9500-957F"
+      },
+      {
+        "file": "serif-09580-09b99a471c24.woff2",
+        "bytes": 48400,
+        "characters": 128,
+        "range": "U+9580-95FF"
+      },
+      {
+        "file": "serif-09600-aabd69d10e71.woff2",
+        "bytes": 50408,
+        "characters": 128,
+        "range": "U+9600-967F"
+      },
+      {
+        "file": "serif-09680-eaf5a808d4c5.woff2",
+        "bytes": 64264,
+        "characters": 128,
+        "range": "U+9680-96FF"
+      },
+      {
+        "file": "serif-09700-dadc0225b6b3.woff2",
+        "bytes": 65508,
+        "characters": 128,
+        "range": "U+9700-977F"
+      },
+      {
+        "file": "serif-09780-399b99c336fe.woff2",
+        "bytes": 67440,
+        "characters": 128,
+        "range": "U+9780-97FF"
+      },
+      {
+        "file": "serif-09800-bb54d6b9c0a0.woff2",
+        "bytes": 60432,
+        "characters": 128,
+        "range": "U+9800-987F"
+      },
+      {
+        "file": "serif-09880-4c7fd9566652.woff2",
+        "bytes": 69692,
+        "characters": 128,
+        "range": "U+9880-98FF"
+      },
+      {
+        "file": "serif-09900-5ac610845093.woff2",
+        "bytes": 73148,
+        "characters": 128,
+        "range": "U+9900-997F"
+      },
+      {
+        "file": "serif-09980-17411376369a.woff2",
+        "bytes": 62196,
+        "characters": 128,
+        "range": "U+9980-99FF"
+      },
+      {
+        "file": "serif-09a00-3b0c03394789.woff2",
+        "bytes": 77988,
+        "characters": 128,
+        "range": "U+9A00-9A7F"
+      },
+      {
+        "file": "serif-09a80-37ada7369011.woff2",
+        "bytes": 69732,
+        "characters": 128,
+        "range": "U+9A80-9AFF"
+      },
+      {
+        "file": "serif-09b00-d1165e87a64f.woff2",
+        "bytes": 77440,
+        "characters": 128,
+        "range": "U+9B00-9B7F"
+      },
+      {
+        "file": "serif-09b80-f07ecdde3957.woff2",
+        "bytes": 65196,
+        "characters": 128,
+        "range": "U+9B80-9BFF"
+      },
+      {
+        "file": "serif-09c00-9db580977f00.woff2",
+        "bytes": 80372,
+        "characters": 128,
+        "range": "U+9C00-9C7F"
+      },
+      {
+        "file": "serif-09c80-c41ae2aa9493.woff2",
+        "bytes": 59144,
+        "characters": 128,
+        "range": "U+9C80-9CFF"
+      },
+      {
+        "file": "serif-09d00-e884203cfde3.woff2",
+        "bytes": 64776,
+        "characters": 128,
+        "range": "U+9D00-9D7F"
+      },
+      {
+        "file": "serif-09d80-5c7116e563cb.woff2",
+        "bytes": 79600,
+        "characters": 128,
+        "range": "U+9D80-9DFF"
+      },
+      {
+        "file": "serif-09e00-8c0d72b04ad6.woff2",
+        "bytes": 78668,
+        "characters": 128,
+        "range": "U+9E00-9E7F"
+      },
+      {
+        "file": "serif-09e80-cf6548384116.woff2",
+        "bytes": 78172,
+        "characters": 128,
+        "range": "U+9E80-9EFF"
+      },
+      {
+        "file": "serif-09f00-7e889b909558.woff2",
+        "bytes": 78156,
+        "characters": 128,
+        "range": "U+9F00-9F7F"
+      },
+      {
+        "file": "serif-09f80-4e55f9d24604.woff2",
+        "bytes": 71832,
+        "characters": 128,
+        "range": "U+9F80-9FFF"
+      },
+      {
+        "file": "serif-0f901-17dae365b2bf.woff2",
+        "bytes": 26128,
+        "characters": 53,
+        "range": "U+F901-F97F"
+      },
+      {
+        "file": "serif-0f980-4727263872e1.woff2",
+        "bytes": 23796,
+        "characters": 49,
+        "range": "U+F980-F9FF"
+      },
+      {
+        "file": "serif-0fa02-c651da1becc1.woff2",
+        "bytes": 18072,
+        "characters": 35,
+        "range": "U+FA02-FA5E"
+      },
+      {
+        "file": "serif-0fb00-219059312861.woff2",
+        "bytes": 2800,
+        "characters": 5,
+        "range": "U+FB00-FB04"
+      },
+      {
+        "file": "serif-0fe10-d5be5cfe397e.woff2",
+        "bytes": 7580,
+        "characters": 68,
+        "range": "U+FE10-FE6B"
+      },
+      {
+        "file": "serif-0ff01-15521661a33f.woff2",
+        "bytes": 24248,
+        "characters": 127,
+        "range": "U+FF01-FF7F"
+      },
+      {
+        "file": "serif-0ff80-31e8b95b7b95.woff2",
+        "bytes": 23448,
+        "characters": 97,
+        "range": "U+FF80-FFEE"
+      },
+      {
+        "file": "serif-1f100-b3559ada137b.woff2",
+        "bytes": 17560,
+        "characters": 122,
+        "range": "U+1F100-1F17F"
+      },
+      {
+        "file": "serif-1f180-174052c617dd.woff2",
+        "bytes": 13116,
+        "characters": 45,
+        "range": "U+1F180-1F1AC"
+      },
+      {
+        "file": "serif-1f200-bd925dc9c951.woff2",
+        "bytes": 21108,
+        "characters": 58,
+        "range": "U+1F200-1F251"
+      },
+      {
+        "file": "serif-20087-775730c46f41.woff2",
+        "bytes": 2112,
+        "characters": 3,
+        "range": "U+20087-200CC"
+      },
+      {
+        "file": "serif-20164-ad103226ea28.woff2",
+        "bytes": 2300,
+        "characters": 1,
+        "range": "U+20164-20164"
+      },
+      {
+        "file": "serif-20628-8a0c9ba8643e.woff2",
+        "bytes": 2340,
+        "characters": 2,
+        "range": "U+20628-20676"
+      },
+      {
+        "file": "serif-20cd0-75ec15a4eb87.woff2",
+        "bytes": 2240,
+        "characters": 1,
+        "range": "U+20CD0-20CD0"
+      },
+      {
+        "file": "serif-2139a-2d336326fe2c.woff2",
+        "bytes": 2288,
+        "characters": 1,
+        "range": "U+2139A-2139A"
+      },
+      {
+        "file": "serif-21413-4a4ef73fd0f4.woff2",
+        "bytes": 2456,
+        "characters": 1,
+        "range": "U+21413-21413"
+      },
+      {
+        "file": "serif-215d7-9b1ba3cad365.woff2",
+        "bytes": 1964,
+        "characters": 1,
+        "range": "U+215D7-215D7"
+      },
+      {
+        "file": "serif-2298f-17c5b44d44d6.woff2",
+        "bytes": 2104,
+        "characters": 1,
+        "range": "U+2298F-2298F"
+      },
+      {
+        "file": "serif-235cb-b869b228aa00.woff2",
+        "bytes": 2476,
+        "characters": 1,
+        "range": "U+235CB-235CB"
+      },
+      {
+        "file": "serif-23c97-da5a7a13b667.woff2",
+        "bytes": 2768,
+        "characters": 2,
+        "range": "U+23C97-23C98"
+      },
+      {
+        "file": "serif-23e23-3b09f74f44f2.woff2",
+        "bytes": 2448,
+        "characters": 1,
+        "range": "U+23E23-23E23"
+      },
+      {
+        "file": "serif-241fe-d800d87b5673.woff2",
+        "bytes": 2372,
+        "characters": 1,
+        "range": "U+241FE-241FE"
+      },
+      {
+        "file": "serif-2420e-40254a335441.woff2",
+        "bytes": 2320,
+        "characters": 1,
+        "range": "U+2420E-2420E"
+      },
+      {
+        "file": "serif-248e9-cf403b307b1d.woff2",
+        "bytes": 1900,
+        "characters": 1,
+        "range": "U+248E9-248E9"
+      },
+      {
+        "file": "serif-249db-c7f1bd1ec06c.woff2",
+        "bytes": 2412,
+        "characters": 1,
+        "range": "U+249DB-249DB"
+      },
+      {
+        "file": "serif-24a01-b52b24ac7f1b.woff2",
+        "bytes": 2904,
+        "characters": 2,
+        "range": "U+24A01-24A7D"
+      },
+      {
+        "file": "serif-24ac9-1d0e9f74857b.woff2",
+        "bytes": 2700,
+        "characters": 1,
+        "range": "U+24AC9-24AC9"
+      },
+      {
+        "file": "serif-25532-9efe6d1ddd50.woff2",
+        "bytes": 2936,
+        "characters": 2,
+        "range": "U+25532-25562"
+      },
+      {
+        "file": "serif-255a8-422586e8ce86.woff2",
+        "bytes": 2404,
+        "characters": 1,
+        "range": "U+255A8-255A8"
+      },
+      {
+        "file": "serif-25ed7-57a65966a114.woff2",
+        "bytes": 2364,
+        "characters": 1,
+        "range": "U+25ED7-25ED7"
+      },
+      {
+        "file": "serif-26221-e83385ee59e3.woff2",
+        "bytes": 2612,
+        "characters": 1,
+        "range": "U+26221-26221"
+      },
+      {
+        "file": "serif-2648d-90cef098ce65.woff2",
+        "bytes": 2548,
+        "characters": 1,
+        "range": "U+2648D-2648D"
+      },
+      {
+        "file": "serif-26676-a58a51488ec8.woff2",
+        "bytes": 2140,
+        "characters": 1,
+        "range": "U+26676-26676"
+      },
+      {
+        "file": "serif-2677c-d25738da10a0.woff2",
+        "bytes": 2492,
+        "characters": 1,
+        "range": "U+2677C-2677C"
+      },
+      {
+        "file": "serif-26951-0db1190a153c.woff2",
+        "bytes": 2040,
+        "characters": 1,
+        "range": "U+26951-26951"
+      },
+      {
+        "file": "serif-26b5c-ae78c0a01ae1.woff2",
+        "bytes": 2092,
+        "characters": 1,
+        "range": "U+26B5C-26B5C"
+      },
+      {
+        "file": "serif-26c21-e514092ebee1.woff2",
+        "bytes": 2320,
+        "characters": 1,
+        "range": "U+26C21-26C21"
+      },
+      {
+        "file": "serif-278b2-955b6769ca5d.woff2",
+        "bytes": 2300,
+        "characters": 1,
+        "range": "U+278B2-278B2"
+      },
+      {
+        "file": "serif-27eaf-b485a7b8171d.woff2",
+        "bytes": 2320,
+        "characters": 1,
+        "range": "U+27EAF-27EAF"
+      },
+      {
+        "file": "serif-27ff9-f817bbf9b4f5.woff2",
+        "bytes": 2468,
+        "characters": 1,
+        "range": "U+27FF9-27FF9"
+      },
+      {
+        "file": "serif-28408-3050c1c1aa0e.woff2",
+        "bytes": 2408,
+        "characters": 1,
+        "range": "U+28408-28408"
+      },
+      {
+        "file": "serif-28678-3c8853dc26ce.woff2",
+        "bytes": 2200,
+        "characters": 1,
+        "range": "U+28678-28678"
+      },
+      {
+        "file": "serif-28695-fe781cbbaba8.woff2",
+        "bytes": 2348,
+        "characters": 1,
+        "range": "U+28695-28695"
+      },
+      {
+        "file": "serif-287e0-9661c0d4e47a.woff2",
+        "bytes": 2432,
+        "characters": 1,
+        "range": "U+287E0-287E0"
+      },
+      {
+        "file": "serif-28b49-c8784765cbe5.woff2",
+        "bytes": 2652,
+        "characters": 1,
+        "range": "U+28B49-28B49"
+      },
+      {
+        "file": "serif-28c47-94a7943b23ab.woff2",
+        "bytes": 4212,
+        "characters": 4,
+        "range": "U+28C47-28C54"
+      },
+      {
+        "file": "serif-28e0f-55dc621972d3.woff2",
+        "bytes": 2052,
+        "characters": 1,
+        "range": "U+28E0F-28E0F"
+      },
+      {
+        "file": "serif-28e99-8cccc092aea2.woff2",
+        "bytes": 2404,
+        "characters": 1,
+        "range": "U+28E99-28E99"
+      },
+      {
+        "file": "serif-2967f-dca090954284.woff2",
+        "bytes": 2092,
+        "characters": 1,
+        "range": "U+2967F-2967F"
+      },
+      {
+        "file": "serif-29810-5337e9751e8b.woff2",
+        "bytes": 2252,
+        "characters": 1,
+        "range": "U+29810-29810"
+      },
+      {
+        "file": "serif-29f7e-b6b250354917.woff2",
+        "bytes": 2504,
+        "characters": 1,
+        "range": "U+29F7E-29F7E"
+      },
+      {
+        "file": "serif-29f83-7f3b78a478b1.woff2",
+        "bytes": 3300,
+        "characters": 2,
+        "range": "U+29F83-29F8C"
+      },
+      {
+        "file": "serif-2a7dd-a565b949f017.woff2",
+        "bytes": 2340,
+        "characters": 1,
+        "range": "U+2A7DD-2A7DD"
+      },
+      {
+        "file": "serif-2a8fb-4ea742795d89.woff2",
+        "bytes": 2400,
+        "characters": 1,
+        "range": "U+2A8FB-2A8FB"
+      },
+      {
+        "file": "serif-2a917-52683dbc49b9.woff2",
+        "bytes": 2552,
+        "characters": 1,
+        "range": "U+2A917-2A917"
+      },
+      {
+        "file": "serif-2aa30-e4054035cded.woff2",
+        "bytes": 3512,
+        "characters": 3,
+        "range": "U+2AA30-2AA58"
+      },
+      {
+        "file": "serif-2afa2-8e6c9db5f653.woff2",
+        "bytes": 2176,
+        "characters": 1,
+        "range": "U+2AFA2-2AFA2"
+      },
+      {
+        "file": "serif-2b127-e8c3b971eb75.woff2",
+        "bytes": 4764,
+        "characters": 4,
+        "range": "U+2B127-2B138"
+      },
+      {
+        "file": "serif-2b1ed-d4eb13e709a8.woff2",
+        "bytes": 2244,
+        "characters": 1,
+        "range": "U+2B1ED-2B1ED"
+      },
+      {
+        "file": "serif-2b300-5516a41d93af.woff2",
+        "bytes": 4576,
+        "characters": 5,
+        "range": "U+2B300-2B37D"
+      },
+      {
+        "file": "serif-2b404-f5a22ae5d7ae.woff2",
+        "bytes": 4164,
+        "characters": 4,
+        "range": "U+2B404-2B461"
+      },
+      {
+        "file": "serif-2b4e7-4f5e96914f76.woff2",
+        "bytes": 3392,
+        "characters": 4,
+        "range": "U+2B4E7-2B4F9"
+      },
+      {
+        "file": "serif-2b50d-6951afb37ef3.woff2",
+        "bytes": 3724,
+        "characters": 3,
+        "range": "U+2B50D-2B536"
+      },
+      {
+        "file": "serif-2b5ae-84153dc51914.woff2",
+        "bytes": 4712,
+        "characters": 5,
+        "range": "U+2B5AE-2B5F4"
+      },
+      {
+        "file": "serif-2b61c-e3a0b857b98a.woff2",
+        "bytes": 5896,
+        "characters": 7,
+        "range": "U+2B61C-2B62C"
+      },
+      {
+        "file": "serif-2b695-9545afd91702.woff2",
+        "bytes": 4796,
+        "characters": 4,
+        "range": "U+2B695-2B6ED"
+      },
+      {
+        "file": "serif-2b7a9-3e9381cee6f6.woff2",
+        "bytes": 4992,
+        "characters": 5,
+        "range": "U+2B7A9-2B7FC"
+      },
+      {
+        "file": "serif-2b806-e63570d6945b.woff2",
+        "bytes": 3836,
+        "characters": 3,
+        "range": "U+2B806-2B81C"
+      },
+      {
+        "file": "serif-2b8b8-1d406cb4521a.woff2",
+        "bytes": 2120,
+        "characters": 1,
+        "range": "U+2B8B8-2B8B8"
+      },
+      {
+        "file": "serif-2bac7-e1de914ab570.woff2",
+        "bytes": 2400,
+        "characters": 1,
+        "range": "U+2BAC7-2BAC7"
+      },
+      {
+        "file": "serif-2bb5f-03b40d9703a0.woff2",
+        "bytes": 3092,
+        "characters": 3,
+        "range": "U+2BB5F-2BB7C"
+      },
+      {
+        "file": "serif-2bb83-160d0b49d424.woff2",
+        "bytes": 2144,
+        "characters": 1,
+        "range": "U+2BB83-2BB83"
+      },
+      {
+        "file": "serif-2bc1b-1d97375963e0.woff2",
+        "bytes": 2200,
+        "characters": 1,
+        "range": "U+2BC1B-2BC1B"
+      },
+      {
+        "file": "serif-2bd77-b729dd9deacb.woff2",
+        "bytes": 2260,
+        "characters": 1,
+        "range": "U+2BD77-2BD77"
+      },
+      {
+        "file": "serif-2bd87-3f91bf243977.woff2",
+        "bytes": 3112,
+        "characters": 2,
+        "range": "U+2BD87-2BDF7"
+      },
+      {
+        "file": "serif-2be29-6b8a16d9f953.woff2",
+        "bytes": 2328,
+        "characters": 1,
+        "range": "U+2BE29-2BE29"
+      },
+      {
+        "file": "serif-2c029-74abeef1dd6d.woff2",
+        "bytes": 2496,
+        "characters": 2,
+        "range": "U+2C029-2C02A"
+      },
+      {
+        "file": "serif-2c0a9-0520724d10d9.woff2",
+        "bytes": 2796,
+        "characters": 2,
+        "range": "U+2C0A9-2C0CA"
+      },
+      {
+        "file": "serif-2c1d5-f33451a19d08.woff2",
+        "bytes": 3236,
+        "characters": 3,
+        "range": "U+2C1D5-2C1F9"
+      },
+      {
+        "file": "serif-2c27c-3a36c525468f.woff2",
+        "bytes": 2292,
+        "characters": 1,
+        "range": "U+2C27C-2C27C"
+      },
+      {
+        "file": "serif-2c288-2a4b81c24896.woff2",
+        "bytes": 2748,
+        "characters": 2,
+        "range": "U+2C288-2C2A4"
+      },
+      {
+        "file": "serif-2c317-8e72d5c53b3a.woff2",
+        "bytes": 3928,
+        "characters": 4,
+        "range": "U+2C317-2C364"
+      },
+      {
+        "file": "serif-2c488-41215665cca4.woff2",
+        "bytes": 3384,
+        "characters": 3,
+        "range": "U+2C488-2C497"
+      },
+      {
+        "file": "serif-2c542-9cf68568d31b.woff2",
+        "bytes": 2352,
+        "characters": 1,
+        "range": "U+2C542-2C542"
+      },
+      {
+        "file": "serif-2c613-8a0990454858.woff2",
+        "bytes": 8148,
+        "characters": 11,
+        "range": "U+2C613-2C64B"
+      },
+      {
+        "file": "serif-2c72c-3a468f4ef945.woff2",
+        "bytes": 2672,
+        "characters": 2,
+        "range": "U+2C72C-2C72F"
+      },
+      {
+        "file": "serif-2c79f-d6d54e5c89f3.woff2",
+        "bytes": 4096,
+        "characters": 3,
+        "range": "U+2C79F-2C7FD"
+      },
+      {
+        "file": "serif-2c8d9-64e914b9dda4.woff2",
+        "bytes": 3592,
+        "characters": 4,
+        "range": "U+2C8D9-2C8F3"
+      },
+      {
+        "file": "serif-2c907-b03c679d732e.woff2",
+        "bytes": 3488,
+        "characters": 3,
+        "range": "U+2C907-2C91D"
+      },
+      {
+        "file": "serif-2ca02-9c85f94b2fbd.woff2",
+        "bytes": 3552,
+        "characters": 3,
+        "range": "U+2CA02-2CA7D"
+      },
+      {
+        "file": "serif-2caa9-6cac9cc8c8f5.woff2",
+        "bytes": 2520,
+        "characters": 1,
+        "range": "U+2CAA9-2CAA9"
+      },
+      {
+        "file": "serif-2cb29-52918f1da5cf.woff2",
+        "bytes": 12696,
+        "characters": 21,
+        "range": "U+2CB29-2CB7C"
+      },
+      {
+        "file": "serif-2cbb1-74c91ee96af8.woff2",
+        "bytes": 3900,
+        "characters": 4,
+        "range": "U+2CBB1-2CBCE"
+      },
+      {
+        "file": "serif-2cc56-a86daa2c0b8f.woff2",
+        "bytes": 2992,
+        "characters": 2,
+        "range": "U+2CC56-2CC5F"
+      },
+      {
+        "file": "serif-2ccf5-34440b8a4db8.woff2",
+        "bytes": 3688,
+        "characters": 4,
+        "range": "U+2CCF5-2CCFF"
+      },
+      {
+        "file": "serif-2cd02-a4f8ca4fb952.woff2",
+        "bytes": 3696,
+        "characters": 3,
+        "range": "U+2CD02-2CD0A"
+      },
+      {
+        "file": "serif-2cd8b-0a2e4faa4995.woff2",
+        "bytes": 8048,
+        "characters": 10,
+        "range": "U+2CD8B-2CDD5"
+      },
+      {
+        "file": "serif-2ce18-4338091dbd00.woff2",
+        "bytes": 6116,
+        "characters": 6,
+        "range": "U+2CE18-2CE7C"
+      },
+      {
+        "file": "serif-2ce88-55d2e231ae4c.woff2",
+        "bytes": 3360,
+        "characters": 2,
+        "range": "U+2CE88-2CE93"
+      },
+      {
+        "file": "serif-2d544-51625e095974.woff2",
+        "bytes": 1876,
+        "characters": 1,
+        "range": "U+2D544-2D544"
+      },
+      {
+        "file": "serif-2f878-172746cacff5.woff2",
+        "bytes": 1884,
+        "characters": 1,
+        "range": "U+2F878-2F878"
+      },
+      {
+        "file": "serif-2f884-7439fa01907e.woff2",
+        "bytes": 2912,
+        "characters": 2,
+        "range": "U+2F884-2F8B6"
+      },
+      {
+        "file": "serif-2f920-3139536fce3b.woff2",
+        "bytes": 3016,
+        "characters": 1,
+        "range": "U+2F920-2F920"
+      }
+    ]
+  }
+}

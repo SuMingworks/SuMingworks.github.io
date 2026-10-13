@@ -4,6 +4,10 @@ AudioEyes 发布的网站包含下列第三方组件。各项许可只适用于�
 
 | 组件 | 版本 / 版权与许可 | 许可文本 |
 | --- | --- | --- |
+| 思源黑体 Source Han Sans（标题字体） | Adobe；SIL OFL 1.1。由简体中文 Bold 字重生成“音频之眼”四字 WOFF2 子集，修改版字体名称为 AudioEyes Title。版权信息见许可原文。 | [LICENSE](third-party-licenses/source-han-sans-LICENSE.txt)、[项目](https://github.com/adobe-fonts/source-han-sans) |
+| 思源黑体 Source Han Sans（歌词字体） | Adobe；SIL OFL 1.1。简体中文 CN 可变字体按 Unicode 分包，保留源字体字符覆盖和 250–900 字重，修改版名称为 AudioEyes Lyrics Sans。来源、版本和文件校验值见 `fonts/lyrics/manifest.json`。 | [LICENSE](third-party-licenses/source-han-sans-LICENSE.txt)、[项目](https://github.com/adobe-fonts/source-han-sans) |
+| 思源宋体 Source Han Serif（歌词字体） | Adobe；SIL OFL 1.1。简体中文 CN 可变字体按 Unicode 分包，保留源字体字符覆盖和 250–900 字重，修改版名称为 AudioEyes Lyrics Serif。来源、版本和文件校验值见 `fonts/lyrics/manifest.json`。 | [LICENSE](third-party-licenses/source-han-serif-LICENSE.txt)、[项目](https://github.com/adobe-fonts/source-han-serif) |
+| MediaPipe Tasks Vision、WASM 与 Hand Landmarker 模型 | tasks-vision 0.10.32；模型 float16/1；Google LLC；Apache-2.0。WASM 包装增加 ModuleFactory 全局导出以支持模块 Worker。 | [LICENSE](third-party-licenses/mediapipe-LICENSE)、[项目](https://github.com/google-ai-edge/mediapipe)、[模型说明](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker) |
 | three-mouse-flow（基于 [artcodev/three-fluid-fx](https://github.com/artcodev/three-fluid-fx) 修改） | Copyright (c) 2026 Artem Korenevych；MIT | [LICENSE](third-party-licenses/three-mouse-flow-LICENSE)、[上游第三方声明](third-party-licenses/three-mouse-flow-THIRD_PARTY_NOTICES.md)（含 Pavel Dobryakov 的 MIT 声明） |
 | Three.js | 0.185.1；Copyright © 2010-2026 three.js authors；MIT | [LICENSE](third-party-licenses/three-LICENSE) |
 | lil-gui | 0.21.0；Copyright (c) 2019 George Michael Brower；MIT | [LICENSE](third-party-licenses/lil-gui-LICENSE.md) |
