@@ -48,9 +48,9 @@
         "isAccessibleForFree": true
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-CYn6Z6mm.js"></script>
+    <script type="module" crossorigin src="/assets/main-D0AR1say.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/preload-helper-zJ_50EbN.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-Cg5Ip-ZK.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-CD8tYjl0.css">
   </head>
   <body>
     <noscript>
@@ -68,11 +68,6 @@
         <select id="visualizationSelect">
           <option value="">加载中...</option>
         </select>
-      </div>
-
-      <!-- 可视化效果设置面板 -->
-      <div class="visualization-settings" id="visualizationSettings">
-        <!-- 效果模式选择器将在这里动态生成 -->
       </div>
 
       <!-- 信息面板 -->
@@ -97,16 +92,6 @@
           <button id="clearPlaylist"><i class="fas fa-trash"></i> 清空</button>
           <button id="shufflePlaylist"><i class="fas fa-random"></i> 随机</button>
         </div>
-      </div>
-
-      <!-- 效果模式选择器 -->
-      <div id="effect-modes-container">
-        <h3><i class="fas fa-palette"></i> 效果模式</h3>
-        <select id="effect-mode-selector"></select>
-        <div id="effect-modes-empty">暂无可用效果模式</div>
-        <button class="collapse-toggle" data-target="effect-modes-container" title="折叠/展开">
-          <i class="fas fa-chevron-right"></i>
-        </button>
       </div>
 
       <!-- ===== 底部 Dock Bar（功能栏） ===== -->
@@ -185,15 +170,6 @@
           <i class="fas fa-chevron-up" aria-hidden="true"></i>
         </button>
 
-        <!-- 折叠按钮兼容（保留 DOM 但不显示） -->
-        <button
-          class="collapse-toggle"
-          data-target="controls"
-          title="折叠/展开"
-          style="display: none"
-        >
-          <i class="fas fa-chevron-left"></i>
-        </button>
       </div>
 
       <!-- 统一控制中心：原有设置内容会在初始化后挂载到右侧内容区 -->
