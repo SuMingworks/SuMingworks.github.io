@@ -1,34 +1,27 @@
 # 音频之眼 AudioEyes
 
-一个在浏览器中运行的实时 3D 音乐可视化平台，让音乐驱动粒子、流体、光影与空间动画，将声音转化为沉浸式视觉体验。
+一个运行在浏览器中的实时 3D 音乐可视化平台，通过分析本地音乐或系统音频，让声音驱动粒子、流体、频谱与光影动画。
 
-**[访问网站](https://www.audioeyes.xyz/)** · **[使用帮助](https://www.audioeyes.xyz/help-content.html)**
+**[在线体验](https://www.audioeyes.xyz/)** · **[使用帮助](https://www.audioeyes.xyz/help-content.html)**
 
-## 项目特点
+## 主要功能
 
-- 实时音频驱动的 3D 可视化效果。
-- 多种粒子、流体、光影与空间动画。
-- 基于浏览器运行，无需安装桌面客户端。
-- 支持 WebGL 和 Web Audio API 的现代浏览器。
+- 多种音乐可视化效果，涵盖粒子、星云、频谱、分形、流体与文字。
+- 本地音频播放与桌面端系统音频捕获。
+- 标准 LRC 和逐字歌词显示，支持样式调整。
+- 图片、视频、渐变背景与鼠标流体交互。
+- 可视化自动切换、全屏模式、快捷键与移动端触摸操作。
 
-## 仓库说明
+## 快速上手
 
-本仓库保存网站发布所用的静态构建文件。
+1. 打开网站，点击底部 Dock 的文件夹按钮，选择本地音乐和歌词文件。
+2. 在播放列表中选择歌曲并播放，通过顶部菜单切换可视化效果。
+3. 打开控制中心，调整歌词、背景、流体等设置。
 
-| 路径 | 内容 |
-| --- | --- |
-| `index.html` | 网站入口 |
-| `assets/` | 构建后的 JavaScript、CSS 与动画资源 |
-| `backgrounds/`、`images/`、`videos/` | 网站媒体资源 |
-| `fonts/` | 字体资源 |
-| `gesture/` | 手势识别相关资源 |
-| `help-content.html` | 使用帮助 |
-| `third-party-licenses/` | 第三方组件许可文本 |
+歌词与歌曲使用相同文件名（如 `歌曲名.mp3` 与 `歌曲名.lrc`），便于自动匹配。桌面端也可通过 Dock 的音频捕获按钮共享系统音频。
 
-## 使用方式
+请使用支持 WebGL 和 Web Audio API 的现代浏览器；部分效果需要 WebGPU 支持。
 
-打开 [音频之眼](https://www.audioeyes.xyz/)，按照页面提示使用。详细操作请查看 [使用帮助](https://www.audioeyes.xyz/help-content.html)。请在浏览器中启用 JavaScript。
+## 关于仓库
 
-## 第三方许可
-
-第三方组件及字体的许可说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。各项许可仅适用于对应组件。
+本仓库保存网站的静态发布文件。第三方组件与字体许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
