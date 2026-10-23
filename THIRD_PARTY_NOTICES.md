@@ -11,6 +11,7 @@ AudioEyes 发布的网站包含下列第三方组件。各项许可只适用于�
 | three-mouse-flow（基于 [artcodev/three-fluid-fx](https://github.com/artcodev/three-fluid-fx) 修改） | Copyright (c) 2026 Artem Korenevych；MIT | [LICENSE](third-party-licenses/three-mouse-flow-LICENSE)、[上游第三方声明](third-party-licenses/three-mouse-flow-THIRD_PARTY_NOTICES.md)（含 Pavel Dobryakov 的 MIT 声明） |
 | Three.js | 0.185.1；Copyright © 2010-2026 three.js authors；MIT | [LICENSE](third-party-licenses/three-LICENSE) |
 | lil-gui | 0.21.0；Copyright (c) 2019 George Michael Brower；MIT | [LICENSE](third-party-licenses/lil-gui-LICENSE.md) |
+| music-metadata | 12.2.3；Borewit；MIT；用于播放列表内嵌封面解析 | [LICENSE](third-party-licenses/music-metadata-LICENSE.txt)、[依赖许可](third-party-licenses/music-metadata-dependencies.txt) |
 | opentype.js | 1.3.4；Copyright (c) 2020 Frederik De Bleser；MIT | [LICENSE](third-party-licenses/opentype.js-LICENSE) |
 | string.prototype.codepointat（opentype.js 依赖） | 0.2.1；MIT | [LICENSE](third-party-licenses/string.prototype.codepointat-LICENSE-MIT.txt) |
 | tiny-inflate（opentype.js 依赖） | 1.0.3；MIT | [LICENSE](third-party-licenses/tiny-inflate-LICENSE) |
