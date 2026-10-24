@@ -1,0 +1,1 @@
+var e=!0,t=new Set;function n(){return e}function r(e){return t.add(e),()=>{t.delete(e)}}function i(n){let r=!!n;if(r!==e){e=r;for(let n of[...t])try{n(e)}catch(e){console.warn(`更新动画鼠标交互失败`,e)}}}export{i as n,r,n as t};

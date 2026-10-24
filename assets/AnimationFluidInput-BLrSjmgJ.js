@@ -1,0 +1,1 @@
+import{r as e,t}from"./AnimationMouseInteraction-CXDsNQh8.js";import{n}from"./pointer-input-Btd8nYC4.js";function r(r,i,a={}){let o,s=e=>{o?.(),o=e?n(r,i,a):void 0};s(t());let c=e(s);return()=>{c(),o?.(),o=void 0}}export{r as t};

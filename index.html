@@ -48,9 +48,9 @@
         "isAccessibleForFree": true
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-DE_eGk8e.js"></script>
+    <script type="module" crossorigin src="/assets/main-BygBkJ2E.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/preload-helper-zJ_50EbN.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-1LU2W2dS.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-BjcRNS2C.css">
   </head>
   <body>
     <noscript>
@@ -134,6 +134,9 @@
               </button>
               <button id="nextButton" class="dock-btn" title="下一首">
                 <i class="fas fa-step-forward"></i>
+              </button>
+              <button id="muteButton" type="button" class="dock-btn" title="静音" aria-label="静音" aria-pressed="false">
+                <i class="fas fa-volume-high" aria-hidden="true"></i>
               </button>
             </div>
 
@@ -276,15 +279,34 @@
               <button type="button" aria-pressed="false">开启摄像头手势</button>
               <p data-gesture-status role="status" aria-live="polite">摄像头手势已关闭</p>
               <video muted autoplay playsinline aria-label="镜像摄像头预览"></video>
-              <ul>
-                <li>只伸食指移动：鼠标流体跟随</li>
-                <li>握拳并移动：旋转视角</li>
-                <li>张掌左右／上下移动：平移视角</li>
-                <li>张掌靠近／远离摄像头：放大／缩小</li>
-                <li>👍 保持后向左／右挥动：上一首／下一首</li>
-                <li>✌️ 保持后向左／右挥动：上一个／下一个动画</li>
-              </ul>
-              <p>全程单手，无需切模式。手形保持约 0.2 秒后生效；张掌正对摄像头，平移与缩放自动锁定，停稳片刻后可换方向。切换后先放下手或换为食指／握拳／张掌再挥动。鼠标操作优先；固定视角动画不支持视角控制。手机请使用 HTTPS，并放在支架上。</p>
+              <div class="gesture-help">
+                <p class="gesture-help-intro">单手即可操作。先保持手形约 0.2 秒，再移动。</p>
+                <section class="gesture-help-group" aria-labelledby="gestureViewHelp">
+                  <h4 id="gestureViewHelp">流体与视角</h4>
+                  <dl class="gesture-help-actions">
+                    <dt>只伸食指移动</dt><dd>流体跟随指尖</dd>
+                    <dt>握拳移动</dt><dd>旋转视角</dd>
+                    <dt>张掌左右 / 上下移动</dt><dd>平移视角</dd>
+                    <dt>张掌靠近 / 远离镜头</dt><dd>放大 / 缩小</dd>
+                  </dl>
+                </section>
+                <section class="gesture-help-group" aria-labelledby="gestureSwitchHelp">
+                  <h4 id="gestureSwitchHelp">切换歌曲与动画</h4>
+                  <dl class="gesture-help-actions gesture-help-switches">
+                    <dt>竖起拇指</dt><dd>左挥：上一首<br>右挥：下一首</dd>
+                    <dt>伸出食指与中指</dt><dd>左挥：上一个动画<br>右挥：下一个动画</dd>
+                  </dl>
+                  <p class="gesture-help-note">每次切换后，先放下手，或改为食指、握拳、张掌，再做下一次切换手势。</p>
+                </section>
+                <details class="gesture-help-tips">
+                  <summary>识别与使用提示</summary>
+                  <ul>
+                    <li>张掌时让掌心正对镜头。平移和缩放一次只识别一种；需要切换操作时，先停稳片刻。</li>
+                    <li>鼠标操作优先；固定视角的动画不支持旋转、平移和缩放。</li>
+                    <li>手机访问请使用 HTTPS，并用支架固定手机。</li>
+                  </ul>
+                </details>
+              </div>
             </section>
           </div>
         </div>
