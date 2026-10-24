@@ -1,0 +1,721 @@
+import{At as e,Et as t,H as n,Kt as r,Pr as i,X as a,Xt as o,cr as s,d as c,er as l,nr as u,r as d,rr as f,v as p}from"./three.module-CI1jJgD_.js";import{n as m,r as h,t as g}from"./OutputPass-D7sfcF5T.js";import{a as _,i as v,n as y,r as b,t as x}from"./GUIHelper-CK73tCKI.js";import{t as S}from"./AnimationCameraControls-2zD2PkBR.js";import{a as C,c as w,l as ee,n as te,p as ne,s as T}from"./PerceptualColor-5EYeXve1.js";var E=()=>({blending:5,blendEquation:100,blendSrc:204,blendDst:201,blendEquationAlpha:100,blendSrcAlpha:200,blendDstAlpha:201});function re(e){return typeof structuredClone==`function`?structuredClone(e):JSON.parse(JSON.stringify(e))}function ie(e,t={}){let n=re(e);for(let[e,r]of Object.entries(t||{}))r&&typeof r==`object`&&!Array.isArray(r)&&n[e]&&typeof n[e]==`object`?Object.assign(n[e],r):n[e]=r;return n}var D={camera:{distance:32,fov:42,autoOrbit:.028},sphere:{radius:10,shellOpacity:.86,rimStrength:1.42,rimPower:4.65,edgeVariation:.68,atmosphere:.105},far:{count:9200,size:1.78,brightness:1.045,shellBias:.4},mid:{count:3600,size:2.73,brightness:.98,shellBias:.48},near:{count:1020,size:4.7,brightness:1.82,cameraBias:.667},hero:{probability:.0215,size:15.2,brightness:3.46},naturalField:{strength:.289,scale:.341,depthVariation:.18,offsetX:.12,offsetY:-.08,offsetZ:.16},composition:{riverRatio:.315,satelliteRatio:.078,riverWidth:1.48,riverFlatten:.46,riverTurbulence:.39,quietStrength:.58,islandStretch:1.58,balanceStrength:.24,brightBalance:.82},dust:{count:1240,size:2.92,opacity:.205,drift:.323},motion:{rotationY:.066,rotationX:.028,twinkle:.54,starDrift:.245},livingFlow:{speed:.0175,curlStrength:.44,confinement:.64,stability:.94,influence:.94,pulseWidth:.09,pulseStrength:.92,vfxStrength:.72,trailStrength:.46,releaseStrength:.39,vortexEvent:.46},audioReactive:{enabled:!0,strength:.82,motion:.58,brightness:.52,pulse:.88,tempoSync:.72,ambient:1.05,dust:1.35,color:1.15},colorDirector:{enabled:!0,intensity:1.32,coverage:1.08,transitionSpeed:1.18,eventIntensity:1.28,peakAccent:1.12},colorSection:{sensitivity:1,calmThreshold:.22,peakThreshold:.66,trendThreshold:.08,relativeThreshold:.57,variationThreshold:.18,minHold:2.5,transitionDuration:3.2},shellColor:{response:1,coverage:1,sectionInfluence:1,downbeatInfluence:1,basePreservation:.04},riverColor:{response:1,coverage:1,highInfluence:.72,kickAccent:1,impactAccent:.95},ambientStarColor:{response:1,coverage:.88,complementary:.82,depthSeparation:.35,snareSpread:.95,variationInfluence:.72},dustColor:{response:1,coverage:.94,highInfluence:1,variationInfluence:.78,hihatAccent:1},heroColor:{response:1,kickAccent:.62,impactAccent:1,downbeatAccent:1,warmPeak:.92,colorCoverage:1},environmentColor:{atmosphereResponse:.9},colorEnvelope:{kickRelease:.25,snareRelease:.36,hihatRelease:.1,impactRelease:.3,downbeatRelease:.55},colors:{blue:`#4969f2`,cyan:`#64d8ff`,violet:`#8b5cf0`,white:`#f4f7ff`,warm:`#f3c9a7`,rim:`#5364cf`},performance:{dpr:1.2}},O=class{constructor(e,t={}){this.canvas=e,this._guiPreferencesLoading=!1,this._pendingInteriorRebuild=!1,this.settings=ie(D,t),this.params=this.settings,this.initialCameraDistance=this.params.camera.distance,this.scene=null,this.camera=null,this.renderer=null,this.controls=null,this.composer=null,this.renderPass=null,this.outputPass=null,this.universe=null,this.atmosphereGroup=null,this.starsGroup=null,this.dustGroup=null,this.shellGroup=null,this.gui=null,this.guiContainer=null,this.guiVisible=!1,this.settingsButton=null,this.hasAudioData=!1,this.audioFrame=null,this.elapsed=0,this.lastTime=performance.now()*.001,this.startTime=this.lastTime,this._core=null,this._disposed=!1,this.init()}init(){return this._disposed?!1:this.scene?!0:(this.setupThreeJS(),this._disposed||(this.createVisualCore(),this._disposed)||(this.setupPostProcessing(),this._disposed)?!1:(this.setupGUI(),this.setupSettingsButton(),console.log(`✅ Animation66 初始化成功`),!0))}setupThreeJS(){let e=this.params;this.scene=new u,this.camera=new r(e.camera.fov,Math.max(1,window.innerWidth)/Math.max(1,window.innerHeight),.1,120),this.camera.position.set(0,0,e.camera.distance),this.renderer=new d({canvas:this.canvas,antialias:!0,alpha:!0,powerPreference:`high-performance`}),this.renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,e.performance.dpr)),this.renderer.setSize(Math.max(1,window.innerWidth),Math.max(1,window.innerHeight),!1),this.renderer.setClearColor(0,0),this.renderer.outputColorSpace=l,this.renderer.toneMapping=0,this.canvas.style.backgroundColor=`transparent`,this.canvas.style.zIndex=`1`,this.controls=new S(this.camera,this.canvas),this.controls.enableDamping=!0,this.controls.dampingFactor=.055,this.controls.enablePan=!1,this.controls.minDistance=15,this.controls.maxDistance=46,this.controls.autoRotate=e.camera.autoOrbit>0,this.controls.autoRotateSpeed=e.camera.autoOrbit,this.controls.target.set(0,0,0),this.controls.saveState(),this.universe=new a,this.atmosphereGroup=new a,this.starsGroup=new a,this.dustGroup=new a,this.shellGroup=new a,this.universe.add(this.atmosphereGroup,this.starsGroup,this.dustGroup,this.shellGroup),this.scene.add(this.universe)}createVisualCore(){let r=this,a=this.params,l=this.renderer;this.scene;let u=this.camera,d=this.controls,m=this.universe,h=this.atmosphereGroup,g=this.starsGroup,_=this.dustGroup,v=this.shellGroup;function y(e){let t=new p(e);return new i(t.r,t.g,t.b)}function b(e){return function(){let t=e+=1831565813;return t=Math.imul(t^t>>>15,t|1),t^=t+Math.imul(t^t>>>7,t|61),((t^t>>>14)>>>0)/4294967296}}let x=b(26288166);function S(){x=b(26288166)}function re(){let e=x()*2-1,t=x()*Math.PI*2,n=Math.sqrt(Math.max(0,1-e*e));return new i(n*Math.cos(t),n*Math.sin(t),e)}function ie(e,t){return re().multiplyScalar(x()**+t*e)}let D=[new i(-7.35,-2.75,-2.55),new i(-5.65,-1.55,1.55),new i(-3.2,.4,3.05),new i(-.95,1.2,1.1),new i(1.05,-.45,-2.65),new i(3.35,.5,-3.05),new i(5.25,2.15,-.65),new i(7.05,3.25,2.1)];function O(e,t,n,r,a,o=new i){let s=a*a,c=s*a;return o.set(0,0,0).addScaledVector(t,2).addScaledVector(e,-a+2*s-c).addScaledVector(t,-5*s+3*c).addScaledVector(n,a+4*s-3*c).addScaledVector(r,-s+c).multiplyScalar(.5)}function k(e){let n=t.clamp(e,0,.999999)*7,r=Math.floor(n),i=n-r,a=r,o=Math.min(r+1,7),s=Math.max(a-1,0),c=Math.min(o+1,7);return O(D[s],D[a],D[o],D[c],i)}function A(e){let t=.0025,n=k(Math.max(0,e-t));return k(Math.min(.99999,e+t)).sub(n).normalize()}function ae(e){let t=A(e),n=Math.abs(t.y)<.88?new i(0,1,0):new i(1,0,0),r=new i().crossVectors(t,n).normalize(),a=new i().crossVectors(t,r).normalize(),o=Math.sin(e*Math.PI*2.15-.55)*.48+Math.sin(e*Math.PI*4.1+.8)*.11,s=Math.cos(o),c=Math.sin(o);return{tangent:t,normal:r.clone().multiplyScalar(s).addScaledVector(a,c),binormal:a.clone().multiplyScalar(s).addScaledVector(r,-c)}}function oe(e){let n=.34+.66*Math.sin(Math.PI*t.clamp(e,0,1))**.46,r=.72*Math.exp(-(((e-.27)/.13)**2)),i=.46*Math.exp(-(((e-.52)/.085)**2)),o=.88*Math.exp(-(((e-.76)/.14)**2)),s=(.68+r-i+o)*n;return a.composition.riverWidth*Math.max(.3,s)}function se(e){let n=.52*Math.exp(-(((e-.18)/.12)**2)),r=1.02*Math.exp(-(((e-.36)/.105)**2)),i=.42*Math.exp(-(((e-.53)/.075)**2)),a=1.16*Math.exp(-(((e-.7)/.11)**2)),o=.68*Math.exp(-(((e-.86)/.095)**2)),s=Math.sin(Math.PI*t.clamp(e,0,1))**.34;return Math.max(.1,(.25+n+r-i+a+o)*s)}function ce(){for(let e=0;e<18;e++){let e=x();if(x()<Math.min(1,se(e)/1.48))return e}return .18+x()*.7}function le(e){let t=1e9,n=0;for(let r=0;r<=46;r++){let i=r/46,a=k(i),o=e.distanceToSquared(a);o<t&&(t=o,n=i)}let r=Math.max(.34,oe(n)),i=Math.sqrt(t),a=Math.exp(-(i*i)/(2*r*r));return{t:n,d:i,width:r,affinity:a}}function ue(e,n){let r=ce(),i=k(r),{normal:o,binormal:s}=ae(r),c=oe(r),l=e===`far`?1.28:e===`mid`?1:.72,u=Math.exp(-(((r-.53)/.115)**2)),d=c*l*.1*u,f=c*l,p=t.lerp(d,f,x()**.58),m=x()*Math.PI*2,h=a.composition.riverFlatten,g=.88+.12*Math.sin(r*17+m*2.4),_=Math.cos(m)*p*g,v=Math.sin(m)*p*h*(.72+.26*Math.sin(r*8.5+1.1)),y=i.clone().addScaledVector(o,_).addScaledVector(s,v),b=a.composition.riverTurbulence;return y.addScaledVector(o,Math.sin(r*27+m*1.7)*b*.12*c),y.addScaledVector(s,Math.cos(r*19-m*1.2)*b*.08*c),y.length()>n&&y.setLength(n*(.9+x()*.05)),{p:y,t:r,lane:p/Math.max(c,.001),width:c}}let j=[{t:.22,n:2.55,b:-1.3,sx:2.9,sy:.62,phase:.2},{t:.61,n:-2.35,b:1.55,sx:2.6,sy:.58,phase:2.5},{t:.82,n:1.75,b:1.2,sx:3.2,sy:.68,phase:4.4}];function de(e,n){let r=j[Math.min(j.length-1,Math.floor(x()*j.length))],i=t.clamp(r.t+(x()-.5)*.105,0,1),o=k(i),{tangent:s,normal:c,binormal:l}=ae(i),u=e===`far`?1.16:e===`mid`?1:.76,d=x()+x()+x()+x()-2,f=x()+x()+x()+x()-2,p=d*r.sx*a.composition.islandStretch*u,m=f*r.sy*u,h=.34*Math.tanh(Math.abs(p)*.55),g=o.clone().addScaledVector(c,r.n*(1-h*.18)).addScaledVector(l,r.b).addScaledVector(s,p).addScaledVector(c,m).addScaledVector(l,m*.42*Math.sin(r.phase+i*9)).addScaledVector(c,-Math.sign(r.n||1)*Math.abs(p)*h*.16);return g.length()>n&&g.setLength(n*(.84+x()*.085)),{p:g,t:i,lane:1.18+Math.abs(m)/(r.sy+.001)}}function fe(e){let t=[[new i(-4.75,4.05,1.65),2.85],[new i(4.7,-3.85,-1.75),2.95],[new i(-.35,-5.05,1.35),2.4],[new i(1.2,4.85,-2.25),2.15]],n=0;for(let[r,i]of t){let t=e.distanceTo(r);n=Math.max(n,Math.exp(-(t*t)/(2*i*i)))}return n}function pe(e,n=0){let r=a.naturalField.scale,i=Math.cos(n),o=Math.sin(n),s=e.x*i-e.z*o,c=e.x*o+e.z*i,l=s+a.naturalField.offsetX,u=e.y+a.naturalField.offsetY,d=c+a.naturalField.offsetZ,f=Math.sin(l*r*.78+u*r*.41-d*r*.32+.7*n),p=Math.sin(-l*r*.27+u*r*.87+d*r*.51+1.35-.3*n),m=Math.sin(l*r*.45-u*r*.24+d*r*.69-.55+.6*n),h=Math.sin(d*r*.43+l*r*.15-u*r*.08)*a.naturalField.depthVariation,g=f*.3+p*.24+m*.18+h,_=fe(e)*a.composition.quietStrength,v=le(e).affinity*.18;return t.clamp(1+g*a.naturalField.strength-_-v,.5,1.26)}function me(){return{total:0,xp:0,xn:0,yp:0,yn:0,zp:0,zn:0,wxp:0,wxn:0,wyp:0,wyn:0}}function M(e,n){if(!n||n.total<24)return 1;let r=n.total*.5,i=e.x>=0?`xp`:`xn`,o=e.y>=0?`yp`:`yn`,s=e.z>=0?`zp`:`zn`,c=(n[i]-r)/Math.max(r,1)+(n[o]-r)/Math.max(r,1)*.52+(n[s]-r)/Math.max(r,1)*.25;return t.clamp(1-c*a.composition.balanceStrength,.7,1.3)}function he(e,n,r,i){let a=t.clamp(n*r*M(e,i),.12,.96);return x()>a?!1:(i.total++,i[e.x>=0?`xp`:`xn`]++,i[e.y>=0?`yp`:`yn`]++,i[e.z>=0?`zp`:`zn`]++,!0)}function ge(e,n,r){if(!n||n.total<30||r<1.15)return 1;let i=e.x>=0?n.wxp:n.wxn,o=e.x>=0?n.wxn:n.wxp,s=e.y>=0?n.wyp:n.wyn,c=e.y>=0?n.wyn:n.wyp,l=(i-o)/Math.max(6,i+o)+.52*(s-c)/Math.max(6,s+c);return t.clamp(1-l*a.composition.brightBalance,.42,1.18)}function _e(e,t,n){t&&(e.x>=0?t.wxp+=n:t.wxn+=n,e.y>=0?t.wyp+=n:t.wyn+=n)}function ve(e,n,r){if(e===`river`){let e=Math.exp(-(((n-.36)/.11)**2)),i=Math.exp(-(((n-.7)/.12)**2)),a=Math.exp(-(((n-.88)/.12)**2)),o=.16+.34*n+.42*Math.max(e,i)-.28*a;return o=t.clamp(o+(r-.5)*.075,0,1),N(o)}return N(e===`satellite`?t.clamp(.22+r*.58,0,1):r)}function N(e){let t=new p(a.colors.blue),n=new p(a.colors.cyan),r=new p(a.colors.violet),i=new p(a.colors.white),o=new p(a.colors.warm);return e<.46?t.clone().lerp(n,e/.46):e<.86?n.clone().lerp(r,(e-.46)/.4):e<.965?r.clone().lerp(i,(e-.86)/.105):i.clone().lerp(o,(e-.965)/.035)}function ye(e,t,r,i,a,o,s,l=[],u=[],d=[],f=[]){let p=new c;p.setAttribute(`position`,new n(e,3)),p.setAttribute(`color`,new n(t,3)),p.setAttribute(`aSize`,new n(r,1)),p.setAttribute(`aAlpha`,new n(i,1)),p.setAttribute(`aPhase`,new n(a,1)),p.setAttribute(`aDepth`,new n(o,1)),p.setAttribute(`aLuminosity`,new n(s,1));let m=e.length/3,h=(e,t)=>e.length===m?e:Array(m).fill(t);return p.setAttribute(`aFlowAffinity`,new n(h(l,0),1)),p.setAttribute(`aFlowPhase`,new n(h(u,0),1)),p.setAttribute(`aFlowLane`,new n(h(d,0),1)),p.setAttribute(`aFlowSpeed`,new n(h(f,0),1)),p}function be(e){let n=Math.max(x(),1e-6),r=1;if(r=e===`far`?.78+n**7.5*.72:e===`mid`?.88+n**6*1.55:.96+n**4.2*2.55,x()<a.hero.probability){let e=x()**.42;r*=t.lerp(1.65,a.hero.brightness,e)}return r}function xe(e,n,r){let i=Math.max(n-1,0),o=1+i**.58*.22;r===`near`&&(o*=1+i**.72*.1);let s=t.clamp((n-1.45)/3.2,0,1),c=t.clamp(.55+a.hero.size*.0475,.7,1.5);return o*=t.lerp(1,c,s),e*o}function Se(e){let t=Math.round(e*a.composition.riverRatio),n=Math.round(e*a.composition.satelliteRatio);return{ambient:Math.max(0,e-t-n),river:t,satellite:n}}function Ce(e,n,r,i,o=0,s=0,c=null){let l=a.sphere.radius*(r===`far`?.94:r===`mid`?.92:.9),u=be(r);if(i===`river`){let e=Math.exp(-(((o-.36)/.105)**2)),n=Math.exp(-(((o-.7)/.115)**2)),r=Math.exp(-(((o-.53)/.08)**2));u*=t.clamp(.91+e*.15+n*.23-r*.1,.78,1.26)}i===`satellite`&&(u*=.94+x()*.12);let d=ge(n,c,Math.max(u,1)**1.4);u>1.55&&x()>d&&(u=1.05+(u-1.05)*.46);let f=xe((r===`far`?a.far.size:r===`mid`?a.mid.size:a.near.size)*(r===`far`?.5+x()*.72:r===`mid`?.58+x()*.88:.66+x()*.98),u,r);if(i===`river`){let e=Math.max(Math.exp(-(((o-.36)/.115)**2)),Math.exp(-(((o-.7)/.125)**2))),t=Math.exp(-(((o-.53)/.085)**2));f*=1+e*.1+Math.exp(-s*s*1.6)*.035-t*.055}let p=r===`far`?.17+x()*.42:r===`mid`?.28+x()*.54:.42+x()*.5,m=i===`ambient`?.88:i===`river`?1:.96;i===`river`&&(m*=t.clamp(.84+se(o)*.2,.82,1.12));let h=t.clamp(p*m,.1,1),g=ve(i,o,x());if(e.P.push(n.x,n.y,n.z),e.C.push(g.r,g.g,g.b),e.S.push(f),e.A.push(h),e.H.push(x()*Math.PI*2),e.D.push(n.length()/l),e.L.push(u),i===`river`)e.FA.push(t.clamp(1-s*.34,.34,1)),e.FP.push(o),e.FL.push(s),e.FS.push((r===`far`?.78:r===`mid`?.96:1.1)*(.82+x()*.42));else{let a=le(n);e.FA.push(i===`satellite`?t.clamp(Math.max(a.affinity*.52,.2),.2,.58):a.affinity*.28),e.FP.push(a.t),e.FL.push(a.d/Math.max(a.width,.001)),e.FS.push((r===`far`?.58:r===`mid`?.7:.82)*(.8+x()*.35))}_e(n,c,f*h*Math.max(u,.8)**1.15*.1)}function we(){return{P:[],C:[],S:[],A:[],H:[],D:[],L:[],FA:[],FP:[],FL:[],FS:[]}}function P(e){return ye(e.P,e.C,e.S,e.A,e.H,e.D,e.L,e.FA,e.FP,e.FL,e.FS)}function Te(e,t,r,i,a){let o=new c;return o.setAttribute(`position`,new n(e,3)),o.setAttribute(`color`,new n(t,3)),o.setAttribute(`aSize`,new n(r,1)),o.setAttribute(`aAlpha`,new n(i,1)),o.setAttribute(`aPhase`,new n(a,1)),o}function Ee(e,n,r,i,o,s){let c=we(),l=Se(n),u=me(),d=0,f=0;for(;d<l.ambient&&f<Math.max(5e3,l.ambient*35);){f++;let n=ie(r,i);e===`near`&&(n.z=t.lerp(n.z,Math.abs(n.z),a.near.cameraBias*.52),n.z+=.28+x()*.58,n.length()>r&&n.setLength(r*(.76+x()*.14))),he(n,o,pe(n,s),u)&&(Ce(c,n,e,`ambient`,0,0,u),d++)}for(let t=0;t<l.river;t++){let t=ue(e,r);Ce(c,t.p,e,`river`,t.t,t.lane,u)}for(let t=0;t<l.satellite;t++){let t=de(e,r);Ce(c,t.p,e,`satellite`,t.t,t.lane,u)}return P(c)}function De(){return Ee(`far`,a.far.count,a.sphere.radius*.94,a.far.shellBias,0,0)}function Oe(){return Ee(`mid`,a.mid.count,a.sphere.radius*.92,a.mid.shellBias,.67,.72)}function ke(){return Ee(`near`,a.near.count,a.sphere.radius*.9,.62,.5,-.48)}function Ae(){let e=[],n=[],r=[],i=[],o=[],s=a.sphere.radius*.91,c=Math.round(a.dust.count*.16),l=Math.max(0,a.dust.count-c),u=0,d=0;for(;u<l&&d<Math.max(4e3,l*30);){d++;let c=ie(s,.52);if(x()>t.clamp(.56*pe(c,.25),.18,.82))continue;let l=N(.16+x()*.56);e.push(c.x,c.y,c.z),n.push(l.r,l.g,l.b),r.push(a.dust.size*(.54+x()*1.04)),i.push(a.dust.opacity*(.24+x()*.62)),o.push(x()*Math.PI*2),u++}for(let t=0;t<c;t++){let t=ue(`far`,s),c=ve(`river`,t.t,x());e.push(t.p.x,t.p.y,t.p.z),n.push(c.r,c.g,c.b),r.push(a.dust.size*(.62+x()*1.18)),i.push(a.dust.opacity*(.3+x()*.66)),o.push(x()*Math.PI*2)}return Te(e,n,r,i,o)}let F={value:0};function je(e,t){return new f({uniforms:{uTime:F,uDrift:{value:a.motion.starDrift},uPixelRatio:{value:l.getPixelRatio()},uTwinkle:{value:a.motion.twinkle},uBrightness:{value:e},uGlow:{value:t},uAudioMid:{value:0},uAudioHigh:{value:0},uRiverLowColor:{value:y(a.colors.violet)},uRiverFlowColor:{value:y(a.colors.cyan)},uRiverHitColor:{value:y(a.colors.rim)},uAmbientLowColor:{value:y(a.colors.blue)},uAmbientHighColor:{value:y(a.colors.cyan)},uHeroColor:{value:y(a.colors.rim)},uFlowSpeed:{value:a.livingFlow.speed},uCurlStrength:{value:a.livingFlow.curlStrength},uConfinement:{value:a.livingFlow.confinement},uFlowStability:{value:a.livingFlow.stability},uFlowInfluence:{value:a.livingFlow.influence},uPulseSpeed:{value:a.livingFlow.speed*3.9},uPulseWidth:{value:a.livingFlow.pulseWidth},uPulseStrength:{value:a.livingFlow.pulseStrength},uVFXStrength:{value:a.livingFlow.vfxStrength},uTrailStrength:{value:a.livingFlow.trailStrength},uReleaseStrength:{value:a.livingFlow.releaseStrength},uVortexEvent:{value:a.livingFlow.vortexEvent},uPulsePhase:{value:0},uBeatImpulse:{value:0},uDownbeatImpulse:{value:0},uAudioSync:{value:0},uAmbientMotion:{value:0},uAmbientBeat:{value:0},uRiverPoints:{value:D}},vertexShader:`
+    attribute float aSize;
+    attribute float aAlpha;
+    attribute float aPhase;
+    attribute float aDepth;
+    attribute float aLuminosity;
+    attribute float aFlowAffinity;
+    attribute float aFlowPhase;
+    attribute float aFlowLane;
+    attribute float aFlowSpeed;
+
+    varying vec3 vColor;
+    varying float vAlpha;
+    varying float vPhase;
+    varying float vDepth;
+    varying float vLuminosity;
+    varying float vFlowEdge;
+    varying float vFlowPulse;
+    varying float vTrail;
+    varying float vRelease;
+    varying float vRiverMask;
+    varying vec2 vTrailDir;
+
+    uniform float uTime;
+    uniform float uDrift;
+    uniform float uPixelRatio;
+    uniform float uFlowSpeed;
+    uniform float uCurlStrength;
+    uniform float uConfinement;
+    uniform float uFlowStability;
+    uniform float uFlowInfluence;
+    uniform float uPulseSpeed;
+    uniform float uPulseWidth;
+    uniform float uPulseStrength;
+    uniform float uVFXStrength;
+    uniform float uTrailStrength;
+    uniform float uReleaseStrength;
+    uniform float uVortexEvent;
+    uniform float uPulsePhase;
+    uniform float uBeatImpulse;
+    uniform float uDownbeatImpulse;
+    uniform float uAudioSync;
+    uniform float uAmbientMotion;
+    uniform float uAmbientBeat;
+    uniform vec3 uRiverPoints[8];
+
+    vec3 catmull(vec3 p0,vec3 p1,vec3 p2,vec3 p3,float t){
+      float t2=t*t;
+      float t3=t2*t;
+      return .5*((2.0*p1)+(-p0+p2)*t+(2.0*p0-5.0*p1+4.0*p2-p3)*t2+(-p0+3.0*p1-3.0*p2+p3)*t3);
+    }
+
+    vec3 curvePoint(float t){
+      float u=clamp(t,0.0,.999999)*7.0;
+      int seg=int(floor(u));
+      float f=fract(u);
+      int i1=seg;
+      int i2=min(seg+1,7);
+      int i0=max(i1-1,0);
+      int i3=min(i2+1,7);
+      return catmull(uRiverPoints[i0],uRiverPoints[i1],uRiverPoints[i2],uRiverPoints[i3],f);
+    }
+
+    void curveFrame(float t,out vec3 tangent,out vec3 normal,out vec3 binormal){
+      float e=.0025;
+      vec3 a=curvePoint(max(0.0,t-e));
+      vec3 b=curvePoint(min(.99999,t+e));
+      tangent=normalize(b-a);
+      vec3 ref=abs(tangent.y)<.88?vec3(0.0,1.0,0.0):vec3(1.0,0.0,0.0);
+      normal=normalize(cross(tangent,ref));
+      binormal=normalize(cross(tangent,normal));
+      float roll=sin(t*6.2831853*2.15-.55)*.48+sin(t*6.2831853*4.1+.8)*.11;
+      float cr=cos(roll),sr=sin(roll);
+      vec3 n=normal*cr+binormal*sr;
+      vec3 bn=binormal*cr-normal*sr;
+      normal=n;
+      binormal=bn;
+    }
+
+    void main(){
+      vColor=color;
+      vAlpha=aAlpha;
+      vPhase=aPhase;
+      vDepth=aDepth;
+      vLuminosity=aLuminosity;
+      vFlowEdge=1.0;
+      vFlowPulse=0.0;
+      vTrail=0.0;
+      vRelease=0.0;
+      vRiverMask=0.0;
+      vTrailDir=vec2(1.0,0.0);
+
+      vec3 p=position;
+      float riverMask=smoothstep(.60,.84,aFlowAffinity)*uFlowInfluence;
+      float satelliteMask=smoothstep(.18,.30,aFlowAffinity)*(1.0-smoothstep(.56,.62,aFlowAffinity));
+      float flowMask=riverMask;
+      vRiverMask=flowMask;
+
+      if(flowMask>.001){
+        // Base transport still follows each particle's baked phase/speed, but a coherent
+        // packet now travels through the river and gives the eye one readable direction.
+        float travel=uTime*uFlowSpeed*aFlowSpeed;
+        float baseT=fract(aFlowPhase+travel);
+        float autonomousPulse=mod(uTime*uPulseSpeed,1.24);
+        float syncedPulse=mod(uPulsePhase,1.24);
+        float pulseCycle=mix(autonomousPulse,syncedPulse,uAudioSync);
+        float pulseHead=pulseCycle-.12;
+        // Art-direction pass: the packet crosses an open river, then rests briefly before the next phrase.
+        // Particle transport may recycle, but the visible energy phrase does not wrap from exit to entrance.
+        float signedPulse=baseT-pulseHead;
+        float pulseDelta=abs(signedPulse);
+        float pulseSigma=max(.025,uPulseWidth);
+        float pulse=exp(-(pulseDelta*pulseDelta)/(2.0*pulseSigma*pulseSigma));
+        float eventGain=1.0+uBeatImpulse*.62+uDownbeatImpulse*.86;
+        float packet=pulse*uPulseStrength*flowMask*eventGain;
+
+        // The packet advances particles locally rather than just making them brighter.
+        // This creates a moving compression/release wave while keeping the spline stable.
+        float movingT=fract(baseT+packet*(.010+.014*aFlowSpeed));
+        vFlowPulse=packet;
+
+        vec3 oldTangent,oldNormal,oldBinormal;
+        vec3 newTangent,newNormal,newBinormal;
+        curveFrame(aFlowPhase,oldTangent,oldNormal,oldBinormal);
+        curveFrame(movingT,newTangent,newNormal,newBinormal);
+
+        vec3 oldCenter=curvePoint(aFlowPhase);
+        vec3 newCenter=curvePoint(movingT);
+        vec3 local=p-oldCenter;
+        float n0=dot(local,oldNormal);
+        float b0=dot(local,oldBinormal);
+        float along0=dot(local,oldTangent);
+
+        // Curl is intentionally localized into two river bends instead of running
+        // everywhere. Forward advection remains the dominant visual grammar.
+        float vortexA=exp(-pow((movingT-.36)/.105,2.0));
+        float vortexB=exp(-pow((movingT-.69)/.125,2.0));
+        float eventA=.35+.65*(.5+.5*sin(uTime*.47+1.1));
+        float eventB=.30+.70*(.5+.5*sin(uTime*.39+3.0));
+        float phraseGate=smoothstep(.08,.34,packet);
+        float vortexMask=clamp(vortexA*.78*eventA+vortexB*.58*eventB,0.0,1.0)
+          *mix(.30,1.0,uVortexEvent)*phraseGate*(1.0+uDownbeatImpulse*.38);
+        float curlPhase=uTime*uCurlStrength*(.20+.30*aFlowSpeed)*(1.0+.16*aFlowLane)*vortexMask+aPhase*.12*vortexMask;
+        float cc=cos(curlPhase),ss=sin(curlPhase);
+        float n1=n0*cc-b0*ss;
+        float b1=n0*ss+b0*cc;
+
+        // Coherent packet briefly tightens lanes, then lets them open again behind it.
+        float breathe=.5+.5*sin(uTime*(.20+.08*aFlowSpeed)+aPhase*1.25);
+        float baseReturn=uConfinement*(.045+.055*breathe)*smoothstep(.15,1.35,aFlowLane);
+        float packetReturn=packet*(.10+.08*smoothstep(.25,1.25,aFlowLane));
+        float radialScale=1.0-clamp(baseReturn+packetReturn,0.0,.34);
+        n1*=radialScale;
+        b1*=radialScale;
+
+        // High inertia means only broad, slow irregularities survive.
+        float micro=(1.0-uFlowStability)*(.055+.060*aFlowLane);
+        n1+=sin(uTime*.45+aPhase*1.8+movingT*12.0)*micro*(1.0-.55*packet);
+        b1+=cos(uTime*.39-aPhase*1.3+movingT*10.0)*micro*.70*(1.0-.55*packet);
+
+        // A small tangent compression around the pulse helps nearby particles read as a
+        // short-lived moving queue instead of unrelated individual movers.
+        float signedCompression=clamp(signedPulse/pulseSigma,-2.0,2.0);
+        float tangentCompression=signedCompression*packet*.032;
+
+        // V2.1: art-directed compression -> release rhythm around two river nodes.
+        float compressionNode=exp(-pow((movingT-.46)/.080,2.0));
+        float releaseNodeA=exp(-pow((movingT-.64)/.066,2.0));
+        float releaseNodeB=exp(-pow((movingT-.80)/.054,2.0));
+        float releaseWindow=max(releaseNodeA,releaseNodeB)*packet*uReleaseStrength*uVFXStrength
+          *(1.0+uDownbeatImpulse*.58);
+        float compress=1.0-compressionNode*packet*.18*uVFXStrength;
+        float expand=1.0+releaseWindow*.18;
+        n1*=compress*expand;
+        b1*=compress*expand;
+
+        // Sparse lateral release: deterministic per-particle phase, then soft return as packet leaves.
+        float releaseSelect=smoothstep(.70,.95,.5+.5*sin(aPhase*7.13+aFlowSpeed*5.7));
+        float releaseLife=releaseWindow*releaseSelect;
+        float releaseAngle=aPhase*1.73+movingT*9.0;
+        vec3 releaseDir=newNormal*cos(releaseAngle)+newBinormal*sin(releaseAngle);
+        vec3 releaseOffset=releaseDir*releaseLife*(.12+.26*smoothstep(.2,1.25,aFlowLane));
+        vRelease=releaseLife;
+
+        vec3 flowed=newCenter+newNormal*n1+newBinormal*b1+newTangent*(along0*.24-tangentCompression)+releaseOffset;
+        p=mix(p,flowed,flowMask);
+
+        // Trail eligibility is intentionally sparse and biased to Mid/Near-like bright particles.
+        float trailSelect=smoothstep(.82,.975,.5+.5*sin(aPhase*11.7+aFlowSpeed*8.1));
+        float brightSelect=smoothstep(1.15,2.55,aLuminosity);
+        vTrail=packet*trailSelect*brightSelect*uTrailStrength*uVFXStrength;
+        vec3 viewTan=normalize((modelViewMatrix*vec4(newTangent,0.0)).xyz);
+        vTrailDir=normalize(viewTan.xy+vec2(1e-4));
+
+        // Hide recycling at tapered ends; pulse also fades there so no bright jump appears.
+        float edgeFade=smoothstep(.018,.085,movingT)*(1.0-smoothstep(.915,.982,movingT));
+        vFlowEdge=mix(1.0,edgeFade,flowMask);
+        vFlowPulse*=edgeFade;
+      }
+
+      // Satellite fields answer the passing packet, but remain subordinate to the river.
+      if(satelliteMask>.001){
+        float autonomousPulseSat=mod(uTime*uPulseSpeed,1.24);
+        float syncedPulseSat=mod(uPulsePhase,1.24);
+        float pulseCycleSat=mix(autonomousPulseSat,syncedPulseSat,uAudioSync);
+        float pulseHeadSat=pulseCycleSat-.12;
+        float sd=abs(aFlowPhase-pulseHeadSat);
+        float sp=exp(-(sd*sd)/(2.0*max(.035,uPulseWidth*1.35)*max(.035,uPulseWidth*1.35)));
+        vec3 st,sn,sb; curveFrame(aFlowPhase,st,sn,sb);
+        float tug=sp*satelliteMask*uVFXStrength*.055;
+        p+=st*tug+sn*sin(aPhase*2.1+uTime*.3)*tug*.45;
+        vFlowPulse=max(vFlowPulse,sp*satelliteMask*.22*uVFXStrength);
+      }
+
+      // Ambient stars have their own broad orbit/breathing response; they are not river leftovers.
+      float ambientMask=1.0-max(flowMask,satelliteMask*.25);
+      float nearFactor=1.0-aDepth;
+      float driftT=uTime*uDrift;
+      p.x+=sin(aPhase+driftT*.18+aDepth*3.0)*.018*nearFactor*ambientMask;
+      p.y+=cos(aPhase*1.21-driftT*.14+aDepth*4.1)*.014*nearFactor*ambientMask;
+      p.z+=sin(aPhase*.70+driftT*.10)*.010*nearFactor*ambientMask;
+
+      // Non-river stars breathe as a restrained field instead of remaining inert.
+      float ambientAudioPhase=aPhase*1.37+uTime*(.34+uAmbientMotion*.48);
+      float ambientAudioAmount=uAmbientMotion*(.18+.22*nearFactor)*ambientMask;
+      p+=vec3(
+        sin(ambientAudioPhase),
+        cos(ambientAudioPhase*1.17),
+        sin(ambientAudioPhase*.73+1.4)
+      )*ambientAudioAmount;
+      float ambientBeatSelect=.35+.65*(.5+.5*sin(aPhase*5.31));
+      p+=normalize(p+vec3(1e-4))*uAmbientBeat*.42*ambientBeatSelect*ambientMask;
+
+      vec4 mv=modelViewMatrix*vec4(p,1.0);
+      gl_Position=projectionMatrix*mv;
+      float perspective=300.0/max(-mv.z,.70);
+      float lumSize=1.0+pow(max(aLuminosity-1.0,0.0),.52)*.10;
+      float ambientAudioSize=1.0+(uAmbientMotion*.18+uAmbientBeat*.58)*ambientMask;
+      gl_PointSize=max(1.0,aSize*lumSize*(1.0+vFlowPulse*.22+vTrail*.58+vRelease*.12)*ambientAudioSize*uPixelRatio*perspective*.095);
+    }
+    `,fragmentShader:`
+    precision highp float;
+
+    varying vec3 vColor;
+    varying float vAlpha;
+    varying float vPhase;
+    varying float vDepth;
+    varying float vLuminosity;
+    varying float vFlowEdge;
+    varying float vFlowPulse;
+    varying float vTrail;
+    varying float vRelease;
+    varying float vRiverMask;
+    varying vec2 vTrailDir;
+
+    uniform float uTime;
+    uniform float uTwinkle;
+    uniform float uBrightness;
+    uniform float uGlow;
+    uniform float uAudioMid;
+    uniform float uAudioHigh;
+    uniform vec3 uRiverLowColor;
+    uniform vec3 uRiverFlowColor;
+    uniform vec3 uRiverHitColor;
+    uniform vec3 uAmbientLowColor;
+    uniform vec3 uAmbientHighColor;
+    uniform vec3 uHeroColor;
+
+    void main(){
+      vec2 q =
+        gl_PointCoord-.5;
+
+      float r=length(q);
+
+      if(r>.5){
+        discard;
+      }
+
+      vec2 td=normalize(vTrailDir+vec2(1e-4));
+      vec2 tp=vec2(dot(q,td),dot(q,vec2(-td.y,td.x)));
+      float tail=exp(-pow(max(tp.x,0.0)*5.2,2.0)-pow(tp.y*18.0,2.0))*vTrail;
+      tail*=smoothstep(.48,.04,r);
+
+      float lum =
+        max(vLuminosity,0.6);
+
+      float core =
+        exp(-r*r*82.0);
+
+      float halo =
+        exp(-r*r*12.0)*
+        uGlow*
+        mix(
+          .72,
+          1.55,
+          clamp((lum-1.0)/3.0,0.0,1.0)
+        );
+
+      float cross =
+        (
+          exp(-abs(q.x)*25.0)*
+          exp(-abs(q.y)*4.0)
+          +
+          exp(-abs(q.y)*25.0)*
+          exp(-abs(q.x)*4.0)
+        )
+        *.035*
+        (1.0-vDepth)*
+        clamp((lum-.9)*.7,0.0,1.0);
+
+      float tw =
+        1.0+
+        sin(
+          uTime*
+          (.44+.22*(1.0-vDepth))
+          +vPhase
+        )*
+        uTwinkle*
+        mix(
+          .08,
+          .16,
+          clamp((lum-1.0)/2.5,0.0,1.0)
+        );
+
+      float pulseAlpha=1.0+vFlowPulse*.42+vRelease*.16;
+
+      float alpha =
+        (core+halo+cross+tail*.42)*
+        vAlpha*
+        tw*
+        vFlowEdge*
+        pulseAlpha;
+
+      float midBand=.5+.5*sin(vPhase*2.7+uTime*(.32+uAudioMid*1.25));
+      float highBand=pow(.5+.5*sin(vPhase*7.3-uTime*(.75+uAudioHigh*2.1)),5.0);
+      float bassBand=.5+.5*sin(vPhase*.83+uTime*.16+vDepth*4.2);
+      float ambientMask=1.0-smoothstep(.08,.72,vRiverMask);
+      float heroMask=smoothstep(2.05,3.35,vLuminosity)*ambientMask;
+      vec3 ambientColor=mix(uAmbientLowColor,uAmbientHighColor,highBand);
+      vec3 audioColor=mix(vColor,ambientColor,ambientMask*.86);
+      float riverColorMask=smoothstep(.08,.72,vRiverMask);
+      vec3 riverColor=mix(uRiverLowColor,uRiverFlowColor,midBand);
+      riverColor=mix(riverColor,uRiverHitColor,highBand*.78);
+      audioColor=mix(audioColor,riverColor,riverColorMask);
+      audioColor=mix(audioColor,uHeroColor,heroMask*(.58+.42*highBand));
+      vec3 pulseTint=mix(vec3(1.0),vec3(.82,1.08,1.18),clamp(vFlowPulse,0.0,1.0));
+      vec3 color =
+        audioColor*
+        pulseTint*
+        (core*1.34+halo+cross+tail*.72)*
+        uBrightness*
+        lum*
+        tw*
+        (1.0+vFlowPulse*.52+vRelease*.14);
+      // Limit additive/HDR energy at the final output, while preserving hue ratios.
+      float peak=max(max(color.r,color.g),color.b);
+      color*=peak>1.35?(1.35+.34*(1.0-exp(-(peak-1.35)*.72)))/peak:1.0;
+
+      gl_FragColor=
+        vec4(
+          color,
+          alpha
+        );
+    }
+    `,transparent:!0,depthTest:!0,depthWrite:!1,...E(),vertexColors:!0,toneMapped:!1})}let I=je(a.far.brightness,.36),L=je(a.mid.brightness,.52),Me=je(a.near.brightness,.68),R=new f({uniforms:{uTime:F,uPixelRatio:{value:l.getPixelRatio()},uDrift:{value:a.dust.drift},uAudioEnergy:{value:0},uAudioMotion:{value:0},uAudioHigh:{value:0},uAudioBeat:{value:0},uDustBaseColor:{value:y(a.colors.blue)},uDustSparkColor:{value:y(a.colors.cyan)},uDustHitColor:{value:y(a.colors.rim)}},vertexShader:`
+    attribute float aSize;
+    attribute float aAlpha;
+    attribute float aPhase;
+
+    varying vec3 vColor;
+    varying float vAlpha;
+
+    uniform float uTime;
+    uniform float uPixelRatio;
+    uniform float uDrift;
+    uniform float uAudioEnergy;
+    uniform float uAudioMotion;
+    uniform float uAudioHigh;
+    uniform float uAudioBeat;
+    uniform vec3 uDustBaseColor;
+    uniform vec3 uDustSparkColor;
+    uniform vec3 uDustHitColor;
+
+    void main(){
+      float shimmer=.5+.5*sin(aPhase*2.41+uTime*(1.2+uAudioHigh*2.8));
+      float eventLift=uAudioBeat*.92;
+      vec3 dustColor=mix(color,uDustBaseColor,.78);
+      float dustHighBand=pow(shimmer,4.0);
+      dustColor=mix(dustColor,uDustSparkColor,.18+dustHighBand*.68);
+      dustColor=mix(dustColor,uDustHitColor,eventLift*(.30+dustHighBand*.55));
+      vColor=dustColor*(1.0+uAudioEnergy*.72+uAudioHigh*shimmer*.48+eventLift*.42);
+      vAlpha=aAlpha*(1.0+uAudioEnergy*1.10+uAudioHigh*shimmer*.72+eventLift*.95);
+
+      vec3 p=position;
+      float t=uTime*uDrift;
+
+      p.x+=sin(aPhase+t*.14)*.026;
+      p.y+=cos(aPhase*1.17-t*.11)*.020;
+      p.z+=sin(aPhase*.71+t*.08)*.015;
+
+      float audioPhase=aPhase*1.63+uTime*(.55+uAudioMotion*1.35);
+      float audioDrift=uAudioMotion*(.07+.08*shimmer);
+      p+=vec3(
+        sin(audioPhase),
+        cos(audioPhase*1.11),
+        sin(audioPhase*.79+2.0)
+      )*audioDrift;
+      vec3 radial=normalize(p+vec3(1e-4));
+      vec3 tangent=normalize(cross(radial,normalize(vec3(.17,1.0,.11)))+vec3(1e-4));
+      float swirlWave=.35+.65*(.5+.5*sin(aPhase*1.91+uTime*(.42+uAudioMotion*.74)));
+      p+=tangent*uAudioMotion*(.12+.18*shimmer)*swirlWave;
+      float beatSelect=.25+.75*(.5+.5*sin(aPhase*4.73));
+      p+=radial*uAudioBeat*.24*beatSelect;
+
+      vec4 mv=
+        modelViewMatrix*
+        vec4(p,1.0);
+
+      gl_Position=
+        projectionMatrix*
+        mv;
+
+      gl_PointSize=
+        max(
+          1.0,
+          aSize*
+          uPixelRatio*
+          280.0/
+          max(-mv.z,.70)*
+          .080*
+          (1.0+uAudioEnergy*.72+uAudioHigh*shimmer*.48+eventLift*1.15)
+        );
+    }
+    `,fragmentShader:`
+    precision highp float;
+
+    varying vec3 vColor;
+    varying float vAlpha;
+
+    void main(){
+      vec2 q=gl_PointCoord-.5;
+      float r=length(q);
+
+      if(r>.5){
+        discard;
+      }
+
+      float alpha=
+        exp(-r*r*10.0)*
+        vAlpha;
+
+      gl_FragColor=
+        vec4(
+          vColor*alpha*.40/(1.0+max(max(vColor.r,vColor.g),vColor.b)*alpha*.12),
+          alpha
+        );
+    }
+    `,transparent:!0,depthTest:!0,depthWrite:!1,...E(),vertexColors:!0,toneMapped:!1});function Ne(e){for(let t of[...e.children])t.geometry&&t.geometry.dispose(),e.remove(t)}function Pe(){Ne(g),Ne(_),S();let e=new o(De(),I),t=new o(Oe(),L),n=new o(ke(),Me),r=new o(Ae(),R);for(let i of[e,t,n,r])i.frustumCulled=!1;e.name=`Far Directed Field`,t.name=`Mid Directed Field`,n.name=`Near Directed Field`,r.name=`3D Dust`,g.add(e,t,n),_.add(r)}let Fe=new s(a.sphere.radius*.945,64,48),z={uTime:F,uStrength:{value:a.sphere.atmosphere},uBlue:{value:y(a.colors.blue)},uViolet:{value:y(a.colors.violet)},uAudioSection:{value:0},uAudioTrend:{value:0}},Ie=new f({uniforms:z,vertexShader:`
+    varying vec3 vWorldPos;
+    varying vec3 vWorldNormal;
+
+    void main(){
+      vec4 world=
+        modelMatrix*
+        vec4(position,1.0);
+
+      vWorldPos=
+        world.xyz;
+
+      vWorldNormal=
+        normalize(
+          mat3(modelMatrix)*
+          normal
+        );
+
+      gl_Position=
+        projectionMatrix*
+        viewMatrix*
+        world;
+    }
+    `,fragmentShader:`
+    precision highp float;
+
+    varying vec3 vWorldPos;
+    varying vec3 vWorldNormal;
+
+    uniform float uTime;
+    uniform float uStrength;
+    uniform vec3 uBlue;
+    uniform vec3 uViolet;
+    uniform float uAudioSection;
+    uniform float uAudioTrend;
+
+    void main(){
+      vec3 V=
+        normalize(
+          cameraPosition-
+          vWorldPos
+        );
+
+      float rim=
+        pow(
+          1.0-
+          abs(
+            dot(
+              V,
+              normalize(vWorldNormal)
+            )
+          ),
+          2.55
+        );
+
+      float broad=
+        .5+
+        .5*sin(
+          vWorldPos.x*.14-
+          vWorldPos.z*.12+
+          vWorldPos.y*.09+
+          uTime*(.028+uAudioSection*.11)+uAudioTrend*1.7
+        );
+
+      float alpha=
+        (
+          .022+
+          (.064+uAudioSection*.052)*broad
+        )*
+        uStrength*
+        (
+          .14+
+          .86*rim
+        );
+
+      vec3 color=
+        mix(
+          uBlue,
+          uViolet,
+          .24+.28*broad+uAudioSection*.18
+        );
+
+      gl_FragColor=
+        vec4(
+          color*alpha,
+          alpha
+        );
+    }
+    `,transparent:!0,side:1,depthWrite:!1,...E(),toneMapped:!1});h.add(new e(Fe,Ie));let Le=new s(a.sphere.radius,128,96),B={uTime:F,uOpacity:{value:a.sphere.shellOpacity},uRimStrength:{value:a.sphere.rimStrength},uRimPower:{value:a.sphere.rimPower},uVariation:{value:a.sphere.edgeVariation},uRim:{value:y(a.colors.rim)},uCyan:{value:y(a.colors.cyan)},uViolet:{value:y(a.colors.violet)},uAudioMid:{value:0},uAudioHigh:{value:0},uAudioDownbeat:{value:0},uAudioColorAmount:{value:0}},Re=new f({uniforms:B,vertexShader:`
+    varying vec3 vWorldPos;
+    varying vec3 vWorldNormal;
+
+    void main(){
+      vec4 world=
+        modelMatrix*
+        vec4(position,1.0);
+
+      vWorldPos=
+        world.xyz;
+
+      vWorldNormal=
+        normalize(
+          mat3(modelMatrix)*
+          normal
+        );
+
+      gl_Position=
+        projectionMatrix*
+        viewMatrix*
+        world;
+    }
+    `,fragmentShader:`
+    precision highp float;
+
+    varying vec3 vWorldPos;
+    varying vec3 vWorldNormal;
+
+    uniform float uTime;
+    uniform float uOpacity;
+    uniform float uRimStrength;
+    uniform float uRimPower;
+    uniform float uVariation;
+
+    uniform vec3 uRim;
+    uniform vec3 uCyan;
+    uniform vec3 uViolet;
+    uniform float uAudioMid;
+    uniform float uAudioHigh;
+    uniform float uAudioDownbeat;
+    uniform float uAudioColorAmount;
+
+    void main(){
+      vec3 V=
+        normalize(
+          cameraPosition-
+          vWorldPos
+        );
+
+      float rim=
+        pow(
+          clamp(
+            1.0-
+            abs(
+              dot(
+                V,
+                normalize(vWorldNormal)
+              )
+            ),
+            0.0,
+            1.0
+          ),
+          uRimPower
+        );
+
+      float a=
+        atan(
+          vWorldPos.y,
+          vWorldPos.x
+        );
+
+      float b=
+        atan(
+          vWorldPos.z,
+          length(vWorldPos.xy)
+        );
+
+      float broad=
+        .68+
+        .16*sin(
+          a*2.0+
+          b*1.15+
+          uTime*.026
+        )+
+        .10*sin(
+          b*3.7-
+          a*.70-
+          uTime*.020
+        );
+
+      broad=
+        mix(
+          1.0,
+          broad,
+          uVariation
+        );
+
+      float broken=
+        .58+
+        .42*
+        smoothstep(
+          -.80,
+          .68,
+          sin(
+            a*1.08-
+            b*.64+
+            .76
+          )
+        );
+
+      float accent=
+        pow(
+          .5+
+          .5*sin(
+            a*4.9+
+            b*3.2+
+            sin(a*1.6)*1.0
+          ),
+          14.0
+        );
+
+      vec3 color=
+        mix(
+          uRim,
+          uCyan,
+          .13+
+          .09*sin(a*1.5)
+        );
+
+      color=
+        mix(
+          color,
+          uViolet,
+          accent*.12
+        );
+
+      // The palette uniforms already contain the audio response. This value only
+      // crossfades the original shell into that palette, avoiding a second audio gate.
+      float audioAmount=clamp(uAudioColorAmount,0.0,1.0);
+      float slowBand=.5+.5*sin(
+        a*(2.0+uAudioMid*1.6)+b*1.4-uTime*(.10+uAudioMid*.48)
+      );
+      float counterBand=.5+.5*sin(
+        a*(-3.1-uAudioHigh*.8)+b*4.3+uTime*(.08+uAudioHigh*.52)+1.7
+      );
+      vec3 flowingPalette=mix(uViolet,uCyan,slowBand);
+      flowingPalette=mix(flowingPalette,uRim,counterBand*.30);
+
+      float highGlint=pow(counterBand,5.0)*uAudioHigh;
+      float beatWave=pow(.5+.5*sin(a*3.2-b*2.4-uTime*2.1),8.0)*uAudioDownbeat;
+      flowingPalette=mix(flowingPalette,uRim,clamp(highGlint*.16+beatWave*.24,0.0,.26));
+      color=mix(color,flowingPalette,clamp(audioAmount*1.18,0.0,.96));
+
+      float alpha=
+        rim*
+        uRimStrength*
+        broad*
+        broken*
+        uOpacity;
+
+      alpha+=
+        accent*
+        rim*
+        .035*
+        uOpacity;
+
+      alpha*=1.0+clamp(audioAmount*.10+highGlint*.06+beatWave*.12,0.0,.18);
+
+      gl_FragColor=
+        vec4(
+          color*alpha,
+          alpha
+        );
+    }
+    `,transparent:!0,depthWrite:!1,...E(),toneMapped:!1});v.add(new e(Le,Re)),Pe();let V={bass:0,mid:0,high:0,motion:0,brightness:0,texture:0,variation:0,relativeEnergy:.5,sectionEnergy:0,energyTrend:0,bpm:0},H={kick:0,snare:0,hihat:0,impact:0,downbeat:0},U={kick:0,snare:0,hihat:0,impact:0,downbeat:0},W=0;function ze(e,t=1){return 1-Math.exp(-Math.max(0,Number(e)||0)*t)}let G={phase:0,mix:0};function K(e,t,n,r=10,i=3.5){let a=t>e?r:i;return e+(t-e)*(1-Math.exp(-a*n))}let q={scale:1,dustScale:1,atmosphereScale:1,starTilt:0,cameraDistance:a.camera.distance},J=null,Be={},Y={state:`CALM`,previous:`CALM`,candidate:`CALM`,candidateTime:0,stateTime:0,transition:1},X={hue:.64,hueVelocity:0,colorPhase:0,chroma:.13,lightness:.6};function Ve(e,t){if(!t)return`CALM`;let n=a.colorSection,r=n.sensitivity,i=e.sectionEnergy*r,o=.5+(e.relativeEnergy-.5)*r,s=e.energyTrend*r;return i>=n.peakThreshold&&o>=n.relativeThreshold?`PEAK`:s>=n.trendThreshold&&(e.variation>=n.variationThreshold||o>.56)?`BUILD`:s<=-n.trendThreshold&&i>n.calmThreshold*.8?`RELEASE`:i<=n.calmThreshold?`CALM`:`FLOW`}function He(e,t,n){let r=Y,i=Ve(t,n);r.stateTime+=e,i===r.candidate?r.candidateTime+=e:(r.candidate=i,r.candidateTime=0);let o=a.colorSection.minHold;i!==r.state&&r.candidateTime>=o&&r.stateTime>=o*.45&&(r.previous=r.state,r.state=i,r.stateTime=0,r.transition=0);let s=Math.max(.15,a.colorSection.transitionDuration/a.colorDirector.transitionSpeed);r.transition=Math.min(1,r.transition+e/s)}function Ue(){J={blue:C(a.colors.blue),cyan:C(a.colors.cyan),violet:C(a.colors.violet),rim:C(a.colors.rim),indigo:C(`#4930ff`)}}function Z(e,t,n,r=7,i=3){let a=Be[e]||(Be[e]=t.slice());for(let e=0;e<3;e++)a[e]=K(a[e],t[e],n,r,i);return a}function Q(e,t){let n=te(T(t,{maxValue:1.45}),{threshold:1,headroom:.28,softness:.58});e.value.set(n[0],n[1],n[2])}let $=e=>(e%1+1)%1,We=(e,t)=>((t-e+.5)%1+1)%1-.5;function Ge(e){let t=[[.98,.08+e.bass],[.64,.08+e.mid],[.38,.06+e.high]],n=0,r=0;for(let[e,i]of t)n+=Math.cos(e*Math.PI*2)*i,r+=Math.sin(e*Math.PI*2)*i;return $(Math.atan2(r,n)/(Math.PI*2))}function Ke(e,n,r){let i=X,o={CALM:.42,FLOW:.92,BUILD:1.34,PEAK:1.72,RELEASE:.68},s=Y.transition*Y.transition*(3-2*Y.transition),c=t.lerp(o[Y.previous],o[Y.state],s),l=Ge(n),u=r?(.34+n.mid*.72+n.high*1.08+n.variation*.86)*c*a.colorDirector.transitionSpeed:0;i.colorPhase=(i.colorPhase+e*u)%(Math.PI*2e3);let d=(n.high-n.bass)*.22+(n.mid-(n.bass+n.high)*.5)*.12,f=(Math.sin(i.colorPhase)*.26+Math.sin(i.colorPhase*.37+1.7)*.13)*1,p=r?$(l+f+d*1+n.texture*.1+n.variation*.16):.64,m=n.energyTrend<-.06?-1:1,h=r?m*(.012+n.mid*.045+n.high*.07+n.variation*.115+n.texture*.035)*c*1*a.colorDirector.transitionSpeed:0;i.hueVelocity=K(i.hueVelocity,h,e,4.8,2.2),i.hue=$(i.hue+i.hueVelocity*e),i.hue=$(i.hue+We(i.hue,p)*(1-Math.exp(-e*(r?1.65*a.colorDirector.transitionSpeed:.8))));let g=Math.max(0,n.relativeEnergy-.42),_=+(Y.previous===`PEAK`),v=+(Y.state===`PEAK`),y=.065*t.lerp(_,v,s)*a.colorDirector.peakAccent,b=(.135+g*.13+n.variation*.085+n.texture*.055+y)*1.15,x=.52+n.brightness*.18+n.sectionEnergy*.09;i.chroma=K(i.chroma,r?b:.13,e,4.2,2),i.lightness=K(i.lightness,r?x:.6,e,3.2,1.5)}function qe(e,n,r,i){a.colorDirector.enabled||(n=0);let o=a.colorDirector,s=t.clamp(n*o.intensity,0,1.5),c=t.clamp(o.coverage,0,1.5),l=t.clamp(s*c,0,1),u=t.clamp(r.bass,0,1)**.72,d=t.clamp(r.mid,0,1)**.72,f=t.clamp(r.high,0,1)**.68,p=t.clamp(r.sectionEnergy,0,1)**.58,m=1.12,h=X.hue,g=X.colorPhase,_=X.chroma,v=X.lightness,y=(e,n,r)=>ne([t.clamp(e,.02,.94),t.clamp(n,.01,.3),$(r)]),b=$(h+Math.sin(g*.43+r.bass*2.8)*.1*m-r.bass*.08),x=$(h+Math.sin(g*.79+1.4+r.mid*3.4)*.2*m+r.mid*.12),S=$(h+Math.sin(g*1.37+3.1+r.high*4.2)*.31*m+r.high*.24),C=y(v-.23,_*.62,b-.035*m),te=y(v,_,b),T=y(v+.055,_*1.02,x),E=y(v+.1,_*1.16,S),re=y(v+.22,_*.46,$(x-.18*m)),ie=y(v-.17,_*.58,$(b+.11*m)),D=y(v-.11,_*.66,$(x+.18*m)),O=o.eventIntensity*o.peakAccent,k=ee([C,te,T],[.18+u,.18+d,.12+f],{preserveChroma:.78,maxChromaScale:2.2}),A=a.riverColor,ae=Math.min(1,(s*c*A.response*A.coverage)**.55),oe=w(J.indigo,w(C,te,u),ae),se=w(J.cyan,w(k,T,d),ae),ce=Math.min(1,O*(i.kick*A.kickAccent+i.impact*A.impactAccent)),le=w(E,re,Math.min(1,f*A.highInfluence*.42+ce)),ue=w(J.rim,le,ae),j=a.ambientStarColor,de=Math.min(1,(s*c*j.response*j.coverage)**.55),fe=w(J.blue,w(C,T,p),de),pe=w(T,E,Math.min(1,j.complementary*(f+i.snare*j.snareSpread+r.variation*j.variationInfluence))),me=w(J.cyan,pe,de),M=a.heroColor,he=Math.min(1,M.response*O*(i.kick*M.kickAccent+i.impact*M.impactAccent+i.downbeat*M.downbeatAccent)),ge=Y.transition*Y.transition*(3-2*Y.transition),_e=w(w(re,E,t.lerp(+(Y.previous===`PEAK`),+(Y.state===`PEAK`),ge)*M.warmPeak*.55),y(v+.25,_*.36,S),he*M.colorCoverage),ve=w(J.rim,_e,l),N=a.dustColor,ye=Math.min(1,(s*c*N.response*N.coverage)**.55),be=w(J.blue,w(C,k,r.texture),ye),xe=w(T,E,Math.min(1,f*N.highInfluence+r.variation*N.variationInfluence)),Se=w(J.cyan,xe,ye),Ce=w(E,re,Math.min(1,O*i.hihat*N.hihatAccent)),we=w(J.rim,Ce,ye),P=a.shellColor,Te=Math.min(1,(s*c*P.response*P.coverage)**.5*(1-P.basePreservation)),Ee=w(w(J.rim,te,Te*P.sectionInfluence),E,Math.min(1,O*i.downbeat*P.downbeatInfluence)),De=w(J.cyan,T,Te),Oe=w(J.violet,E,Te),ke=a.environmentColor,Ae=w(J.blue,ie,Math.min(1,s*ke.atmosphereResponse)),F=w(J.violet,D,Math.min(1,s*ke.atmosphereResponse)),je=Z(`riverLow`,oe,e,5,2.5),Ne=Z(`riverFlow`,se,e,5,2.5),Pe=Z(`riverHit`,ue,e,18,7),Fe=Z(`ambientLow`,fe,e,4,1.8),Ie=Z(`ambientHigh`,me,e,7,2.8),Le=Z(`hero`,ve,e,22,3.4);for(let[e,n]of[I,L,Me].entries()){Q(n.uniforms.uRiverLowColor,je),Q(n.uniforms.uRiverFlowColor,Ne),Q(n.uniforms.uRiverHitColor,Pe);let r=t.clamp(.56+(e-1)*a.ambientStarColor.depthSeparation*.34,0,1);Q(n.uniforms.uAmbientLowColor,w(Fe,Ie,r*.24)),Q(n.uniforms.uAmbientHighColor,w(Fe,Ie,r)),Q(n.uniforms.uHeroColor,Le)}Q(R.uniforms.uDustBaseColor,Z(`dustBase`,be,e,6,3)),Q(R.uniforms.uDustSparkColor,Z(`dustSpark`,Se,e,9,4)),Q(R.uniforms.uDustHitColor,Z(`dustHit`,we,e,20,8)),Q(B.uRim,Z(`shellRim`,Ee,e,18,2.6)),Q(B.uCyan,Z(`shellCyan`,De,e,1.8,.75)),Q(B.uViolet,Z(`shellViolet`,Oe,e,1.8,.75)),Q(z.uBlue,Z(`atmosphereBlue`,Ae,e,1.5,.7)),Q(z.uViolet,Z(`atmosphereViolet`,F,e,1.5,.7))}Ue();function Je(e){if(!e)return null;let t=Number(e.energy)||0,n=Number(e.bass)||0,r=Number(e.mid)||0,i=Number(e.high)||0;return{...e,bass:n,mid:r,high:i,energy:t,motion:Number(e.motion)||0,brightness:Number(e.brightness)||t,texture:Number(e.texture??e.percussive)||0,variation:Number(e.variation)||0,relativeEnergy:Number.isFinite(Number(e.relativeEnergy))?Number(e.relativeEnergy):.5,sectionEnergy:Number(e.sectionEnergy??t)||0,energyTrend:Number(e.energyTrend)||0,bpm:Number(e.bpm)||0,kick:Number(e.kick)||0,snare:Number(e.snare)||0,hihat:Number(e.hihat)||0,impact:Number(e.impact)||Math.max(Number(e.kick)||0,Number(e.snare)||0)*.7,downbeat:Number(e.downbeat)||+!!e.isDownbeat,isDownbeat:!!e.isDownbeat}}function Ye(e){let t=a.audioReactive.enabled&&r.hasAudioData?Je(r.audioFrame):null,n=!!t;if(n)H.kick=ze(t.kick,.62),H.snare=ze(t.snare,.82),H.hihat=ze(t.hihat,1.65),H.impact=ze(t.impact,1.05),H.downbeat=ze(t.downbeat,.9),(t.isDownbeat||t.downbeat>.5)&&(G.phase=0);else for(let e of Object.keys(H))H[e]=0;let i=a.colorEnvelope,o={kick:4.6/i.kickRelease,snare:4.6/i.snareRelease,hihat:4.6/i.hihatRelease,impact:4.6/i.impactRelease,downbeat:4.6/i.downbeatRelease};for(let t of Object.keys(U))U[t]=Math.max(H[t],U[t]*Math.exp(-o[t]*e));let s=t?Number(t.bpm)||0:V.bpm;n&&s>35&&(G.phase=(G.phase+e*1.24*s/60)%1.24),G.mix=K(G.mix,n&&s>35?1:0,e,3.5,2.2);for(let n of Object.keys(V)){let r=t?Number(t[n])||0:n===`relativeEnergy`?.5:0,i=n===`sectionEnergy`?2.2:8,a=n===`sectionEnergy`?.9:3;V[n]=K(V[n],r,e,i,a)}W=K(W,+!!n,e,5,2.2),He(e,V,n),Ke(e,V,n)}function Xe(e){let n=a.audioReactive,r=V,i=U,o=(n.enabled?n.strength:0)*W,s=o*n.motion,c=o*n.brightness,f=o*n.pulse,p=o*n.ambient,g=o*n.dust,v=t.clamp(r.sectionEnergy,0,1)**.58,y=t.clamp(r.energyTrend,-1,1),b=r.bpm>35?1.24*r.bpm/60:a.livingFlow.speed*3.9,x=Math.min(1,n.tempoSync*o),S=t.lerp(a.livingFlow.speed*3.9,b,x),C=G.mix*n.tempoSync*+(o>0),w=o*n.color;qe(e,w,r,i);for(let[e,n,l]of[[I,a.far.brightness,.36],[L,a.mid.brightness,.52],[Me,a.near.brightness,.68]])e.uniforms.uFlowSpeed.value=a.livingFlow.speed*(1+s*(r.motion*.92+r.bass*.38)),e.uniforms.uCurlStrength.value=a.livingFlow.curlStrength*(1+s*r.motion*1.15),e.uniforms.uConfinement.value=a.livingFlow.confinement*(1+s*r.bass*.32),e.uniforms.uFlowStability.value=t.clamp(a.livingFlow.stability-s*r.motion*.12,0,1),e.uniforms.uFlowInfluence.value=a.livingFlow.influence,e.uniforms.uPulseSpeed.value=S,e.uniforms.uPulseWidth.value=a.livingFlow.pulseWidth*(1+s*r.bass*.24),e.uniforms.uPulseStrength.value=a.livingFlow.pulseStrength*(1+f*i.kick*.92),e.uniforms.uVFXStrength.value=a.livingFlow.vfxStrength*(1+s*r.motion*.72),e.uniforms.uTrailStrength.value=a.livingFlow.trailStrength*(1+s*r.motion*.36),e.uniforms.uReleaseStrength.value=a.livingFlow.releaseStrength*(1+f*i.kick*.38),e.uniforms.uVortexEvent.value=a.livingFlow.vortexEvent*(1+f*i.kick*.82),e.uniforms.uPulsePhase.value=G.phase,e.uniforms.uBeatImpulse.value=i.kick*f*.72,e.uniforms.uDownbeatImpulse.value=i.downbeat*f,e.uniforms.uAudioSync.value=t.clamp(C,0,1),e.uniforms.uAmbientMotion.value=p*r.motion,e.uniforms.uAmbientBeat.value=p*i.snare*.72,e.uniforms.uBrightness.value=n*(1+c*r.brightness*.72),e.uniforms.uGlow.value=l*(1+c*r.brightness*.48),e.uniforms.uTwinkle.value=t.clamp(a.motion.twinkle+c*r.brightness*.34,0,1.5),e.uniforms.uAudioMid.value=o*r.mid,e.uniforms.uAudioHigh.value=o*r.high;z.uStrength.value=a.sphere.atmosphere*(1+o*(v*1.18+r.brightness*.34)),z.uAudioSection.value=o*v,z.uAudioTrend.value=y,B.uOpacity.value=a.sphere.shellOpacity*(1+o*(v*.34+i.downbeat*.1)),B.uRimStrength.value=a.sphere.rimStrength*(1+o*(v*.48+r.brightness*.2+i.downbeat*.24));let ee=w*a.colorDirector.intensity*a.shellColor.response*a.shellColor.coverage;B.uAudioMid.value=t.clamp(r.sectionEnergy,0,1)**.58,B.uAudioHigh.value=t.clamp(r.brightness,0,1)**.68,B.uAudioDownbeat.value=i.downbeat,B.uAudioColorAmount.value=ee,R.uniforms.uAudioEnergy.value=t.clamp(g*r.high,0,1.35),R.uniforms.uAudioMotion.value=t.clamp(g*r.texture,0,1.5),R.uniforms.uAudioHigh.value=t.clamp(g*r.high**.72,0,1.4),R.uniforms.uAudioBeat.value=t.clamp(g*i.hihat,0,1.5);let te=1+o*(v*.052+Math.max(0,y)*.018);q.scale=K(q.scale,te,e,2.4,.8),m.scale.setScalar(q.scale);let ne=1+o*(r.high**.72*.06+i.hihat*.055);q.dustScale=K(q.dustScale,ne,e,8,3.5),_.scale.setScalar(q.dustScale);let T=1+o*(v*.026+Math.max(0,y)*.018);q.atmosphereScale=K(q.atmosphereScale,T,e,1.8,.65),h.scale.setScalar(q.atmosphereScale);let E=a.camera.distance*(1-o*v*.046-o*i.downbeat*.012);q.cameraDistance=K(q.cameraDistance,E,e,2.1,.8),u.position.setLength(q.cameraDistance),l.setClearColor(0,0),d.autoRotate=a.camera.autoOrbit>0||W>.02,d.autoRotateSpeed=a.camera.autoOrbit+o*(v*.055+Math.max(0,y)*.025)}function Ze(){for(let e of Object.keys(V))V[e]=0;V.relativeEnergy=.5;for(let e of Object.keys(H))H[e]=0;for(let e of Object.keys(U))U[e]=0;W=0,G.phase=0,G.mix=0,Y.state=`CALM`,Y.previous=`CALM`,Y.candidate=`CALM`,Y.candidateTime=0,Y.stateTime=0,Y.transition=1,Object.assign(X,{hue:.64,hueVelocity:0,colorPhase:0,chroma:.13,lightness:.6});for(let e of[I,L,Me])e.uniforms.uAudioMid.value=0,e.uniforms.uAudioHigh.value=0,e.uniforms.uPulsePhase.value=0,e.uniforms.uBeatImpulse.value=0,e.uniforms.uDownbeatImpulse.value=0,e.uniforms.uAudioSync.value=0,e.uniforms.uAmbientMotion.value=0,e.uniforms.uAmbientBeat.value=0;z.uAudioSection.value=0,z.uAudioTrend.value=0,B.uAudioMid.value=0,B.uAudioHigh.value=0,B.uAudioDownbeat.value=0,B.uAudioColorAmount.value=0,R.uniforms.uAudioEnergy.value=0,R.uniforms.uAudioMotion.value=0,R.uniforms.uAudioHigh.value=0,R.uniforms.uAudioBeat.value=0}this._core={commonTime:F,farMaterial:I,midMaterial:L,nearMaterial:Me,dustMaterial:R,atmosphereGeometry:Fe,atmosphereMaterial:Ie,atmosphereUniforms:z,shellGeometry:Le,shellMaterial:Re,shellUniforms:B,buildInterior:Pe,disposeChildren:Ne,updateAudioFeatures:Ye,applyAudioResponse:Xe,resetAudioReaction:Ze,refreshPerceptualAnchors:Ue,perceptualState:Be,visualRuntime:q,audioDrive:V,visualEvents:U,audioEvents:H,audioSync:G,colorSectionRuntime:Y,musicColorRuntime:X,approach:K,getAudioActive:()=>W}}resetGuiCamera(){if(!this.camera||!this.controls)return;let e=this.initialCameraDistance;this.camera.position.set(0,0,e),this.controls.target.set(0,0,0),this.controls.update(),this._core?.visualRuntime&&(this._core.visualRuntime.cameraDistance=e)}requestInteriorRebuild(){if(this._guiPreferencesLoading){this._pendingInteriorRebuild=!0;return}this._core?.buildInterior()}beginGuiPreferencesLoad(){this._guiPreferencesLoading=!0,this._pendingInteriorRebuild=!1}endGuiPreferencesLoad(){let e=this._pendingInteriorRebuild;this._guiPreferencesLoading=!1,this._pendingInteriorRebuild=!1,e&&this._core?.buildInterior()}setupPostProcessing(){this.renderPass=new m(this.scene,this.camera),this.composer=new h(this.renderer),this.composer.addPass(this.renderPass),this.outputPass=new g,this.composer.addPass(this.outputPass)}createGUIContainer(){this.guiContainer=b(`Animation66-gui-container`),x(`Animation66-gui-container`),document.body.appendChild(this.guiContainer)}setupGUI(){this.createGUIContainer();let e=this.params,t=this._core;this.renderer;let n=this.camera;this.controls,this.gui=new _({title:`66.星潮幻域`,container:this.guiContainer});let r=this.gui.addFolder(`镜头与构图`);r.add(e.camera,`distance`,15,46,.01).name(`镜头距离`).onChange(e=>{t.visualRuntime.cameraDistance=e,n.position.setLength(e)}),r.add(e.sphere,`shellOpacity`,0,1.2,.001).name(`球壳透明度`).onChange(e=>t.shellUniforms.uOpacity.value=e),r.add(e.far,`count`,3e3,13e3,100).name(`星海密度`).onFinishChange(()=>this.requestInteriorRebuild()),r.add(e.composition,`riverWidth`,.7,3.2,.01).name(`河流宽度`).onFinishChange(()=>this.requestInteriorRebuild());let i=this.gui.addFolder(`基础外观`);i.add(e.sphere,`rimStrength`,0,2,.001).name(`球壳边缘`).onChange(e=>t.shellUniforms.uRimStrength.value=e),i.add(e.sphere,`atmosphere`,0,.5,.001).name(`内部大气`).onChange(e=>t.atmosphereUniforms.uStrength.value=e),i.add(e.dust,`opacity`,0,.35,.001).name(`星尘强度`).onFinishChange(()=>this.requestInteriorRebuild()),i.add(e.motion,`twinkle`,0,1,.001).name(`星光闪烁`).onChange(e=>{for(let n of[t.farMaterial,t.midMaterial,t.nearMaterial])n.uniforms.uTwinkle.value=e});let a=this.gui.addFolder(`音乐互动`);a.add(e.audioReactive,`enabled`).name(`启用音乐互动`),a.add(e.audioReactive,`strength`,0,1.5,.01).name(`整体响应`),a.add(e.audioReactive,`motion`,0,1.5,.01).name(`运动响应`),a.add(e.audioReactive,`color`,0,1.5,.01).name(`颜色响应`),a.add(e.audioReactive,`pulse`,0,1.5,.01).name(`节拍响应`);let o=this.gui.addFolder(`颜色表现`);o.add(e.colorDirector,`transitionSpeed`,.35,2.5,.01).name(`变化速度`),o.add(e.colorDirector,`peakAccent`,0,1.5,.01).name(`高潮强调`);let s=this.gui.addFolder(`高级美术`);s.add(e.livingFlow,`trailStrength`,0,1.2,.01).name(`河流亮迹`),s.add(e.livingFlow,`curlStrength`,0,1.6,.01).name(`河流卷流`),s.add(e.hero,`probability`,.002,.04,1e-4).name(`Hero 星数量`).onFinishChange(()=>this.requestInteriorRebuild()),s.add(e.near,`size`,1,8,.01).name(`主体粒子尺寸`).onFinishChange(()=>this.requestInteriorRebuild()),s.open(),this.gui.close(),this.gui.hide()}setupSettingsButton(){this.settingsButton=v(`Animation66-settings-button`),this.settingsButton.addEventListener(`click`,()=>{this.guiVisible=!this.guiVisible,this.gui&&(this.guiVisible?(this.gui.open(),this.gui.show()):this.gui.hide())}),document.body.appendChild(this.settingsButton)}updateWithAudioData(e,t){t!==void 0&&Number.isFinite(Number(t))&&(this.elapsed=Number(t));let n=e?.audioFeature?.animation;n?(this.audioFrame=n,this.hasAudioData=e?.isPlaying===void 0?!0:e.isPlaying===!0):(this.audioFrame=null,this.hasAudioData=!1)}updateAudioAnalysis(e){this._core&&(this._core.updateAudioFeatures(e),this._core.applyAudioResponse(e))}render(){if(this._disposed||!this._core||!this.composer)return;let e=performance.now()*.001,n=Math.min(Math.max(e-this.lastTime,1/240),.1);this.lastTime=e,this.elapsed=e-this.startTime;let r=this._core;r.commonTime.value=this.elapsed,this.updateAudioAnalysis(n);let i=r.getAudioActive(),a=(this.params.audioReactive.enabled?this.params.audioReactive.strength:0)*i,o=t.clamp(r.audioDrive.sectionEnergy,0,1)**.58;this.starsGroup.rotation.y+=(this.params.motion.rotationY*.132+a*o*.012)*n,this.starsGroup.rotation.x+=this.params.motion.rotationX*.084*n,r.visualRuntime.starTilt=r.approach(r.visualRuntime.starTilt,a*t.clamp(r.audioDrive.energyTrend,-1,1)*.045,n,1.4,.7),this.starsGroup.rotation.z=r.visualRuntime.starTilt,this.dustGroup.rotation.y-=(this.params.motion.rotationY*.06+a*(r.audioDrive.texture*.085+r.audioDrive.high*.038))*n,this.dustGroup.rotation.x+=a*(r.audioDrive.high*.052+r.visualEvents.hihat*.045)*n,this.atmosphereGroup.rotation.y-=(this.params.motion.rotationY*.027+a*o*.022)*n,this.shellGroup.rotation.y+=a*(o*.01+Math.max(0,r.audioDrive.energyTrend)*.006)*n,this.controls.update(),this.composer.render()}onWindowResize(){if(!this.camera||!this.renderer)return;let e=Math.max(1,window.innerWidth),t=Math.max(1,window.innerHeight);this.camera.aspect=e/t,this.camera.updateProjectionMatrix(),this.renderer.setSize(e,t,!1),this.composer?.setSize(e,t)}dispose(){this._disposed||(this._disposed=!0,y(this.settingsButton,this.guiContainer,this.gui),this.settingsButton=null,this.guiContainer=null,this.gui=null,this.controls?.dispose(),this._core&&(this._core.disposeChildren(this.starsGroup),this._core.disposeChildren(this.dustGroup),this._core.farMaterial.dispose(),this._core.midMaterial.dispose(),this._core.nearMaterial.dispose(),this._core.dustMaterial.dispose(),this._core.atmosphereGeometry.dispose(),this._core.atmosphereMaterial.dispose(),this._core.shellGeometry.dispose(),this._core.shellMaterial.dispose()),this.composer?.dispose?.(),this.renderer?.dispose(),this.scene&&this.universe&&this.scene.remove(this.universe),this._core=null,this.scene=null,this.camera=null,this.renderer=null,this.controls=null,this.composer=null)}};export{O as default};
